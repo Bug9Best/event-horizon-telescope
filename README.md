@@ -1,7 +1,7 @@
 # event-horizon-telescope
 
 # เมื่อทำการ Clone Repository จาก github มาเเล้ว
-1.ให้เเตก Branch จาก main โดยใช้รูแเบบ ดังนี้ dev-(ส่วนที่ตัวเองได้รับมอบหมาย)-(ชื่อของคนที่ทำ) เช่น dev-overview-best <br>
+1.ให้เเตก Branch จาก main โดยใช้รูปแเบบ ดังนี้ dev-(ส่วนที่ตัวเองได้รับมอบหมาย)-(ชื่อของคนที่ทำ) เช่น dev-overview-best <br>
 &emsp;ส่วนที่มอบหมาย ประกอบด้วย <br>
 &emsp;&emsp;- home page (อิงฟ้า) <br>
 &emsp;&emsp;- knowledge (หลิงหลิง) <br>
