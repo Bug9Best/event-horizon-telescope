@@ -39,30 +39,6 @@ p{
   color: #ffffff;
   left: 30px;
 }
-@media (max-width: 436px) {
-  .text {
-    width: 92%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
-}
-.text h1 {
-  font-size: 26px;
-  font-weight: 400;
-  opacity: 0.8;
-}
-@media (max-width: 399px) {
-  .text h1 {
-    font-size: 20px;
-  }
-}
-.text h2 {
-  font-weight: 300;
-  opacity: 0.5;
-  font-size: 17px;
-  margin-top: 5px;
-}
 
 .star {
   animation-name: flicker;
@@ -2062,3 +2038,13 @@ p{
   transform: translate(-50%, -50%);
 }
 
+.event1 img{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+.event1 p{
+  position: absolute;
+  top: 80%;
+  left: 10%;
+}
