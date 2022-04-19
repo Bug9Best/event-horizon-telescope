@@ -2052,7 +2052,7 @@ p{
     font-size: 50px;
     top: 10%;
     left: 50%;
-    transform: translate(-40%, -50%);
+    transform: translate(-42%, -50%);
 }
 
 .earth img{
@@ -2064,19 +2064,19 @@ p{
 
 .event1 img{
   position: absolute;
-  top: 35%;
-  right: 5%;
+  top: 30%;
+  right: 8%;
 }
 .event1 p{
   position: absolute;
-  top: 30%;
-  right: 5%;
+  top: 70%;
+  right: 3%;
 }
 
 .event2 img{
   position: absolute;
-  top: 5%;
-  left: 10%;
+  top: 10%;
+  left: 5%;
 }
 .event2 p{
   position: absolute;
@@ -2085,8 +2085,8 @@ p{
 }
 .event3 img{
     position: absolute;
-    top: 60%;
-    left: 5%;
+    top: 52%;
+    left: 12%;
 }
 .event3 p{
     position: absolute;
