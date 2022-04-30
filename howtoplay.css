@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #121110;
+}
+
+.back{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    
+}
+.back img{
+    width: 87%;
+    max-width: 100%;
+
+}
+.logo{
+    position: absolute;
+    width: 100vw;
+    padding-left: 175px;
+}
+.logo img{
+    width: 23%;
+    max-width: 100%;
+}
+.txt{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+}
+.txt img{
+    width: 27%;
+    top: 10px;
+    max-width: 100%;
+
+}
