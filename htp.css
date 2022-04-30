@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Josefin+Sans:wght@300&family=Jost:wght@300;500&family=Kanit:wght@300;400;700&family=Lato:wght@300&family=Luxurious+Roman&family=Mitr:wght@500&family=Mochiy+Pop+P+One&family=Moon+Dance&family=Noto+Sans+Thai:wght@300;400&family=Oswald&family=Poppins:wght@300;400&family=Quintessential&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #11100E;
+    font-family: 'Mitr', sans-serif;
+}
+.container{
+    height: 100vh;
+    position: relative;
+    background-image: url('image/htp-back1.png');
+    background-size: cover;
+    background-size: 88%;
+    background-position: 50% -550%;
+    background-repeat: no-repeat;
+}
+/* txt */
+.txt img{
+    width: 450px;
+    height: 230px;
+}
+.txt p{
+    position: absolute;
+    font-size: 25px;
+    font-weight: 800;
+}
+/* txt1 top page */
+.txt-1{
+    position: absolute;
+    top: 18%;
+    left: 35%;
+}
+
+.txt-1 .txt-11{
+    top: 26%;
+    left: 20%;
+}
+
+.txt-1 .txt-12{
+    top: 43%;
+    left: 29%;
+}
+
+.txt-1 .txt-13{
+    top: 60%;
+    left: 35%;
+}
+/* txt2 right1 */
+.txt-2{
+    position: absolute;
+    top: 41%;
+    left: 22%;
+}
+
+.txt-2 .txt-21{
+    top: 28%;
+    left: 33%;
+}
+
+.txt-2 .txt-22{
+    top: 45%;
+    left: 32%;
+}
+/* txt3 left1 */
+.txt-3{
+    position: absolute;
+    top: 41%;
+    right: 22%;
+}
+
+.txt-3 .txt-31{
+    top: 28%;
+    left: 27%;
+}
+
+.txt-3 .txt-32{
+    top: 45%;
+    left: 32%;
+}
+/* txt4 right1 */
+.txt-4{
+    position: absolute;
+    top: 63%;
+    left: 22%;
+}
+
+.txt-4 .txt-41{
+    top: 28%;
+    left: 31%;
+}
+
+.txt-4 .txt-42{
+    top: 45%;
+    left: 34%;
+}
+
+.txt-4 .txt-43{
+    top: 62%;
+    left: 28%;
+}
+/* txt5 left2 */
+.txt-5{
+    position: absolute;
+    top: 63%;
+    right: 22%;
+}
+
+.txt-5 .txt-51{
+    top: 28%;
+    left: 27%;
+}
+
+.txt-5 .txt-52{
+    top: 45%;
+    left: 34%;
+}
+.txt-5 .txt-53{
+    top: 62%;
+    left: 32%;
+}
+/* corect incorect */
+.img567 img{
+    position: absolute;
+    width: 280px;
+}
+.img567 .img5{
+    top: 50%;
+    left: 19%;
+}
+.img567 .img6{
+    top: 50%;
+    right: 19%;
+}
+.img567 .img7{
+    width: 200px;
+    top: 56%;
+    left: 39%;
+}
+.img567 .logo2{
+    width: 400px;
+    top: -1%;
+    left: 8%;
+}
+.img567 .ling{
+    width: 250px;
+    top: 2%;
+    left: 12%;
+}
+.img567 .nok{
+    width: 300px;
+    top: 64%;
+    right: 6%;
+}
+.img567 .img4-1{
+    width: 250px;
+    top: 32%;
+    left: 9%;
+}
+.img567 .img4-2{
+    width: 250px;
+    top: 53%;
+    right: 10%;
+}
+.img567 .banana1{
+    width: 150px;
+    top: 36%;
+    left: 10%;
+}
+.img567 .banana2{
+    width: 200px;
+    top: 75%;
+    left: 20%;
+}
+.img567 .banana3{
+    width: 200px;
+    top: 75%;
+    right: 21%;
+}
+.img567 .banana4{
+    width: 150px;
+    top: 57%;
+    right: 15.5%;
+}
+.img567 h1{
+    position: absolute;
+    width: 100px;
+    
+}
+.t1{
+    top: 38.5%;
+    left: 18%;
+}
+.t2{
+    top: 59.5%;
+    right: 11%;
+}
+.t3{
+    top: 74%;
+    left: 24%;
+}
+.t4{
+    top: 75%;
+    right: 23%;
+}
+.t5{
+    top: 49%;
+    right: 16%;
+    font-size: 50px;
+    color: #6A8DBC;
+}
+
+
