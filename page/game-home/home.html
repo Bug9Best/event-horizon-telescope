@@ -11,6 +11,9 @@
     type="image/x-icon">
   <link rel="stylesheet" href="home.css">
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 </head>
 
 <body onload="openDialog()">
@@ -30,16 +33,19 @@
   <div class="meteor-13"></div>
   <div class="meteor-14"></div>
   <div class="meteor-15"></div>
-  <div class="logo">
+  <div id="logo">
     <img src="/assets/image/hp-logo1.png" alt="" class="back1">
     <img src="/assets/image/hp-logo2.png" alt="" class="back2">
     <img src="/assets/image/hp-logo3.png" alt="" class="back3">
   </div>
 
-  <div class="bt">
-    <a href="lab.html" class="button" onMouseOver="mouseOver()">START GAME</a>
-    <a href="htp.html" class="button" onMouseOver="mouseOver()">HOW TO PLAY</a>
+  <div id="button">
+    <a class="button" onMouseOver="mouseOver()" onclick="start()">START GAME</a>
+    <a class="button" onMouseOver="mouseOver()" onclick="howPlay()">HOW TO PLAY</a>
   </div>
+
+  <div id="text"></div>
+  <div id="line"></div>
   <script src="home.js"></script>
 </body>
 
