@@ -1,0 +1,25 @@
+body{
+    height: 100%;
+    background-image: url(../assets/image/background.png);
+    overflow: hidden;
+}
+.box-asnwer{
+    width: 800px;
+    height: 150px;
+    background-color: #feb041;
+    border-radius: 20px;
+    margin:auto;
+    margin-top: 50px;
+}
+p{
+    font-family: 'Mitr', sans-serif;
+    font-size: 24px;
+    padding: 20px;
+}
+.img-q2 img{
+    width: 1400px;
+    height: 700px;
+    position: relative;
+    left: 62px;
+    bottom: 180px;
+}
