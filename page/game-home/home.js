@@ -3,7 +3,7 @@ function openDialog() {
     Swal.fire({
       icon: 'question',
       title: 'ข้อเเนะนำ',
-      text: 'เพื่ออรรถรสในการเล่นเกมส์ โปรดเพื่ออรรถรสในการเล่นเกมส์ โปรดเพื่ออรรถรสในการเล่นเกมส์ โปรดเพื่ออรรถรสในการเล่นเกมส์ โปรด',
+      text: 'เพื่ออรรถรสในการเล่นเกมส์ โปรดเปิดเสียงเเละขยายหน้าต่างให้มากกว่า XXX พิกเซล',
       showConfirmButton: true,
       confirmButtonText: "ทราบเเล้วเปลี่ยน!",
       confirmButtonColor: " #356db8",
@@ -35,18 +35,37 @@ function start() {
   }, 3500);
 }
 
-function howPlay() {
-  Swal.fire({
-    icon: 'question',
-    title: 'ข้อเเนะนำ',
-    text: 'เพื่ออรรถรสในการเล่นเกมส์ โปรดเพื่ออรรถรสในการเล่นเกมส์ โปรดเพื่ออรรถรสในการเล่นเกมส์ โปรดเพื่ออรรถรสในการเล่นเกมส์ โปรด',
-    showConfirmButton: true,
-    confirmButtonText: "ทราบเเล้วเปลี่ยน!",
-    confirmButtonColor: " #356db8",
-  })
-  window.location.href = '/htp.html';
 
+async function howPlay() {
+  const steps = ['1', '2', '3']
+  const swalQueueStep = Swal.mixin({
+    confirmButtonText: 'ต่อไป',
+    cancelButtonText: 'ย้อนกลับ',
+    width: '80%',
+    customClass: 'swal-height',
+    progressSteps: steps,
+    reverseButtons: true,
+  })
+  const values = []
+  let currentStep
+  for (currentStep = 0; currentStep < steps.length;) {
+    const result = await swalQueueStep.fire({
+      title: `Test`,
+      showCancelButton: currentStep > 0,
+      currentProgressStep: currentStep
+    })
+
+    if (result.value) {
+      values[currentStep] = result.value
+      currentStep++
+    } else if (result.dismiss === Swal.DismissReason.cancel) {
+      currentStep--
+    } else {
+      break
+    }
+  }
 }
+
 
 function frameLooper() {
   let timer = setTimeout('frameLooper()', 70);
@@ -57,10 +76,10 @@ function frameLooper() {
     clearTimeout(timer);
     setTimeout(function () {
       document.getElementById("text").style.display = "none";
-    }, 500);
+    }, 3000);
     setTimeout(function () {
       opening();
-    }, 2000);
+    }, 4000);
   }
 }
 

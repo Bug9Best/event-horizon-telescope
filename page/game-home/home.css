@@ -444,3 +444,7 @@ body {
   width: 100vw;
   background-color: white;
 }
+
+.swal-height {
+  height: 80vh;
+}
