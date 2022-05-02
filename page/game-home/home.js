@@ -36,34 +36,12 @@ function start() {
 }
 
 
-async function howPlay() {
-  const steps = ['1', '2', '3']
-  const swalQueueStep = Swal.mixin({
-    confirmButtonText: 'ต่อไป',
-    cancelButtonText: 'ย้อนกลับ',
+function howPlay() {
+  Swal.fire({
+    template: '#howToPlay',
     width: '80%',
     customClass: 'swal-height',
-    progressSteps: steps,
-    reverseButtons: true,
   })
-  const values = []
-  let currentStep
-  for (currentStep = 0; currentStep < steps.length;) {
-    const result = await swalQueueStep.fire({
-      title: `Test`,
-      showCancelButton: currentStep > 0,
-      currentProgressStep: currentStep
-    })
-
-    if (result.value) {
-      values[currentStep] = result.value
-      currentStep++
-    } else if (result.dismiss === Swal.DismissReason.cancel) {
-      currentStep--
-    } else {
-      break
-    }
-  }
 }
 
 
