@@ -1,6 +1,6 @@
 body{
     max-height: 100vh;
-    background: url(../assets/Image/background-lab.png), url(../assets/Image/space-background-lab.png);
+    background: black;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -15,4 +15,20 @@ body{
     left: 0;
     bottom: 0;
     position: absolute;
+}
+.bg1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -99;
+}
+.bg2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -100;
 }
