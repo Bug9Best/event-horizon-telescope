@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="summarize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +13,85 @@
 </head>
 
 <body>
-  summarize
+  <!-- summarize
   <input type="submit" value="Return to homepage" onclick="home()">
-  <input type="submit" value="Return to game" onclick="game()">
+  <input type="submit" value="Return to game" onclick="game()"> -->
+  <!-- <section id="background">
+    <div class="title">EVENT HORIZON TELESCOPE</div>
+  </section> -->
+
+  <section>
+    <h1>EVENT HORIZON TELESCOPE</h1>
+    <img src="https://cdn.discordapp.com/attachments/934057101632897026/971667628227723284/m87-02.jpg" width="100%" style="filter: brightness(70%);" alt="">
+  </section>
+
+  <section id="sec1">
+    <h2>หลุมดำ (Black hole)</h2>
+    <br><a>วัตถุที่มีความโน้มถ่วงเป็นอนันต์ ดูดกลืนทุกสรรพสิ่งแม้แต่ตัวของมันเองลงไปในหลุมลึกที่ดำมืด</a>
+    <a>ที่แม้แต่แสงก็ไม่สามารถที่หลุดลอดออกมาได้</a>
+  </section>
+
+  <section id="sec2">
+    <blockquote>
+      <h2>เราสามารถถ่ายเห็นหลุมดำได้อย่างไร ?</h2>
+      <br><a>ในการถ่ายหลุมดำเป็นเรื่องที่ยากเนื่องจากหลุมดำเป็นวัตถุที่ไม่เปล่งแสง เราจึงจำเป็นต้องปรับคลื่นความถี่
+      ของกล้องให้ตรงกับการถ่ายภาพรังสีของหลุมดำเพื่อถ่ายมันออกมา ซึ่งการถ่ายมันก็ยากเข้าไปอีกเนื่องจาก
+      หลุมดำนั้นอยู่ไกลโลกเรามากๆ ทำให้เราจำเป็นจะต้องทำให้ขนาดของเลนกล้องมีขนาดใหญ่เท่าโลก ซึ่งมันก็เป็นไปไม่ได้
+      เราเลยจำเป็นจะต้องถ่ายภาพจากกล้องทตั้งไว้ในส่วนต่างๆของโลกแล้วจึงนำภาพที่ได้นั้นมาประมวลผลกันเป็นภาพหลุมดำ
+      ซึ่งรูปหลุมดำที่ถ่ายคือของกาแล็คซี่ M87 แต่ก็มีหลุมดำที่อยู่ใกล้เรามากกว่านั้นก็คือ A0620-00 ชื่อ Sagittarius A
+      ห่างจากโลก 26,540 ปีแสง แต่เนื่องจากมันมีขนาดเล็กเกินไปทำให้ยากต่อการถ่ายเลยไปเลือกถ่าย
+      หลุมดำของกาแล็คซี่ M87 แทน</a>
+    </blockquote>
+  </section>
+
+  <section id="sec3">
+    <blockquote>
+      <h2>เทคนิค (Very Long Baseline Interferometer : VLBI)</h2>
+      <br><a>ใช้ความถี่กล้องมารวมกันเป็นกล้องโทรทรรศน์วิทยุเสมือนกล้องขนาดใหญ่เท่าโลก แล้วถ่ายภาพในเวลาเดียวกัน
+        ในความถี่ 230 GHz ทำให้ได้ภาพความละเอียดสูง แล้วนำภาพหลายๆภาพขนาดประมาณ 5 ล้าน GB มาประมวลผล
+        ใช้เวลา 2 ปีเพื่อได้ภาพหลุมดำ</a>
+    </blockquote>
+  </section>
+
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+  <a class="star"></a>
+
   <script>
-    function home() { window.location.href = 'home.html' }
-    function game() { window.location.href = 'game.html' }
+    //$(".background").onepage_scroll();
+    // function home() { window.location.href = 'home.html' }
+    // function game() { window.location.href = 'game.html' }
+    window.addEventListener('scroll', () => {
+      document.querySelector('img').style.clipPath = `circle(${window.scrollY+100}px at center)`;
+    })
   </script>
 </body>
 

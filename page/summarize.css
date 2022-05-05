@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mitr', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    /* background: url("https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png"); */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    background-color: black;
+    /* background: url("https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png"); */
+}
+
+section:first-of-type h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    clip-path: circle(100px at center);
+}
+
+section:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: hsl(0, 0%, 0%, 70%); */
+    background: linear-gradient(to top, black, transparent);
+    padding: 5rem;
+    margin-top: 50rem;
+    position: relative;
+    z-index: 3;
+}
+
+section:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: hsl(0, 0%, 0%, 70%); */
+    background-image: linear-gradient(to bottom, black, transparent), url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
+    padding: 5rem;
+    position: relative;
+    z-index: 3;
+}
+
+section:nth-child(4) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
+    padding: 5rem;
+    position: relative;
+    z-index: 3;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+}
+
+h2 {
+    color: white;
+    font-size: 25px;
+    /* text-shadow: 2px 2px 2px black; */
+}
+
+a {
+    color: white;
+    font-size: 18px;
+    /* text-shadow: 2px 2px 2px black; */
+}
+
+.star {
+    position: fixed;
+    background-color: white;
+    bottom: -200px;
+    height: 3px;
+    width: 3px;
+    animation-name: float;
+    animation-iteration-count: infinite;
+}
+
+.star:nth-child(1) { left: 10px; animation-duration: 11s; animation-delay: 1s; }
+.star:nth-child(2) { left: 40px; animation-duration: 15s; animation-delay: 12s; }
+.star:nth-child(3) { left: 80px; animation-duration: 13s; animation-delay: 3s; }
+.star:nth-child(4) { left: 120px; animation-duration: 10.5s; animation-delay: 6s; }
+.star:nth-child(5) { left: 160px; animation-duration: 10s; animation-delay: 1s; }
+.star:nth-child(6) { left: 200px; animation-duration: 14s; animation-delay: 5s; }
+.star:nth-child(7) { left: 240px; animation-duration: 16s; animation-delay: 3s; }
+.star:nth-child(8) { left: 280px; animation-duration: 12s; animation-delay: 8s; }
+.star:nth-child(9) { left: 320px; animation-duration: 18s; animation-delay: 7s; }
+.star:nth-child(10) { left: 360px; animation-duration: 14.5s; animation-delay: 2s; }
+.star:nth-child(11) { left: 400px; animation-duration: 16.5s; animation-delay: 3s; }
+.star:nth-child(12) { left: 440px; animation-duration: 12.3s; animation-delay: 2s; }
+.star:nth-child(13) { left: 480px; animation-duration: 18.4s; animation-delay: 10s; }
+.star:nth-child(14) { left: 520px; animation-duration: 13.7s; animation-delay: 3s; }
+.star:nth-child(15) { left: 560px; animation-duration: 10.5s; animation-delay: 3s; }
+.star:nth-child(16) { left: 600px; animation-duration: 10.1s; animation-delay: 1s; }
+.star:nth-child(17) { left: 640px; animation-duration: 14.8s; animation-delay: 2s; }
+.star:nth-child(18) { left: 680px; animation-duration: 16.7s; animation-delay: 1s; }
+.star:nth-child(19) { left: 720px; animation-duration: 11.3s; animation-delay: 9s; }
+.star:nth-child(20) { left: 760px; animation-duration: 15.5s; animation-delay: 2s; }
+.star:nth-child(21) { left: 800px; animation-duration: 10.9s; animation-delay: 1s; }
+.star:nth-child(22) { left: 840px; animation-duration: 10.6s; animation-delay: 9s; }
+.star:nth-child(23) { left: 880px; animation-duration: 15.2s; animation-delay: 6s; }
+.star:nth-child(24) { left: 920px; animation-duration: 12.7s; animation-delay: 1s; }
+.star:nth-child(25) { left: 960px; animation-duration: 19.1s; animation-delay: 3s; }
+.star:nth-child(26) { left: 1000px; animation-duration: 12.4s; animation-delay: 1s; }
+.star:nth-child(27) { left: 1040px; animation-duration: 18.6s; animation-delay: 2s; }
+.star:nth-child(28) { left: 1080px; animation-duration: 14.3s; animation-delay: 7s; }
+.star:nth-child(29) { left: 1120px; animation-duration: 18.9s; animation-delay: 2s; }
+.star:nth-child(30) { left: 1160px; animation-duration: 14.2s; animation-delay: 4s; }
+.star:nth-child(31) { left: 1200px; animation-duration: 10.1s; animation-delay: 1s; }
+.star:nth-child(32) { left: 1240px; animation-duration: 10.3s; animation-delay: 1s; }
+
+@keyframes float {
+    from {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+}
+
+blockquote{
+    border-left: 10px solid hsl(40,100%,60%);;
+    padding: 3em;
+    /* background: hsl(30,100%,60%); */
+}
