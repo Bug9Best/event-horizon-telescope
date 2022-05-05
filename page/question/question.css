@@ -1,4 +1,4 @@
-.q1, .q4,.q5,.q3{
+.q2, .q4,.q5,.q3{
     display: none;
 }
 * { 
@@ -110,6 +110,7 @@ p{
     width:0;
     height:0;
     border:0;
+    cursor: pointer;
 }
 .messagebox{
     width:  100px;
