@@ -1,12 +1,13 @@
 function openDialog() {
   setTimeout(function () {
     Swal.fire({
-      icon: 'question',
+      icon: 'warning',
       title: 'ข้อเเนะนำ',
       text: 'เพื่ออรรถรสในการเล่นเกมส์ โปรดเปิดเสียงเเละขยายหน้าต่างให้มากกว่า XXX พิกเซล',
       showConfirmButton: true,
       confirmButtonText: "ทราบเเล้วเปลี่ยน!",
-      confirmButtonColor: "#356db8",
+      confirmButtonColor: "#FAB400",
+      focusConfirm: false,
     })
   }, 500);
 }
@@ -41,6 +42,9 @@ function howPlay() {
     template: '#howToPlay',
     width: '750px',
     customClass: 'swal-height',
+    confirmButtonText: "ทราบเเล้วเปลี่ยน!",
+    confirmButtonColor: "#FAB400",
+    focusConfirm: false,
   })
 }
 

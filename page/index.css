@@ -378,19 +378,22 @@ body {
   animation: sizelogo 1s alternate infinite;
 }
 
-@keyframes sizelogo{
-  0%{
+@keyframes sizelogo {
+  0% {
     transform: scale(1);
   }
-  100%{
+
+  100% {
     transform: scale(1.03);
   }
 }
-@keyframes size{
-  0%{
+
+@keyframes size {
+  0% {
     transform: scale(1);
   }
-  100%{
+
+  100% {
     transform: scale(1.01);
   }
 }
@@ -442,10 +445,9 @@ body {
 
 .button:hover {
   transform: scale(1.035);
-  /* Fix Here */
   transform: translate(0, -6px);
   box-shadow: 8px -8px 20px 0 rgba(249, 204, 93, 0.3),
-                -8px 8px 20px 0 rgba(255, 153, 51, 0.3);
+    -8px 8px 20px 0 rgba(255, 153, 51, 0.3);
   transition: transform 0.3s ease, box-shodow 0.3s ease;
 }
 
@@ -472,24 +474,12 @@ body {
   height: 80vh;
 }
 
-.howtoplay-2{
-  animation: size 1s alternate infinite;
-}
-.howtoplay-2 h1{
-  margin: 40px 0;
-  animation: size 1s alternate infinite;
-  
-}
-.howtoplay-2 p{
+.howtoplay-2 p {
   font-size: 22px;
+  text-align: left;
 }
 
 :root {
-  /* --color-primary: #fd863c;
-  --color-secondary: #FF9933;
-  --color-tertiary: #f7c64c;
-  --color-quaternary: #f7d47b;
-  --color-quinary: #f5dc9f; */
   --color-primary: #FAB400;
   --color-secondary: #f7c64c;
   --color-tertiary: #f7ce65;
@@ -514,7 +504,7 @@ body {
   margin: 15px 0px;
   margin-top: 35px;
   color: var(--color-primary);
-  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  animation: shadows 1.5s ease-in infinite, move 2s ease-in infinite;
   letter-spacing: 0.4rem;
 }
 
@@ -522,43 +512,53 @@ body {
   0% {
     text-shadow: none;
   }
+
   10% {
     text-shadow: 3px 3px 0 var(--color-secondary);
   }
+
   20% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary);
   }
+
   30% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
   }
+
   40% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
       12px 12px 0 var(--color-quinary);
   }
+
   50% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
       12px 12px 0 var(--color-quinary);
   }
+
   60% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
       12px 12px 0 var(--color-quinary);
   }
+
   70% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
   }
+
   80% {
     text-shadow: 3px 3px 0 var(--color-secondary),
       6px 6px 0 var(--color-tertiary);
   }
+
   90% {
     text-shadow: 3px 3px 0 var(--color-secondary);
   }
+
   100% {
     text-shadow: none;
   }
@@ -568,15 +568,19 @@ body {
   0% {
     transform: translate(0px, 0px);
   }
+
   40% {
     transform: translate(-12px, -12px);
   }
+
   50% {
     transform: translate(-12px, -12px);
   }
+
   60% {
     transform: translate(-12px, -12px);
   }
+
   100% {
     transform: translate(0px, 0px);
   }
