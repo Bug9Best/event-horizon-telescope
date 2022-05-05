@@ -9,9 +9,8 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+body{
     background-color: black;
-    /* background: url("https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png"); */
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-y: scroll;
@@ -24,7 +23,6 @@ body::-webkit-scrollbar {
 section {
     min-height: 100vh;
     background-color: black;
-    /* background: url("https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png"); */
 }
 
 section:first-of-type h1 {
@@ -48,12 +46,11 @@ img {
     clip-path: circle(100px at center);
 }
 
-section:nth-child(2) {
+section:nth-child(3) {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background-color: hsl(0, 0%, 0%, 70%); */
     background: linear-gradient(to top, black, transparent);
     padding: 5rem;
     margin-top: 50rem;
@@ -61,19 +58,18 @@ section:nth-child(2) {
     z-index: 3;
 }
 
-section:nth-child(3) {
+section:nth-child(4) {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* background-color: hsl(0, 0%, 0%, 70%); */
     background-image: linear-gradient(to bottom, black, transparent), url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
     padding: 5rem;
     position: relative;
     z-index: 3;
 }
 
-section:nth-child(4) {
+section:nth-child(5) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,13 +88,11 @@ h1 {
 h2 {
     color: white;
     font-size: 25px;
-    /* text-shadow: 2px 2px 2px black; */
 }
 
 a {
     color: white;
     font-size: 18px;
-    /* text-shadow: 2px 2px 2px black; */
 }
 
 .star {
@@ -156,7 +150,57 @@ a {
 }
 
 blockquote{
-    border-left: 10px solid hsl(40,100%,60%);;
+    border-left: 10px solid hsl(40,100%,60%);
     padding: 3em;
-    /* background: hsl(30,100%,60%); */
+}
+
+.page {
+    position: fixed;
+    z-index: 5;
+    display: block;
+    width: 20px;
+    height: 100px;
+    bottom: 18em;
+    right: 1em;
+}
+
+.page a {
+    transition: fill 0.5s ease-out;
+}
+
+.page a:hover {
+    fill: hsl(40,100%,60%);
+    cursor: pointer;
+}
+
+.nextButton {
+    position: absolute;
+    color: white;
+    background-color: transparent;
+    padding: 8px;
+    width: 6em;
+    height: 3em;
+    bottom: 3em;
+    right: 4em;
+    text-align: center;
+    text-decoration:none;
+    transition: color 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.nextButton:hover {
+    color: hsl(40,100%,60%);
+    transform: translateX(5px);
+    cursor: pointer;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
 }
