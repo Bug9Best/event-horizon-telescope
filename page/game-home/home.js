@@ -6,7 +6,7 @@ function openDialog() {
       text: 'เพื่ออรรถรสในการเล่นเกมส์ โปรดเปิดเสียงเเละขยายหน้าต่างให้มากกว่า XXX พิกเซล',
       showConfirmButton: true,
       confirmButtonText: "ทราบเเล้วเปลี่ยน!",
-      confirmButtonColor: " #356db8",
+      confirmButtonColor: "#356db8",
     })
   }, 500);
 }
@@ -39,7 +39,7 @@ function start() {
 function howPlay() {
   Swal.fire({
     template: '#howToPlay',
-    width: '80%',
+    width: '750px',
     customClass: 'swal-height',
   })
 }
