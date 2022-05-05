@@ -1,3 +1,4 @@
+// real real hard code
 let bananaPnt = document.getElementById("banana-p");
 let starPnt = document.getElementById("star-p");
 let bPoint = 3;
