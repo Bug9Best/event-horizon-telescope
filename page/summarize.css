@@ -46,7 +46,7 @@ img {
     clip-path: circle(100px at center);
 }
 
-section:nth-child(3) {
+section:nth-child(4) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +58,7 @@ section:nth-child(3) {
     z-index: 3;
 }
 
-section:nth-child(4) {
+section:nth-child(5) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,7 +69,7 @@ section:nth-child(4) {
     z-index: 3;
 }
 
-section:nth-child(5) {
+section:nth-child(6) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,12 +105,12 @@ a {
     animation-iteration-count: infinite;
 }
 
-.star:nth-child(1) { left: 10px; animation-duration: 11s; animation-delay: 1s; }
-.star:nth-child(2) { left: 40px; animation-duration: 15s; animation-delay: 12s; }
-.star:nth-child(3) { left: 80px; animation-duration: 13s; animation-delay: 3s; }
-.star:nth-child(4) { left: 120px; animation-duration: 10.5s; animation-delay: 6s; }
-.star:nth-child(5) { left: 160px; animation-duration: 10s; animation-delay: 1s; }
-.star:nth-child(6) { left: 200px; animation-duration: 14s; animation-delay: 5s; }
+.star:nth-child(33) { left: 10px; animation-duration: 11s; animation-delay: 1s; }
+.star:nth-child(34) { left: 40px; animation-duration: 15s; animation-delay: 12s; }
+.star:nth-child(35) { left: 80px; animation-duration: 13s; animation-delay: 3s; }
+.star:nth-child(36) { left: 120px; animation-duration: 10.5s; animation-delay: 6s; }
+.star:nth-child(37) { left: 160px; animation-duration: 10s; animation-delay: 1s; }
+.star:nth-child(38) { left: 200px; animation-duration: 14s; animation-delay: 5s; }
 .star:nth-child(7) { left: 240px; animation-duration: 16s; animation-delay: 3s; }
 .star:nth-child(8) { left: 280px; animation-duration: 12s; animation-delay: 8s; }
 .star:nth-child(9) { left: 320px; animation-duration: 18s; animation-delay: 7s; }
@@ -175,11 +175,13 @@ blockquote{
 
 .nextButton {
     position: absolute;
-    color: white;
-    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    background-color: hsl(40,100%,60%);
+    border-radius: 20px;
     padding: 8px;
-    width: 6em;
-    height: 3em;
+    width: 5em;
+    height: 2.7em;
     bottom: 3em;
     right: 4em;
     text-align: center;
@@ -188,7 +190,7 @@ blockquote{
 }
 
 .nextButton:hover {
-    color: hsl(40,100%,60%);
+    background-color: hsl(40,100%,80%);
     transform: translateX(5px);
     cursor: pointer;
 }
@@ -203,4 +205,35 @@ blockquote{
 .reveal.active {
     transform: translateY(0px);
     opacity: 1;
+}
+
+.homeButton {
+    position: fixed;
+    color: white;
+    background-color: hsl(0, 0%, 0%, 80%);
+    border-radius: 20px;
+    font-size: 18px;
+    width: 8em;
+    text-align: right;
+    padding: 1rem;
+    text-decoration:none;
+    top: 1em;
+    left: 1em;
+    z-index: 6;
+}
+
+.homeIcon {
+    position: absolute;
+    background: url("https://cdn.discordapp.com/attachments/963409614672629810/971822001276715128/monkey.png");
+    background-repeat: no-repeat;
+    width: 520px;
+    height: 520px;
+    transform: scale(0.1);
+    top: -380%;
+    left: -150%;
+}
+
+.homeButton:hover {
+    background-color: hsl(0,0%,30%);
+    cursor: pointer;
 }
