@@ -34,66 +34,17 @@ body{
     left: -10px;
     bottom: -30px;
     position: absolute;
-    animation: monking 2s;
-    opacity: 1;
-}
-#doctor{
-    width: 25%;
-    height: 62.5%;
-    right: 70px;
-    bottom: -40px;
-    position: absolute;
-    animation: docing 2s;
-    opacity: 1;
+    opacity: .5;
 }
 #bird{
     width: 25%;
     height: 40%;
-    right: -470px;
-    bottom: 500px;
+    right: 80px;
+    bottom: -50px;
     position: absolute;
     opacity: 1;
 }
-@keyframes monking{
-    from{
-        left: -510px;
-    }
-    to{
-        left: -10px;
-    }
-}
-@keyframes docing{
-    from{
-        right: -430px;
-    }
-    to{
-        right: 70px;
-    }
-}
-#dialog0{
-    width: 800px;
-    height: 150px;
-    background-color: #233353;
-    border: solid #FFC700;
-    border-width: 10px;
-    border-radius: 43px;
-    position: absolute;
-    bottom: -250px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-}
-p{
-    font-size: 30px;
-    color: white;
-    text-align: center;
-}
-#dialog1, #dialog2, #dialog3, #dialog4, #dialog5, #dialog6, #dialog7{
+#dialog{
     width: 800px;
     height: 150px;
     background-color: #233353;
@@ -109,6 +60,9 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
-    opacity: 0;
+}
+p{
+    font-size: 30px;
+    color: white;
+    text-align: center;
 }
