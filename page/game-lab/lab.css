@@ -1,4 +1,4 @@
-body{
+body {
     max-height: 100vh;
     background: black;
     background-size: cover;
@@ -6,13 +6,15 @@ body{
     overflow: hidden;
 }
 
-*{
+* {
     font-family: 'Mitr', sans-serif;
 }
-.bg{
+
+.bg {
     max-height: 100vh;
 }
-.bg1{
+
+.bg1 {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -20,7 +22,8 @@ body{
     top: 0;
     z-index: -99;
 }
-.bg2{
+
+.bg2 {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -28,7 +31,8 @@ body{
     top: 0;
     z-index: -100;
 }
-#monkey{
+
+#monkey {
     width: 25%;
     height: 60%;
     left: -10px;
@@ -37,7 +41,8 @@ body{
     animation: monking 2s;
     opacity: 1;
 }
-#doctor{
+
+#doctor {
     width: 25%;
     height: 62.5%;
     right: 70px;
@@ -46,7 +51,8 @@ body{
     animation: docing 2s;
     opacity: 1;
 }
-#bird{
+
+#bird {
     width: 25%;
     height: 40%;
     right: -470px;
@@ -54,23 +60,28 @@ body{
     position: absolute;
     opacity: 1;
 }
-@keyframes monking{
-    from{
+
+@keyframes monking {
+    from {
         left: -510px;
     }
-    to{
+
+    to {
         left: -10px;
     }
 }
-@keyframes docing{
-    from{
+
+@keyframes docing {
+    from {
         right: -430px;
     }
-    to{
+
+    to {
         right: 70px;
     }
 }
-#dialog0{
+
+#dialog0 {
     width: 800px;
     height: 150px;
     background-color: #233353;
@@ -88,12 +99,14 @@ body{
     justify-content: center;
     z-index: 1;
 }
-p{
+
+p {
     font-size: 30px;
     color: white;
     text-align: center;
 }
-#dialog1, #dialog2, #dialog3, #dialog4, #dialog5, #dialog6, #dialog7{
+
+#dialog1, #dialog2, #dialog3, #dialog4, #dialog5, #dialog6, #dialog7 {
     width: 800px;
     height: 150px;
     background-color: #233353;
