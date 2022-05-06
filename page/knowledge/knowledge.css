@@ -9,7 +9,12 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
   font-family: 'Mitr', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 section {
