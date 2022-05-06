@@ -1,72 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap');
-body{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url("https://cdn.discordapp.com/attachments/969070208729899008/970728668898926622/realback.jpg");
+}
+
+body {
+  background-image: url("/assets/Image/realback.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Mitr', sans-serif;
-
 }
 
-section{
+section {
   min-height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section:nth-child(1){
+section:nth-child(1) {
   letter-spacing: 5px;
   color: #fff;
 }
 
-section:nth-child(2){
+section:nth-child(2) {
   color: #010333;
 }
 
-section:nth-child(3){
+section:nth-child(3) {
   color: #010333;
 }
 
-section:nth-child(4){
+section:nth-child(4) {
   color: #010333;
 }
 
-section:nth-child(5){
+section:nth-child(5) {
   color: #010333;
 }
 
-section:nth-child(6){
+section:nth-child(6) {
   letter-spacing: 5px;
   color: #fff;
 }
 
-section:nth-child(7){
+section:nth-child(7) {
   color: #010333;
 }
 
-section:nth-child(8){
+section:nth-child(8) {
   color: #010333;
 }
 
-section .container{
+section .container {
   margin: 150px;
 }
 
-section h1{
+section h1 {
   font-size: 70px;
   text-shadow: 0 0 10px #9ad9ff;
 }
 
-section .card{
+section .card {
   border: 0 0 2px #ffcd5d;
   display: flex;
 }
 
-section .card .text{
+section .card .text {
   border-radius: 7px;
   background: #ffcd5d;
   font-size: 22px;
@@ -75,7 +76,7 @@ section .card .text{
   text-align: center;
 }
 
-section .card .text h6{
+section .card .text h6 {
   font-size: 22px;
   text-align: center;
   text-transform: uppercase;
@@ -83,31 +84,62 @@ section .card .text h6{
 }
 
 
-@media (max-width: 900px){
-  section h1{
+@media (max-width: 900px) {
+  section h1 {
     font-size: 40px;
   }
 
-  section .card{
+  section .card {
     flex-direction: column;
   }
 }
 
-.reveal{
+.reveal {
   position: relative;
   transform: translateY(180px);
   opacity: 0;
   transition: all 1s ease;
 }
 
-.reveal.active{
+.reveal.active {
   transform: translateY(0px);
   opacity: 1;
 }
 
-.img1{
+.img1 {
   display: flex;
   justify-content: center;
   align-items: center;
 
+}
+
+.homeButton {
+  position: fixed;
+  color: white;
+  background-color: hsl(0, 0%, 0%, 80%);
+  border-radius: 20px;
+  font-size: 18px;
+  width: 8em;
+  text-align: right;
+  padding: 1rem;
+  text-decoration: none;
+  top: 1em;
+  left: 1em;
+  z-index: 6;
+}
+
+.homeIcon {
+  position: absolute;
+  background: url("/assets/Image/monkey.png");
+  background-repeat: no-repeat;
+  width: 520px;
+  height: 520px;
+  transform: scale(0.1);
+  top: -380%;
+  left: -150%;
+}
+
+.homeButton:hover {
+  background-color: hsl(0, 0%, 30%);
+  cursor: pointer;
 }

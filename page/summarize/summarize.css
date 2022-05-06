@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: black;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -105,52 +105,212 @@ a {
     animation-iteration-count: infinite;
 }
 
-.star:nth-child(33) { left: 10px; animation-duration: 11s; animation-delay: 1s; }
-.star:nth-child(34) { left: 40px; animation-duration: 15s; animation-delay: 12s; }
-.star:nth-child(35) { left: 80px; animation-duration: 13s; animation-delay: 3s; }
-.star:nth-child(36) { left: 120px; animation-duration: 10.5s; animation-delay: 6s; }
-.star:nth-child(37) { left: 160px; animation-duration: 10s; animation-delay: 1s; }
-.star:nth-child(38) { left: 200px; animation-duration: 14s; animation-delay: 5s; }
-.star:nth-child(7) { left: 240px; animation-duration: 16s; animation-delay: 3s; }
-.star:nth-child(8) { left: 280px; animation-duration: 12s; animation-delay: 8s; }
-.star:nth-child(9) { left: 320px; animation-duration: 18s; animation-delay: 7s; }
-.star:nth-child(10) { left: 360px; animation-duration: 14.5s; animation-delay: 2s; }
-.star:nth-child(11) { left: 400px; animation-duration: 16.5s; animation-delay: 3s; }
-.star:nth-child(12) { left: 440px; animation-duration: 12.3s; animation-delay: 2s; }
-.star:nth-child(13) { left: 480px; animation-duration: 18.4s; animation-delay: 10s; }
-.star:nth-child(14) { left: 520px; animation-duration: 13.7s; animation-delay: 3s; }
-.star:nth-child(15) { left: 560px; animation-duration: 10.5s; animation-delay: 3s; }
-.star:nth-child(16) { left: 600px; animation-duration: 10.1s; animation-delay: 1s; }
-.star:nth-child(17) { left: 640px; animation-duration: 14.8s; animation-delay: 2s; }
-.star:nth-child(18) { left: 680px; animation-duration: 16.7s; animation-delay: 1s; }
-.star:nth-child(19) { left: 720px; animation-duration: 11.3s; animation-delay: 9s; }
-.star:nth-child(20) { left: 760px; animation-duration: 15.5s; animation-delay: 2s; }
-.star:nth-child(21) { left: 800px; animation-duration: 10.9s; animation-delay: 1s; }
-.star:nth-child(22) { left: 840px; animation-duration: 10.6s; animation-delay: 9s; }
-.star:nth-child(23) { left: 880px; animation-duration: 15.2s; animation-delay: 6s; }
-.star:nth-child(24) { left: 920px; animation-duration: 12.7s; animation-delay: 1s; }
-.star:nth-child(25) { left: 960px; animation-duration: 19.1s; animation-delay: 3s; }
-.star:nth-child(26) { left: 1000px; animation-duration: 12.4s; animation-delay: 1s; }
-.star:nth-child(27) { left: 1040px; animation-duration: 18.6s; animation-delay: 2s; }
-.star:nth-child(28) { left: 1080px; animation-duration: 14.3s; animation-delay: 7s; }
-.star:nth-child(29) { left: 1120px; animation-duration: 18.9s; animation-delay: 2s; }
-.star:nth-child(30) { left: 1160px; animation-duration: 14.2s; animation-delay: 4s; }
-.star:nth-child(31) { left: 1200px; animation-duration: 10.1s; animation-delay: 1s; }
-.star:nth-child(32) { left: 1240px; animation-duration: 10.3s; animation-delay: 1s; }
+.star:nth-child(33) {
+    left: 10px;
+    animation-duration: 11s;
+    animation-delay: 1s;
+}
+
+.star:nth-child(34) {
+    left: 40px;
+    animation-duration: 15s;
+    animation-delay: 12s;
+}
+
+.star:nth-child(35) {
+    left: 80px;
+    animation-duration: 13s;
+    animation-delay: 3s;
+}
+
+.star:nth-child(36) {
+    left: 120px;
+    animation-duration: 10.5s;
+    animation-delay: 6s;
+}
+
+.star:nth-child(37) {
+    left: 160px;
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+
+.star:nth-child(38) {
+    left: 200px;
+    animation-duration: 14s;
+    animation-delay: 5s;
+}
+
+.star:nth-child(7) {
+    left: 240px;
+    animation-duration: 16s;
+    animation-delay: 3s;
+}
+
+.star:nth-child(8) {
+    left: 280px;
+    animation-duration: 12s;
+    animation-delay: 8s;
+}
+
+.star:nth-child(9) {
+    left: 320px;
+    animation-duration: 18s;
+    animation-delay: 7s;
+}
+
+.star:nth-child(10) {
+    left: 360px;
+    animation-duration: 14.5s;
+    animation-delay: 2s;
+}
+
+.star:nth-child(11) {
+    left: 400px;
+    animation-duration: 16.5s;
+    animation-delay: 3s;
+}
+
+.star:nth-child(12) {
+    left: 440px;
+    animation-duration: 12.3s;
+    animation-delay: 2s;
+}
+
+.star:nth-child(13) {
+    left: 480px;
+    animation-duration: 18.4s;
+    animation-delay: 10s;
+}
+
+.star:nth-child(14) {
+    left: 520px;
+    animation-duration: 13.7s;
+    animation-delay: 3s;
+}
+
+.star:nth-child(15) {
+    left: 560px;
+    animation-duration: 10.5s;
+    animation-delay: 3s;
+}
+
+.star:nth-child(16) {
+    left: 600px;
+    animation-duration: 10.1s;
+    animation-delay: 1s;
+}
+
+.star:nth-child(17) {
+    left: 640px;
+    animation-duration: 14.8s;
+    animation-delay: 2s;
+}
+
+.star:nth-child(18) {
+    left: 680px;
+    animation-duration: 16.7s;
+    animation-delay: 1s;
+}
+
+.star:nth-child(19) {
+    left: 720px;
+    animation-duration: 11.3s;
+    animation-delay: 9s;
+}
+
+.star:nth-child(20) {
+    left: 760px;
+    animation-duration: 15.5s;
+    animation-delay: 2s;
+}
+
+.star:nth-child(21) {
+    left: 800px;
+    animation-duration: 10.9s;
+    animation-delay: 1s;
+}
+
+.star:nth-child(22) {
+    left: 840px;
+    animation-duration: 10.6s;
+    animation-delay: 9s;
+}
+
+.star:nth-child(23) {
+    left: 880px;
+    animation-duration: 15.2s;
+    animation-delay: 6s;
+}
+
+.star:nth-child(24) {
+    left: 920px;
+    animation-duration: 12.7s;
+    animation-delay: 1s;
+}
+
+.star:nth-child(25) {
+    left: 960px;
+    animation-duration: 19.1s;
+    animation-delay: 3s;
+}
+
+.star:nth-child(26) {
+    left: 1000px;
+    animation-duration: 12.4s;
+    animation-delay: 1s;
+}
+
+.star:nth-child(27) {
+    left: 1040px;
+    animation-duration: 18.6s;
+    animation-delay: 2s;
+}
+
+.star:nth-child(28) {
+    left: 1080px;
+    animation-duration: 14.3s;
+    animation-delay: 7s;
+}
+
+.star:nth-child(29) {
+    left: 1120px;
+    animation-duration: 18.9s;
+    animation-delay: 2s;
+}
+
+.star:nth-child(30) {
+    left: 1160px;
+    animation-duration: 14.2s;
+    animation-delay: 4s;
+}
+
+.star:nth-child(31) {
+    left: 1200px;
+    animation-duration: 10.1s;
+    animation-delay: 1s;
+}
+
+.star:nth-child(32) {
+    left: 1240px;
+    animation-duration: 10.3s;
+    animation-delay: 1s;
+}
 
 @keyframes float {
     from {
         transform: translateY(0px);
         opacity: 1;
     }
+
     to {
         transform: translateY(-1000px);
         opacity: 0;
     }
 }
 
-blockquote{
-    border-left: 10px solid hsl(40,100%,60%);
+blockquote {
+    border-left: 10px solid hsl(40, 100%, 60%);
     padding: 3em;
 }
 
@@ -169,7 +329,7 @@ blockquote{
 }
 
 .page a:hover {
-    fill: hsl(40,100%,60%);
+    fill: hsl(40, 100%, 60%);
     cursor: pointer;
 }
 
@@ -177,7 +337,7 @@ blockquote{
     position: absolute;
     color: black;
     font-size: 18px;
-    background-color: hsl(40,100%,60%);
+    background-color: hsl(40, 100%, 60%);
     border-radius: 20px;
     padding: 8px;
     width: 5em;
@@ -185,12 +345,12 @@ blockquote{
     bottom: 3em;
     right: 4em;
     text-align: center;
-    text-decoration:none;
+    text-decoration: none;
     transition: color 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .nextButton:hover {
-    background-color: hsl(40,100%,80%);
+    background-color: hsl(40, 100%, 80%);
     transform: translateX(5px);
     cursor: pointer;
 }
@@ -216,7 +376,7 @@ blockquote{
     width: 8em;
     text-align: right;
     padding: 1rem;
-    text-decoration:none;
+    text-decoration: none;
     top: 1em;
     left: 1em;
     z-index: 6;
@@ -224,7 +384,7 @@ blockquote{
 
 .homeIcon {
     position: absolute;
-    background: url("https://cdn.discordapp.com/attachments/963409614672629810/971822001276715128/monkey.png");
+    background: url("/assets/Image/monkey.png");
     background-repeat: no-repeat;
     width: 520px;
     height: 520px;
@@ -234,6 +394,6 @@ blockquote{
 }
 
 .homeButton:hover {
-    background-color: hsl(0,0%,30%);
+    background-color: hsl(0, 0%, 30%);
     cursor: pointer;
 }
