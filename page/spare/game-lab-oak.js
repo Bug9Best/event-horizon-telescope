@@ -7,7 +7,7 @@ function dialog(){
     var doc = document.getElementById("doctor");
     var bird = document.getElementById("bird");
     if (count == -1){
-        var elem = document.getElementById("dialog0");
+        var elem = document.getElementById("dialog0",count);
         var pos = -250;
         id = setInterval(frame, 7);
         function frame() {
