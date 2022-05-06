@@ -423,31 +423,29 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: -40px;
 }
 
 .button {
-  background: linear-gradient(#F9CC5D, #f78c22);
-  border: none;
-  color: white;
-  padding: 14px 31px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 32px;
-  margin: 4px 2px;
+  margin: 16px;
+  padding: 14px 28px;
+  width: 240px;
+  border-radius: 28px;
   cursor: pointer;
-  border-radius: 15px;
+  
+  color: white;
+  background: linear-gradient(#F9CC5D, #f78c22);
+  text-align: center;
+  font-size: 22px;
   font-weight: 900;
-  margin: 20px;
-  width: 225px;
-  border-radius: 30px;
+  text-decoration: none;
 }
 
 .button:hover {
   transform: scale(1.035);
   transform: translate(0, -6px);
-  box-shadow: 8px -8px 20px 0 rgba(249, 204, 93, 0.3),
-    -8px 8px 20px 0 rgba(255, 153, 51, 0.3);
+  box-shadow: 8px -8px 20px 0 rgba(249, 204, 93, 0.15),
+    -8px 8px 20px 0 rgba(255, 153, 51, 0.15);
   transition: transform 0.3s ease, box-shodow 0.3s ease;
 }
 
