@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EHT | Game</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mitr&family=Redressed&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="lab.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Lab | Event Horizon Telescope</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="game-lab-oak.css">
 </head>
-
-<body onload="dialog()">
-  <div class="bg">
-    <img class="bg1" src="/assets/Image/background-lab.png">
-    <img class="bg2" src="/assets/Image/space-background-lab.png">
-  </div>
-  <img id="monkey" src="/assets/image/monkey-normal-face.png">
-  <img id="doctor" src="/assets/Image/doctor.png">
-  <img id="bird" src="/assets/Image/bird.png">
-  <div id="dialog0">
-    <p id="text0"></p>
-  </div>
-  <div id="dialog1">
-    <p id="text1"></p>
-  </div>
-  <div id="dialog2">
-    <p id="text2"></p>
-  </div>
-  <div id="dialog3">
-    <p id="text3"></p>
-  </div>
-  <div id="dialog4">
-    <p id="text4"></p>
-  </div>
-  <div id="dialog5">
-    <p id="text5"></p>
-  </div>
-  <div id="dialog6">
-    <p id="text6"></p>
-  </div>
-  <div id="dialog7">
-    <p id="text7"></p>
-  </div>
-  <script src="lab.js"></script>
+<body>
+    <div class="bg">
+        <img class="bg1" onclick="dialog()" src="../assets/Image/background-lab.png">
+        <img class="bg2" src="../assets/Image/space-background-lab.png">
+    </div>
+    <img id="monkey" onclick="dialog()" src="../assets/Image/monkey-normal-face.png">
+    <img id="doctor" onclick="dialog()" src="../assets/Image/doctor.png">
+    <img id="bird" onclick="dialog()" src="../assets/Image/bird.png">
+    <div id="dialog0" onclick="dialog()">
+        <p id="text0"></p>
+    </div>
+    <div id="dialog1" onclick="dialog()">
+        <p id="text1"></p>
+    </div>
+    <div id="dialog2" onclick="dialog()">
+        <p id="text2"></p>
+    </div>
+    <div id="dialog3" onclick="dialog()">
+        <p id="text3"></p>
+    </div>
+    <div id="dialog4" onclick="dialog()">
+        <p id="text4"></p>
+    </div>
+    <div id="dialog5" onclick="dialog()">
+        <p id="text5"></p>
+    </div>
+    <div id="dialog6" onclick="dialog()">
+        <p id="text6"></p>
+    </div>
+    <div id="dialog7" onclick="dialog()">
+        <p id="text7"></p>
+    </div>
+    <script src="game-lab-oak.js"></script>
 </body>
-
 </html>
