@@ -143,3 +143,26 @@ section .card .text h6 {
   background-color: hsl(0, 0%, 30%);
   cursor: pointer;
 }
+
+.nextButton {
+  color: black;
+  font-size: 18px;
+  background-color: hsl(40, 100%, 60%);
+  border-radius: 20px;
+  padding: 8px 8px;
+
+  width: 100px;
+  bottom: 3em;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50px, 80px);
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.5s ease-out, transform 0.5s ease-out, ;
+}
+
+.nextButton:hover {
+  background-color: hsl(40, 100%, 80%);
+  cursor: pointer;
+}
