@@ -79,7 +79,7 @@ function opening() {
       line.style.height = interval + 'px';
     }
     else {
-      // window.location.href = '../game-lab/lab.html'
+      window.location.href = '/page/game-lab/lab.html'
     }
   }
 } 
