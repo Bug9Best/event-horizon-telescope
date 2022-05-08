@@ -2,19 +2,24 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="summarize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="summarize.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EHT | Knowledge</title>
 </head>
 
-<body>
+<body onload="sound()">
+  <a href="/index.html" id="homeButton">หน้าหลัก
+    <div class="homeIcon"></div>
+  </a>
 
-  <section></section>
+  <a onclick="thaiVer()" class="THbutton">TH |</a>
+  <a onclick="engVer()" class="ENbutton">EN</a>
+
   <svg class="page">
     <a href="#top">
       <circle stroke="hsl(0, 0%, 100%, 50%)" stroke-width="2" cx="50%" cy="20%" r="5"></circle>
@@ -35,20 +40,22 @@
   </svg>
 
   <section id="top">
-    <h1>EVENT HORIZON TELESCOPE</h1>
+    <h1 id="title">EVENT HORIZON TELESCOPE</h1>
     <img src="/assets/Image/m87.jpg" width="100%" style="filter: brightness(70%);" alt="">
   </section>
 
   <section id="sec1">
-    <h2 class="reveal">หลุมดำ (Black hole)</h2>
-    <br><a class="reveal">วัตถุที่มีความโน้มถ่วงเป็นอนันต์ ดูดกลืนทุกสรรพสิ่งแม้แต่ตัวของมันเองลงไปในหลุมลึกที่ดำมืด</a>
-    <a class="reveal">ที่แม้แต่แสงก็ไม่สามารถที่หลุดลอดออกมาได้</a>
+    <h1 class="reveal" id="title2">หลุมดำ</h1><br>
+    <a class="reveal" id="subtitle">
+      วัตถุที่มีความโน้มถ่วงเป็นอนันต์ ดูดกลืนทุกสรรพสิ่งแม้แต่ตัวของมันเองลงไปในหลุมลึกที่ดำมืด <br>
+      ที่แม้แต่แสงก็ไม่สามารถที่หลุดลอดออกมาได้</a>
   </section>
 
   <section id="sec2">
     <blockquote class="reveal">
-      <h2>เราสามารถถ่ายเห็นหลุมดำได้อย่างไร ?</h2>
-      <br><a>ในการถ่ายหลุมดำเป็นเรื่องที่ยากเนื่องจากหลุมดำเป็นวัตถุที่ไม่เปล่งแสง เราจึงจำเป็นต้องปรับคลื่นความถี่
+      <h1 id="sec2-title">เราสามารถถ่ายเห็นหลุมดำได้อย่างไร ?</h1> <br>
+      <a id="sec2-subtitle">ในการถ่ายหลุมดำเป็นเรื่องที่ยากเนื่องจากหลุมดำเป็นวัตถุที่ไม่เปล่งแสง
+        เราจึงจำเป็นต้องปรับคลื่นความถี่
         ของกล้องให้ตรงกับการถ่ายภาพรังสีของหลุมดำเพื่อถ่ายมันออกมา ซึ่งการถ่ายมันก็ยากเข้าไปอีกเนื่องจาก
         หลุมดำนั้นอยู่ไกลโลกเรามากๆ ทำให้เราจำเป็นจะต้องทำให้ขนาดของเลนกล้องมีขนาดใหญ่เท่าโลก ซึ่งมันก็เป็นไปไม่ได้
         เราเลยจำเป็นจะต้องถ่ายภาพจากกล้องทตั้งไว้ในส่วนต่างๆของโลกแล้วจึงนำภาพที่ได้นั้นมาประมวลผลกันเป็นภาพหลุมดำ
@@ -60,12 +67,15 @@
 
   <section id="sec3">
     <blockquote class="reveal">
-      <h2>เทคนิค (Very Long Baseline Interferometer : VLBI)</h2>
-      <br><a>ใช้ความถี่กล้องมารวมกันเป็นกล้องโทรทรรศน์วิทยุเสมือนกล้องขนาดใหญ่เท่าโลก แล้วถ่ายภาพในเวลาเดียวกัน
+      <h1 id="sec3-title">เทคนิค (Very Long Baseline Interferometry : VLBI)</h1> <br>
+      <a id="sec3-subtitle">
+        ใช้ความถี่กล้องมารวมกันเป็นกล้องโทรทรรศน์วิทยุเสมือนกล้องขนาดใหญ่เท่าโลก
+        แล้วถ่ายภาพในเวลาเดียวกัน
         ในความถี่ 230 GHz ทำให้ได้ภาพความละเอียดสูง แล้วนำภาพหลายๆภาพขนาดประมาณ 5 ล้าน GB มาประมวลผล
         ใช้เวลา 2 ปีเพื่อได้ภาพหลุมดำ</a>
     </blockquote>
-    <a class="nextButton" href="/page/knowledge/knowledge.html">Next</a>
+    <a id="nextButton" href="/page/knowledge/knowledge.html">ถัดไป</a>
+
   </section>
 
   <a class="star"></a>

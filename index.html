@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETH | Monkey M87</title>
+  <link rel="shortcut icon"
+    href="https://media.discordapp.net/attachments/968165457225994260/968168976427384832/ABA551FD-8C14-4967-8CF6-BD46AB26B830-removebg-preview.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="index.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+
+<body onload="openDialog()">
+  <div class="star"></div>
+  <div class="meteor-1"></div>
+  <div class="meteor-2"></div>
+  <div class="meteor-3"></div>
+  <div class="meteor-4"></div>
+  <div class="meteor-5"></div>
+  <div class="meteor-6"></div>
+  <div class="meteor-7"></div>
+  <div class="meteor-8"></div>
+  <div class="meteor-9"></div>
+  <div class="meteor-10"></div>
+  <div class="meteor-11"></div>
+  <div class="meteor-12"></div>
+  <div class="meteor-13"></div>
+  <div class="meteor-14"></div>
+  <div class="meteor-15"></div>
+  <div id="logo">
+    <img src="/assets/image/hp-logo1.png" alt="" class="back1">
+    <img src="/assets/image/hp-logo2.png" alt="" class="back2">
+    <img src="/assets/image/hp-logo3.png" alt="" class="back3">
+  </div>
+
+  <div id="button">
+    <a class="button" onMouseOver="mouseOver()" onclick="start()">START GAME</a>
+    <a class="button" onMouseOver="mouseOver()" onclick="howPlay()">HOW TO PLAY</a>
+    <a class="button" href="/page/summarize/summarize.html">KNOWLEDGE</a>
+  </div>
+
+  <div id="text"></div>
+  <div id="line"></div>
+  <script src="index.js"></script>
+
+  <template id="howToPlay">
+    <swal-button type="confirm">
+      ต่อไป
+    </swal-button>
+    <swal-html>
+      <div style="display: flex; justify-content: center;" class="howtoplay">
+        <div class="howtoplay-2">
+          <div class="content">
+            <h2 class="text_shadows">HOW TO PLAY</h2>
+          </div>
+          <p>ผู้เล่นจะต้องตอบคำถามให้ได้มากที่สุดเพื่อช่วยให้ลิงทำภารกิจสำเร็จ</p>
+          <p>หากผู้เล่นตอบคำถามถูกในแต่ละข้อจะได้รับกล้วย 3 ลูก🍌</p>
+          <p>แต่ถ้าหากตอบคำถามผิดจะได้รับกล้วยเพียง 2 ลูก🍌</p>
+          <p>ในแต่ละคำถามผู้เล่นสามารถซื้อคำใบ้ได้โดยจ่ายเป็นกล้วย 5 ลูกเท่านั้น!</p>
+          <p>แต่ว่าถ้าผู้เล่นตอบคำถามได้ไม่ถึง 4 ข้อจะถือว่าลิงทำภารกิจไม่สำเร็จ</p>
+        </div>
+
+      </div>
+    </swal-html>
+  </template>
+</body>
+
+</html>
