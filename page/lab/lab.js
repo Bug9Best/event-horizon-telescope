@@ -2,6 +2,12 @@ var count = -1;
 var id = null;
 let word = ['อ่าวสวัสดีลิงน้อย... อืม... ดูทรงน่าจะได้นะสนใจมาลองเข้าร่วมโครงการ EHT ไหมล่ะ ?', 'สนใจครับแต่ผมพึ่งมาทำงานใหม่เองนะครับ', 'ไม่เกี่ยวหรอกขอแค่มีความรู้ด้านนี้ ก็เข้าร่วมได้แล้ว', 'งั้นก็ลองดูครับ',
     'งั้นเรื่องการสัมภาษณ์ความรู้เรื่องนี้เอาเป็นตอบคำถามเอาละกัน...ok ฝากนกแก้วเป็นผู้สอบสัมภาษณ์ละกัน', 'สวัสดีครับผมเป็นผู้ช่วยของ Dr. จะมาสอบสัมภาษณ์ครับ', 'ครับ', 'เริ่มเลยนะ']
+function sound() {
+    var sound = new Audio('/assets/sound/Like_a_dream_come_true.mp3')
+    sound.volume = 0.1;
+    sound.play();
+}
+
 function dialog() {
     var monkey = document.getElementById("monkey");
     var doc = document.getElementById("doctor");

@@ -10,7 +10,7 @@ let stateHint = true;
 
 function sound() {
   var soundTrack = new Audio('/assets/sound/Like_a_dream_come_true.mp3')
-  soundTrack.volume = 0.025
+  soundTrack.volume = 0.05
   soundTrack.loop = true;
   soundTrack.play();
 }
