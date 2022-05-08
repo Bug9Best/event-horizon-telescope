@@ -13,12 +13,12 @@
 </head>
 
 <body>
-  <a href="home.html" class="homeButtonTH">หน้าหลัก
+  <a href="/index.html" id="homeButton">หน้าหลัก
     <div class="homeIcon"></div>
   </a>
 
-  <a href="summarize-th.html" class="THbutton">TH</a>
-  <a href="summarize-en.html" class="ENbutton">EN</a>
+  <a onclick="thaiVer()" class="THbutton">TH |</a>
+  <a onclick="engVer()" class="ENbutton">EN</a>
 
   <svg class="page">
     <a href="#top">
@@ -29,32 +29,33 @@
       <circle stroke="hsl(0, 0%, 100%, 50%)" stroke-width="2" cx="50%" cy="40%" r="5"></circle>
       <circle fill="hsl(0, 0%, 100%, 50%)" cx="50%" cy="40%" r="3"></circle>
     </a>
-    < <a href="#sec2">
+    <a href="#sec2">
       <circle stroke="hsl(0, 0%, 100%, 50%)" stroke-width="2" cx="50%" cy="60%" r="5"></circle>
       <circle fill="hsl(0, 0%, 100%, 50%)" cx="50%" cy="60%" r="3"></circle>
-      </a>
-      <a href="#sec3">
-        <circle stroke="hsl(0, 0%, 100%, 50%)" stroke-width="2" cx="50%" cy="80%" r="5"></circle>
-        <circle fill="hsl(0, 0%, 100%, 50%)" cx="50%" cy="80%" r="3"></circle>
-      </a>
+    </a>
+    <a href="#sec3">
+      <circle stroke="hsl(0, 0%, 100%, 50%)" stroke-width="2" cx="50%" cy="80%" r="5"></circle>
+      <circle fill="hsl(0, 0%, 100%, 50%)" cx="50%" cy="80%" r="3"></circle>
+    </a>
   </svg>
 
   <section id="top">
-    <h1>EVENT HORIZON TELESCOPE</h1>
-    <img src="https://cdn.discordapp.com/attachments/934057101632897026/971667628227723284/m87-02.jpg" width="100%"
-      style="filter: brightness(70%);" alt="">
+    <h1 id="title">EVENT HORIZON TELESCOPE</h1>
+    <img src="/assets/Image/m87.jpg" width="100%" style="filter: brightness(70%);" alt="">
   </section>
 
   <section id="sec1">
-    <h2 class="reveal" style="font-size: 30px;">หลุมดำ</h2>
-    <br><a class="reveal" style="font-size: 23px;">วัตถุที่มีความโน้มถ่วงเป็นอนันต์ ดูดกลืนทุกสรรพสิ่งแม้แต่ตัวของมันเองลงไปในหลุมลึกที่ดำมืด</a>
-    <a class="reveal" style="font-size: 23px;">ที่แม้แต่แสงก็ไม่สามารถที่หลุดลอดออกมาได้</a>
+    <h1 class="reveal" id="title2">หลุมดำ</h1><br>
+    <a class="reveal" id="subtitle">
+      วัตถุที่มีความโน้มถ่วงเป็นอนันต์ ดูดกลืนทุกสรรพสิ่งแม้แต่ตัวของมันเองลงไปในหลุมลึกที่ดำมืด <br>
+      ที่แม้แต่แสงก็ไม่สามารถที่หลุดลอดออกมาได้</a>
   </section>
 
   <section id="sec2">
     <blockquote class="reveal">
-      <h2>เราสามารถถ่ายเห็นหลุมดำได้อย่างไร ?</h2>
-      <br><a>ในการถ่ายหลุมดำเป็นเรื่องที่ยากเนื่องจากหลุมดำเป็นวัตถุที่ไม่เปล่งแสง เราจึงจำเป็นต้องปรับคลื่นความถี่
+      <h1 id="sec2-title">เราสามารถถ่ายเห็นหลุมดำได้อย่างไร ?</h1> <br>
+      <a id="sec2-subtitle">ในการถ่ายหลุมดำเป็นเรื่องที่ยากเนื่องจากหลุมดำเป็นวัตถุที่ไม่เปล่งแสง
+        เราจึงจำเป็นต้องปรับคลื่นความถี่
         ของกล้องให้ตรงกับการถ่ายภาพรังสีของหลุมดำเพื่อถ่ายมันออกมา ซึ่งการถ่ายมันก็ยากเข้าไปอีกเนื่องจาก
         หลุมดำนั้นอยู่ไกลโลกเรามากๆ ทำให้เราจำเป็นจะต้องทำให้ขนาดของเลนกล้องมีขนาดใหญ่เท่าโลก ซึ่งมันก็เป็นไปไม่ได้
         เราเลยจำเป็นจะต้องถ่ายภาพจากกล้องทตั้งไว้ในส่วนต่างๆของโลกแล้วจึงนำภาพที่ได้นั้นมาประมวลผลกันเป็นภาพหลุมดำ
@@ -66,12 +67,14 @@
 
   <section id="sec3">
     <blockquote class="reveal">
-      <h2>เทคนิค (Very Long Baseline Interferometry : VLBI)</h2>
-      <br><a>ใช้ความถี่กล้องมารวมกันเป็นกล้องโทรทรรศน์วิทยุเสมือนกล้องขนาดใหญ่เท่าโลก แล้วถ่ายภาพในเวลาเดียวกัน
+      <h1 id="sec3-title">เทคนิค (Very Long Baseline Interferometry : VLBI)</h1> <br>
+      <a id="sec3-subtitle">
+        ใช้ความถี่กล้องมารวมกันเป็นกล้องโทรทรรศน์วิทยุเสมือนกล้องขนาดใหญ่เท่าโลก
+        แล้วถ่ายภาพในเวลาเดียวกัน
         ในความถี่ 230 GHz ทำให้ได้ภาพความละเอียดสูง แล้วนำภาพหลายๆภาพขนาดประมาณ 5 ล้าน GB มาประมวลผล
         ใช้เวลา 2 ปีเพื่อได้ภาพหลุมดำ</a>
     </blockquote>
-    <a class="nextButton" href="/page/knowledge/knowledge.html">ถัดไป</a>
+    <a id="nextButton" href="/page/knowledge/knowledge.html">ถัดไป</a>
 
   </section>
 

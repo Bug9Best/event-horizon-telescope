@@ -10,7 +10,10 @@ html {
 }
 
 body {
+    color: white;
     background-color: black;
+    font-size: 20px;
+
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-y: scroll;
@@ -18,6 +21,57 @@ body {
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+#homeButton {
+    position: fixed;
+    color: white;
+    background-color: hsl(0, 0%, 0%, 80%);
+    border-radius: 20px;
+    font-size: 18px;
+    width: 8.3em;
+    text-align: right;
+    padding: 1rem;
+    text-decoration: none;
+    top: 1em;
+    left: 1.45em;
+    z-index: 6;
+}
+
+.homeIcon {
+    position: absolute;
+    background: url("/assets/Image/monkey.png");
+    background-repeat: no-repeat;
+    width: 520px;
+    height: 520px;
+    transform: scale(0.1);
+    top: -380%;
+    left: -150%;
+}
+
+.homeButton:hover {
+    background-color: hsl(0, 0%, 30%);
+    cursor: pointer;
+}
+
+.ENbutton {
+    position: fixed;
+    color: white;
+    top: 1.8em;
+    right: 2em;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 7;
+}
+
+.THbutton {
+    position: fixed;
+    color: white;
+    top: 1.8em;
+    right: 4em;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 7;
 }
 
 section {
@@ -80,7 +134,7 @@ section:nth-child(8) {
     z-index: 3;
 }
 
-h1 {
+/* h1 {
     color: white;
     font-size: 40px;
 }
@@ -93,7 +147,7 @@ h2 {
 a {
     color: white;
     font-size: 18px;
-}
+} */
 
 .star {
     position: fixed;
@@ -312,6 +366,7 @@ a {
 blockquote {
     border-left: 10px solid hsl(40, 100%, 60%);
     padding: 3em;
+    border-radius: 4px;
 }
 
 .page {
@@ -333,7 +388,7 @@ blockquote {
     cursor: pointer;
 }
 
-.nextButton {
+#nextButton {
     position: absolute;
     color: black;
     font-size: 18px;
@@ -367,66 +422,20 @@ blockquote {
     opacity: 1;
 }
 
-.homeButtonEN {
-    position: fixed;
-    color: white;
-    background-color: hsl(0, 0%, 0%, 80%);
-    border-radius: 20px;
-    font-size: 18px;
-    width: 8em;
-    text-align: right;
-    padding: 1rem;
-    text-decoration: none;
-    top: 1em;
-    left: 1em;
-    z-index: 6;
+#title {
+    width: 80%;
+    text-align: center;
+    font-size: 58px;
 }
 
-.homeButtonTH {
-    position: fixed;
-    color: white;
-    background-color: hsl(0, 0%, 0%, 80%);
-    border-radius: 20px;
-    font-size: 18px;
-    width: 8.3em;
-    text-align: right;
-    padding: 1rem;
-    text-decoration: none;
-    top: 1em;
-    left: 1.45em;
-    z-index: 6;
+#title2 {
+    width: 80%;
+    text-align: center;
+    font-size: 52px;
 }
 
-.homeIcon {
-    position: absolute;
-    background: url("https://cdn.discordapp.com/attachments/963409614672629810/971822001276715128/monkey.png");
-    background-repeat: no-repeat;
-    width: 520px;
-    height: 520px;
-    transform: scale(0.1);
-    top: -380%;
-    left: -150%;
-}
-
-.homeButton:hover {
-    background-color: hsl(0, 0%, 30%);
-    cursor: pointer;
-}
-
-.ENbutton {
-    position: fixed;
-    color: white;
-    top: 1.8em;
-    right: 2em;
-    text-decoration: none;
-    z-index: 7;
-}
-
-.THbutton {
-    position: fixed;
-    color: white;
-    top: 1.8em;
-    right: 4em;
-    text-decoration: none;
-    z-index: 7;
+#subtitle {
+    width: 80%;
+    text-align: center;
+    font-size: 28px;
 }
