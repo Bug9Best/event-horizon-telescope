@@ -10,10 +10,14 @@ function openDialog() {
       focusConfirm: false,
     })
   }, 500);
+  var soundTrack = new Audio('/assets/sound/Memories.mp3')
+  soundTrack.volume = 0.1
+  soundTrack.loop = true;
+  soundTrack.play();
 }
 
 function mouseOver() {
-  var sound = new Audio('/assets/effect/Select.wav')
+  var sound = new Audio('/assets/effect/Click 2.wav')
   sound.volume = 0.1;
   sound.play();
 }
