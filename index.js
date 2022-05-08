@@ -11,7 +11,7 @@ function openDialog() {
     })
   }, 500);
   var soundTrack = new Audio('/assets/sound/Memories.mp3')
-  soundTrack.volume = 0.1
+  soundTrack.volume = 0.2
   soundTrack.loop = true;
   soundTrack.play();
 }
@@ -83,7 +83,7 @@ function opening() {
       line.style.height = interval + 'px';
     }
     else {
-      window.location.href = '/page/game-lab/lab.html'
+      window.location.href = '/page/lab/lab.html'
     }
   }
 } 

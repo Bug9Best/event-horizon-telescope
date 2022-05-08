@@ -8,6 +8,19 @@ let count = 1;
 let listHint = ["อย่าลืมนะว่าในอวกาศก็มีฝุ่น", "รู้ไหมว่าถ้าตามทฤษฏีต้องใช้เลนใหญ่เท่าโลกเลยนะ", "รู้ไหมว่าการเลือกสถานที่ตั้งกล้องควรเลือกสถานที่ที่มีสิ่งรบกวนน้อยที่สุด", "เป็นล้านเลยหรอพี่!! ข้อมูลมันเยอะมากเลยนะ!", "ความไกลและขนาดของหลุมดำก็มีผลต่อการถ่ายภาพนะ"]
 let stateHint = true;
 
+function sound() {
+  var soundTrack = new Audio('/assets/sound/Like_a_dream_come_true.mp3')
+  soundTrack.volume = 0.025
+  soundTrack.loop = true;
+  soundTrack.play();
+}
+
+function mouseOver() {
+  var mouseSound = new Audio('/assets/effect/Click 4.wav')
+  mouseSound.volume = 0.2;
+  mouseSound.play();
+}
+
 function backHome() {
   window.location.href = '/index.html'
 }
@@ -18,6 +31,9 @@ function adddispay1t() {
   element1.classList.remove("dispay");
   element2.classList.add("dispay");
   count++;
+  var mouseSound = new Audio('/assets/effect/Correct.wav')
+  mouseSound.volume = 0.2;
+  mouseSound.play();
   addbanana1()
 }
 function adddispay1f() {
@@ -26,6 +42,9 @@ function adddispay1f() {
   element1.classList.remove("dispay");
   element2.classList.add("dispay");
   count++;
+  var mouseSound = new Audio('/assets/effect/Wrong 2.wav');
+  mouseSound.volume = 0.2;
+  mouseSound.play();
   addbanana2()
 }
 function adddispay2q() {
@@ -47,6 +66,9 @@ function adddispay2t() {
   element1.classList.remove("dispay");
   element2.classList.add("dispay");
   count++;
+  var mouseSound = new Audio('/assets/effect/Correct.wav')
+  mouseSound.volume = 0.2;
+  mouseSound.play();
   addbanana1()
 }
 function adddispay2f() {
@@ -54,6 +76,9 @@ function adddispay2f() {
   var element2 = document.getElementById("false-q2");
   element1.classList.remove("dispay");
   element2.classList.add("dispay");
+  var mouseSound = new Audio('/assets/effect/Crack Earth ( Egg Sound ).wav')
+  mouseSound.volume = 0.2;
+  mouseSound.play();
   count++;
   addbanana2()
 }
@@ -76,6 +101,9 @@ function adddispay3t() {
   element1.classList.remove("dispay");
   element2.classList.add("dispay");
   count++;
+  var mouseSound = new Audio('/assets/effect/Correct.wav')
+  mouseSound.volume = 0.2;
+  mouseSound.play();
   addbanana1()
 }
 function adddispay3f() {
@@ -84,6 +112,9 @@ function adddispay3f() {
   element1.classList.remove("dispay");
   element2.classList.add("dispay");
   count++;
+  var mouseSound = new Audio('/assets/effect/Wrong 2.wav')
+  mouseSound.volume = 0.2;
+  mouseSound.play();
   addbanana2()
 }
 function adddispay4q() {
@@ -105,6 +136,9 @@ function adddispay4t() {
   element1.classList.remove("dispay");
   element2.classList.add("dispay");
   count++;
+  var mouseSound = new Audio('/assets/effect/Correct.wav')
+  mouseSound.volume = 0.2;
+  mouseSound.play();
   addbanana1()
 }
 function adddispay4f() {
@@ -112,6 +146,9 @@ function adddispay4f() {
   var element2 = document.getElementById("false-q4");
   element1.classList.remove("dispay");
   element2.classList.add("dispay");
+  var mouseSound = new Audio('/assets/effect/Siren Police.wav')
+  mouseSound.volume = 0.2;
+  mouseSound.play();
   count++;
   addbanana2()
 }
@@ -133,6 +170,9 @@ function adddispay5t() {
   var element2 = document.getElementById("true-q5");
   element1.classList.remove("dispay");
   element2.classList.add("dispay");
+  var mouseSound = new Audio('/assets/effect/Correct.wav')
+  mouseSound.volume = 0.2;
+  mouseSound.play();
   count++;
   addbanana1()
 }
@@ -142,9 +182,12 @@ function adddispay5f() {
   element1.classList.remove("dispay");
   element2.classList.add("dispay");
   count++;
+  var mouseSound = new Audio('/assets/effect/Wrong 2.wav')
+  mouseSound.volume = 0.2;
+  mouseSound.play();
   addbanana2()
 }
-console.log(bPoint);
+
 function addbanana1() {
   bPoint = bPoint + 3;
   sPoint = sPoint + 1
@@ -158,7 +201,14 @@ function addbanana2() {
 function checkbanana() {
   let element1 = document.getElementById("hint" + count);
   let element2 = document.getElementById("banana-p" + count)
-  if (bPoint < 5) {
+  if (bPoint < 5 && stateHint == true) {
+    var errorEffect = new Audio('/assets/effect/Wrong 2.wav')
+    errorEffect.volume = 0.1
+    errorEffect.loop = true;
+    errorEffect.play();
+    setTimeout(() => {
+      errorEffect.pause();
+    }, 500);
     element1.innerText = "ไม่สนิทอย่าติดตลก ไปหากล้วยมาใหม่!!!"
     element1.style.color = "red"
     setTimeout(() => {
@@ -170,11 +220,16 @@ function checkbanana() {
     if (stateHint == true) {
       bPoint = bPoint - 5
       stateHint = false;
+      var correctEffect = new Audio('/assets/effect/Click 3.wav')
+      correctEffect.volume = 0.5
+      correctEffect.loop = true;
+      correctEffect.play();
+      setTimeout(() => {
+        correctEffect.pause();
+      }, 200);
     }
     element2.innerText = bPoint
     element1.innerText = listHint[count - 1]
     element1.style.color = "green"
-
-
   }
 }

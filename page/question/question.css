@@ -172,7 +172,6 @@ p{
 }
 .box1{
     background: #ffcd5d;
-    border: 5px solid rgb(36, 20, 129); 
     width: 80vw;
     height: 60vh;
     margin: auto;
@@ -182,7 +181,6 @@ p{
 }
 .box{
     background: #ffcd5d;
-    border: 5px solid rgb(36, 20, 129); 
     width: 65vw;
     height: 60vh;
     margin: auto;
