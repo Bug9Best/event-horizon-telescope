@@ -22,7 +22,7 @@ let enVer = [
 ]
 function sound() {
   var sound = new Audio('/assets/sound/OpenaBreach.mp3')
-  sound.volume = 0.25;
+  sound.volume = 0.2;
   sound.loop = true;
   sound.play();
 }
