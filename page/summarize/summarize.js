@@ -20,6 +20,12 @@ let enVer = [
   "next",
   "from which even light cannot escape.",
 ]
+function sound() {
+  var sound = new Audio('/assets/sound/OpenaBreach.mp3')
+  sound.volume = 0.25;
+  sound.loop = true;
+  sound.play();
+}
 
 window.addEventListener('scroll', () => {
   document.querySelector('img').style.clipPath = `circle(${window.scrollY + 100}px at center)`;
@@ -74,7 +80,7 @@ function engVer() {
 
   homeButton.innerHTML = enVer[0] + `<div class="homeIcon"></div>`
   title2.innerText = enVer[1]
-  subtitle2.innerHTML = enVer[2]  + `<br>` + enVer[8]
+  subtitle2.innerHTML = enVer[2] + `<br>` + enVer[8]
   title3.innerText = enVer[3]
   subtitle3.innerText = enVer[4]
   title4.innerText = enVer[5]

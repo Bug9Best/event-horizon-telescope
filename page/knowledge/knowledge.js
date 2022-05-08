@@ -17,3 +17,10 @@ function reveal() {
     }
   }
 }
+
+function sound() {
+  var sound = new Audio('/assets/sound/SingularityAnotherVersion.mp3')
+  sound.volume = 0.2;
+  sound.loop = true;
+  sound.play();
+}
