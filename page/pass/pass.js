@@ -18,6 +18,7 @@ function main() {
     state2();
     state3();
     state4();
+    state5();
 }
 
 function showDialog() {
@@ -66,6 +67,12 @@ function state4() {
         frameLooper2();
         count++;
     }, 9500);
+}
+
+function state5() {
+    setTimeout(() => {
+        //  Blur Screen
+    }, 15000);
 }
 
 function frameLooper0() {
