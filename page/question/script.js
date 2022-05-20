@@ -174,7 +174,7 @@ function adddispay5t() {
   mouseSound.volume = 0.2;
   mouseSound.play();
   count++;
-  addbanana1()
+  addbanana1();
 }
 function adddispay5f() {
   var element1 = document.getElementById("q5");
@@ -185,7 +185,7 @@ function adddispay5f() {
   var mouseSound = new Audio('/assets/effect/Wrong 2.wav')
   mouseSound.volume = 0.2;
   mouseSound.play();
-  addbanana2()
+  addbanana2();
 }
 
 function addbanana1() {
@@ -231,5 +231,14 @@ function checkbanana() {
     element2.innerText = bPoint
     element1.innerText = listHint[count - 1]
     element1.style.color = "green"
+  }
+}
+
+function result() {
+  if (sPoint >= 4) {
+    window.location.href = '/page/pass/pass.html'
+  }
+  else {
+    window.location.href = '/page/fail/fail.html'
   }
 }

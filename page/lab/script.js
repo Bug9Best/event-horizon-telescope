@@ -1,19 +1,54 @@
 var count = -1;
 var id = null;
-let word = ['อ่าวสวัสดีลิงน้อย... อืม... ดูทรงน่าจะได้นะสนใจมาลองเข้าร่วมโครงการ EHT ไหมล่ะ ?', 'สนใจครับแต่ผมพึ่งมาทำงานใหม่เองนะครับ', 'ไม่เกี่ยวหรอกขอแค่มีความรู้ด้านนี้ ก็เข้าร่วมได้แล้ว', 'งั้นก็ลองดูครับ',
-    'งั้นเรื่องการสัมภาษณ์ความรู้เรื่องนี้เอาเป็นตอบคำถามเอาละกัน...ok ฝากนกแก้วเป็นผู้สอบสัมภาษณ์ละกัน', 'สวัสดีครับผมเป็นผู้ช่วยของ Dr. จะมาสอบสัมภาษณ์ครับ', 'ครับ', 'เริ่มเลยนะ']
+var element = document.querySelector("body");
+var monkey = document.getElementById("monkey");
+var doc = document.getElementById("doctor");
+var bird = document.getElementById("bird");
+let word = [
+    'อ่าวสวัสดีลิงน้อย... อืม... ดูทรงน่าจะได้นะสนใจมาลองเข้าร่วมโครงการ EHT ไหมล่ะ ?',
+    'สนใจครับแต่ผมพึ่งมาทำงานใหม่เองนะครับ',
+    'ไม่เกี่ยวหรอกขอแค่มีความรู้ด้านนี้ ก็เข้าร่วมได้แล้ว',
+    'งั้นก็ลองดูครับ',
+    'งั้นเรื่องการสัมภาษณ์ความรู้เรื่องนี้เอาเป็นตอบคำถามเอาละกัน...ok ฝากนกแก้วเป็นผู้สอบสัมภาษณ์ละกัน',
+    'สวัสดีครับผมเป็นผู้ช่วยของ Dr. จะมาสอบสัมภาษณ์ครับ',
+    'ครับ ผมพร้อมเเล้วครับ',
+    'โอเค เริ่มเลยนะ']
+let [selectedText0, selectedText1, selectedText2, selectedText3, selectedText4, selectedText5, selectedText6, selectedText7] =
+    [word[0], word[1], word[2], word[3], word[4], word[5], word[6], word[7]];
+var [array0, array1, array2, array3, array4, array5, array6, array7] =
+    [selectedText0.split(""), selectedText1.split(""),
+    selectedText2.split(""), selectedText3.split(""),
+    selectedText4.split(""), selectedText5.split(""),
+    selectedText6.split(""), selectedText7.split("")];
+
+element.addEventListener("click", function () {
+    main();
+}, { once: true });
+
+function main() {
+    sound();
+    showDialog();
+    state2();
+    // state3();
+    // state4();
+    // state5();
+    // state6();
+    // state7();
+    // state8();
+    // state9();
+    // state10();
+}
+
 function sound() {
     var sound = new Audio('/assets/sound/Like_a_dream_come_true.mp3')
     sound.volume = 0.1;
+    sound.loop = true;
     sound.play();
 }
 
-function dialog() {
-    var monkey = document.getElementById("monkey");
-    var doc = document.getElementById("doctor");
-    var bird = document.getElementById("bird");
-    if (count == -1) {
-        var elem = document.getElementById("dialog0", count);
+function showDialog() {
+    setTimeout(() => {
+        var elem = document.getElementById("dialog0");
         var pos = -250;
         id = setInterval(frame, 7);
         function frame() {
@@ -25,55 +60,62 @@ function dialog() {
             }
         }
         count++;
-    }
-    else if (count == 0) {
+    }, 1500);
+}
+
+function state2() {
+    setTimeout(() => {
         monkey.style = "opacity: .5;";
         doc.style = "opacity: 1;";
-        // document.getElementById("text").innerHTML = word[count]
         frameLooper0();
         count++;
-    }
-    else if (count == 1) {
+    }, 2500);
+}
+function state3() {
+    setTimeout(() => {
         monkey.style = "opacity: 1;";
         doc.style = "opacity: .5;";
-        // document.getElementById("text").innerHTML = "";
         document.getElementById("dialog0").style.opacity = 0;
         document.getElementById("dialog1").style.opacity = 1;
         frameLooper1();
         count++;
-    }
-    else if (count == 2) {
+    }, 2500);
+}
+function state4() {
+    setTimeout(() => {
         monkey.style = "opacity: .5;";
         doc.style = "opacity: 1;";
-        // document.getElementById("text").innerHTML = "";
         document.getElementById("dialog1").style.opacity = 0;
         document.getElementById("dialog2").style.opacity = 1;
         frameLooper2();
         count++;
-    }
-    else if (count == 3) {
+    }, 2500);
+}
+function state5() {
+    setTimeout(() => {
         monkey.style = "opacity: 1;";
         doc.style = "opacity: .5;";
-        // document.getElementById("text").innerHTML = "";
         document.getElementById("dialog2").style.opacity = 0;
         document.getElementById("dialog3").style.opacity = 1;
         frameLooper3();
         count++;
-    }
-    else if (count == 4) {
+    }, 2500);
+}
+function state6() {
+    setTimeout(() => {
         monkey.style = "opacity: .5;";
         doc.style = "opacity: 1;";
-        // document.getElementById("text").innerHTML = "";
         document.getElementById("dialog3").style.opacity = 0;
         document.getElementById("dialog4").style.opacity = 1;
         frameLooper4();
         count++;
-    }
-    else if (count == 5) {
+    }, 2500);
+}
+function state7() {
+    setTimeout(() => {
         monkey.style = "opacity: 1;";
         doc.style = "opacity: 0;";
         bird.style.opacity = 1;
-        // document.getElementById("text").innerHTML = "";
         document.getElementById("dialog4").style.opacity = 0;
         var elem = document.getElementById("bird");
         var pos = -470;
@@ -94,72 +136,37 @@ function dialog() {
             }
         }
         count++;
-    }
-    else if (count == 6) {
+    }, 2500);
+}
+function state8() {
+    setTimeout(() => {
         monkey.style.opacity = .5
         bird.style.opacity = 1
-        // document.getElementById("text").innerHTML = "";
         document.getElementById("dialog5").style.opacity = 1;
         frameLooper5();
         count++;
-    }
-    else if (count == 7) {
+    }, 2500);
+}
+function state9() {
+    setTimeout(() => {
         monkey.style.opacity = 1
         bird.style.opacity = .5
-        // document.getElementById("text").innerHTML = "";
         document.getElementById("dialog5").style.opacity = 0;
         document.getElementById("dialog6").style.opacity = 1;
         frameLooper6();
         count++;
-    }
-    else if (count == 8) {
+    }, 2500);
+}
+function state10() {
+    setTimeout(() => {
         monkey.style.opacity = .5
         bird.style.opacity = 1
-        // document.getElementById("text").innerHTML = "";
         document.getElementById("dialog6").style.opacity = 0;
         document.getElementById("dialog7").style.opacity = 1;
         frameLooper7();
         count++;
-    }
+    }, 2500);
 }
-// var count2 = 0;
-// var selectedText = word[count2];
-// var array = selectedText.split("");
-// function frameLooper() {
-//     let timer = setTimeout('frameLooper()', 70);
-//     if (array0.length > 0) {
-//         document.getElementById("text").innerHTML += array.shift();
-//     }
-//     else{
-//         clearTimeout(timer);
-//         document.getElementById("text").innerHTML = word[count2];
-//         ++count2;
-//         selectedText = word[count2];
-//         array = selectedText.split("");
-//     }
-// }
-// var i = 0;
-// function frameLooper() {
-//     let timer = setTimeout('frameLooper1()', 70);
-//     if (i < selectedText.length) {
-//         document.getElementById("text1").innerHTML += selectedText0.charAt(i);
-//         i++;
-//     }
-//     else{
-//         i = 0;
-//         clearTimeout(timer);
-//         document.getElementById("text1").innerHTML = selectedText;
-//         ++count2;
-//         selectedText = word[count2];
-//     }
-// }
-let [selectedText0, selectedText1, selectedText2, selectedText3, selectedText4, selectedText5, selectedText6, selectedText7] =
-    [word[0], word[1], word[2], word[3], word[4], word[5], word[6], word[7]];
-var [array0, array1, array2, array3, array4, array5, array6, array7] =
-    [selectedText0.split(""), selectedText1.split(""),
-    selectedText2.split(""), selectedText3.split(""),
-    selectedText4.split(""), selectedText5.split(""),
-    selectedText6.split(""), selectedText7.split("")];
 
 function frameLooper0() {
     let timer = setTimeout('frameLooper0()', 50);
