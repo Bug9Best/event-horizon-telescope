@@ -3,7 +3,11 @@ function openDialog() {
     Swal.fire({
       icon: 'warning',
       title: 'ข้อเเนะนำ',
+<<<<<<< HEAD:script.js
       text: 'เพื่ออรรถรสในการเล่นเกมส์ โปรดเปิดเสียงเเละขยายหน้าต่างให้มากกว่า 992 พิกเซล',
+=======
+      text: 'เพื่ออรรถรสในการเล่นเกมส์ โปรดเปิดเสียงเเละขยายหน้าต่างให้มากกว่า 1000 พิกเซล',
+>>>>>>> 8b13bbb720abed89c08bbae5e8577548fbe595c2:index.js
       showConfirmButton: true,
       confirmButtonText: "ทราบเเล้วเปลี่ยน!",
       confirmButtonColor: "#FAB400",
