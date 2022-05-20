@@ -1,5 +1,5 @@
 var element = document.querySelector("body");
-element.addEventListener("mouseover", function () {
+element.addEventListener("click", function () {
   soundTrack();
 }, { once: true });
 
