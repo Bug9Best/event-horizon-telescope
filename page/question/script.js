@@ -32,10 +32,12 @@ function adddispay1t() {
   element2.classList.add("dispay");
   count++;
   var mouseSound = new Audio('/assets/effect/Correct.wav')
-  mouseSound.volume = 0.2;
+  mouseSound.volume = 0.5;
   mouseSound.play();
-  addbanana1()
+  addbanana1();
+  countDownTo11();
 }
+
 function adddispay1f() {
   var element1 = document.getElementById("q1");
   var element2 = document.getElementById("false-q1");
@@ -43,9 +45,10 @@ function adddispay1f() {
   element2.classList.add("dispay");
   count++;
   var mouseSound = new Audio('/assets/effect/Wrong 2.wav');
-  mouseSound.volume = 0.2;
+  mouseSound.volume = 0.5;
   mouseSound.play();
-  addbanana2()
+  addbanana2();
+  countDownTo12();
 }
 function adddispay2q() {
   var element1 = document.getElementById("true-q1");
@@ -67,9 +70,10 @@ function adddispay2t() {
   element2.classList.add("dispay");
   count++;
   var mouseSound = new Audio('/assets/effect/Correct.wav')
-  mouseSound.volume = 0.2;
+  mouseSound.volume = 0.5;
   mouseSound.play();
-  addbanana1()
+  addbanana1();
+  countDownTo21();
 }
 function adddispay2f() {
   var element1 = document.getElementById("q2");
@@ -77,10 +81,11 @@ function adddispay2f() {
   element1.classList.remove("dispay");
   element2.classList.add("dispay");
   var mouseSound = new Audio('/assets/effect/Crack Earth ( Egg Sound ).wav')
-  mouseSound.volume = 0.2;
+  mouseSound.volume = 0.5;
   mouseSound.play();
   count++;
-  addbanana2()
+  addbanana2();
+  countDownTo22();
 }
 function adddispay3q() {
   var element1 = document.getElementById("true-q2");
@@ -102,9 +107,10 @@ function adddispay3t() {
   element2.classList.add("dispay");
   count++;
   var mouseSound = new Audio('/assets/effect/Correct.wav')
-  mouseSound.volume = 0.2;
+  mouseSound.volume = 0.5;
   mouseSound.play();
-  addbanana1()
+  addbanana1();
+  countDownTo31();
 }
 function adddispay3f() {
   var element1 = document.getElementById("q3");
@@ -113,9 +119,10 @@ function adddispay3f() {
   element2.classList.add("dispay");
   count++;
   var mouseSound = new Audio('/assets/effect/Wrong 2.wav')
-  mouseSound.volume = 0.2;
+  mouseSound.volume = 0.5;
   mouseSound.play();
-  addbanana2()
+  addbanana2();
+  countDownTo32();
 }
 function adddispay4q() {
   var element1 = document.getElementById("true-q3");
@@ -137,9 +144,10 @@ function adddispay4t() {
   element2.classList.add("dispay");
   count++;
   var mouseSound = new Audio('/assets/effect/Correct.wav')
-  mouseSound.volume = 0.2;
+  mouseSound.volume = 0.5;
   mouseSound.play();
-  addbanana1()
+  addbanana1();
+  countDownTo41();
 }
 function adddispay4f() {
   var element1 = document.getElementById("q4");
@@ -147,10 +155,11 @@ function adddispay4f() {
   element1.classList.remove("dispay");
   element2.classList.add("dispay");
   var mouseSound = new Audio('/assets/effect/Siren Police.wav')
-  mouseSound.volume = 0.2;
+  mouseSound.volume = 0.5;
   mouseSound.play();
   count++;
-  addbanana2()
+  addbanana2();
+  countDownTo42();
 }
 function adddispay5q() {
   var element1 = document.getElementById("true-q4");
@@ -171,10 +180,11 @@ function adddispay5t() {
   element1.classList.remove("dispay");
   element2.classList.add("dispay");
   var mouseSound = new Audio('/assets/effect/Correct.wav')
-  mouseSound.volume = 0.2;
+  mouseSound.volume = 0.5;
   mouseSound.play();
   count++;
   addbanana1();
+  countDownTo51();
 }
 function adddispay5f() {
   var element1 = document.getElementById("q5");
@@ -183,9 +193,10 @@ function adddispay5f() {
   element2.classList.add("dispay");
   count++;
   var mouseSound = new Audio('/assets/effect/Wrong 2.wav')
-  mouseSound.volume = 0.2;
+  mouseSound.volume = 0.5;
   mouseSound.play();
   addbanana2();
+  countDownTo52();
 }
 
 function addbanana1() {
@@ -203,7 +214,7 @@ function checkbanana() {
   let element2 = document.getElementById("banana-p" + count)
   if (bPoint < 5 && stateHint == true) {
     var errorEffect = new Audio('/assets/effect/Wrong 2.wav')
-    errorEffect.volume = 0.1
+    errorEffect.volume = 0.25
     errorEffect.loop = true;
     errorEffect.play();
     setTimeout(() => {
@@ -221,7 +232,7 @@ function checkbanana() {
       bPoint = bPoint - 5
       stateHint = false;
       var correctEffect = new Audio('/assets/effect/Click 3.wav')
-      correctEffect.volume = 0.5
+      correctEffect.volume = 0.75
       correctEffect.loop = true;
       correctEffect.play();
       setTimeout(() => {

@@ -1,19 +1,21 @@
-function openDialog() {
-  setTimeout(function () {
-    Swal.fire({
-      icon: 'warning',
-      title: 'ข้อเเนะนำ',
-      text: 'เพื่ออรรถรสในการเล่นเกมส์ โปรดเปิดเสียงเเละขยายหน้าต่างให้มากกว่า 992 พิกเซล',
-      showConfirmButton: true,
-      confirmButtonText: "ทราบเเล้วเปลี่ยน!",
-      confirmButtonColor: "#FAB400",
-      focusConfirm: false,
-    })
-  }, 500);
+var element = document.querySelector("body");
+element.addEventListener("mouseover", function () {
+  soundTrack();
+}, { once: true });
+
+function soundTrack() {
   var soundTrack = new Audio('/assets/sound/Memories.mp3')
   soundTrack.volume = 0.2
   soundTrack.loop = true;
   soundTrack.play();
+}
+function openDialog() {
+  setTimeout(function () {
+    Swal.fire({
+      template: '#alert',
+      focusConfirm: false,
+    })
+  }, 500);
 }
 
 function mouseOver() {

@@ -5,11 +5,11 @@ var monkey = document.getElementById("monkey");
 var doc = document.getElementById("doctor");
 var bird = document.getElementById("bird");
 let word = [
-    'อ่าวสวัสดีลิงน้อย... อืม... ดูทรงน่าจะได้นะสนใจมาลองเข้าร่วมโครงการ EHT ไหมล่ะ ?',
-    'สนใจครับแต่ผมพึ่งมาทำงานใหม่เองนะครับ',
-    'ไม่เกี่ยวหรอกขอแค่มีความรู้ด้านนี้ ก็เข้าร่วมได้แล้ว',
+    'อ่าวสวัสดีลิงน้อย... อืม... ดูทรงน่าจะได้นะ สนใจมาลองเข้าร่วมโครงการ EHT ไหมล่ะ ?',
+    'สนใจครับ แต่ผมพึ่งมาทำงานใหม่เองนะครับ',
+    'ไม่เกี่ยวหรอก ขอแค่มีความรู้ด้านนี้ ก็เข้าร่วมได้แล้ว',
     'งั้นก็ลองดูครับ',
-    'งั้นเรื่องการสัมภาษณ์ความรู้เรื่องนี้เอาเป็นตอบคำถามเอาละกัน...ok ฝากนกแก้วเป็นผู้สอบสัมภาษณ์ละกัน',
+    'งั้นเรื่องการสัมภาษณ์ความรู้เรื่องนี้เอาเป็นตอบคำถามเอาละกัน... ok ฝากนกแก้วเป็นผู้สอบสัมภาษณ์ละกัน',
     'สวัสดีครับผมเป็นผู้ช่วยของ Dr. จะมาสอบสัมภาษณ์ครับ',
     'ครับ ผมพร้อมเเล้วครับ',
     'โอเค เริ่มเลยนะ']
@@ -21,7 +21,7 @@ var [array0, array1, array2, array3, array4, array5, array6, array7] =
     selectedText4.split(""), selectedText5.split(""),
     selectedText6.split(""), selectedText7.split("")];
 
-element.addEventListener("click", function () {
+element.addEventListener("mouseover", function () {
     main();
 }, { once: true });
 
@@ -29,19 +29,19 @@ function main() {
     sound();
     showDialog();
     state2();
-    // state3();
-    // state4();
-    // state5();
-    // state6();
-    // state7();
-    // state8();
-    // state9();
-    // state10();
+    state3();
+    state4();
+    state5();
+    state6();
+    state7();
+    state8();
+    state9();
+    state10();
 }
 
 function sound() {
     var sound = new Audio('/assets/sound/Like_a_dream_come_true.mp3')
-    sound.volume = 0.1;
+    sound.volume = 0.075;
     sound.loop = true;
     sound.play();
 }
@@ -79,7 +79,7 @@ function state3() {
         document.getElementById("dialog1").style.opacity = 1;
         frameLooper1();
         count++;
-    }, 2500);
+    }, 8000);
 }
 function state4() {
     setTimeout(() => {
@@ -89,7 +89,7 @@ function state4() {
         document.getElementById("dialog2").style.opacity = 1;
         frameLooper2();
         count++;
-    }, 2500);
+    }, 11000);
 }
 function state5() {
     setTimeout(() => {
@@ -99,7 +99,7 @@ function state5() {
         document.getElementById("dialog3").style.opacity = 1;
         frameLooper3();
         count++;
-    }, 2500);
+    }, 15000);
 }
 function state6() {
     setTimeout(() => {
@@ -109,7 +109,7 @@ function state6() {
         document.getElementById("dialog4").style.opacity = 1;
         frameLooper4();
         count++;
-    }, 2500);
+    }, 17000);
 }
 function state7() {
     setTimeout(() => {
@@ -136,7 +136,7 @@ function state7() {
             }
         }
         count++;
-    }, 2500);
+    }, 23000);
 }
 function state8() {
     setTimeout(() => {
@@ -145,7 +145,7 @@ function state8() {
         document.getElementById("dialog5").style.opacity = 1;
         frameLooper5();
         count++;
-    }, 2500);
+    }, 25000);
 }
 function state9() {
     setTimeout(() => {
@@ -155,7 +155,7 @@ function state9() {
         document.getElementById("dialog6").style.opacity = 1;
         frameLooper6();
         count++;
-    }, 2500);
+    }, 29000);
 }
 function state10() {
     setTimeout(() => {
@@ -165,7 +165,7 @@ function state10() {
         document.getElementById("dialog7").style.opacity = 1;
         frameLooper7();
         count++;
-    }, 2500);
+    }, 31500);
 }
 
 function frameLooper0() {
@@ -250,5 +250,5 @@ function frameLooper7() {
 
     setTimeout(() => {
         window.location.href = '/page/question/question.html'
-    }, 2000);
+    }, 3000);
 }
