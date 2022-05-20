@@ -9,6 +9,7 @@ function soundTrack() {
   soundTrack.loop = true;
   soundTrack.play();
 }
+
 function openDialog() {
   setTimeout(function () {
     Swal.fire({
