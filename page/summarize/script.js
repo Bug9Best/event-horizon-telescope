@@ -20,6 +20,7 @@ let enVer = [
   "next",
   "from which even light cannot escape.",
 ]
+
 function sound() {
   var sound = new Audio('/assets/sound/OpenaBreach.mp3')
   sound.volume = 0.2;
