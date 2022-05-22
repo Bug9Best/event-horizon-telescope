@@ -3,7 +3,7 @@ var id = null;
 var monkey = document.getElementById("monkey");
 var bird = document.getElementById("bird");
 let word = [
-    'ok จากการสัมภาษณ์ประเมินแล้ว ดูเหมือนว่านายไม่เหมาะสมที่จะทำ โปรเจคนี้นะ เสียใจด้วย พยายามต่อไปนะ',
+    'ok จากการสัมภาษณ์ประเมินแล้ว ดูเหมือนว่านายไม่เหมาะสมที่จะทำ โปรเจกต์นี้นะ เสียใจด้วย พยายามต่อไปนะ',
     'ครับผม ผมจะพยายามให้มากขึ้นครับ '];
 let [selectedText0, selectedText1] = [word[0], word[1]];
 var [array0, array1] = [selectedText0.split(""), selectedText1.split("")];
