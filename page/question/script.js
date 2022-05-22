@@ -28,8 +28,8 @@ function addbanana2() {
 }
 
 function sound() {
-  var soundTrack = new Audio('/assets/effect/BG_MUSIC.wav')
-  soundTrack.volume = 0.8
+  var soundTrack = new Audio('/assets/sound/Space.mp3')
+  soundTrack.volume = 0.2
   soundTrack.loop = true;
   soundTrack.play();
 }
