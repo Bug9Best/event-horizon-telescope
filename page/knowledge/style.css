@@ -171,3 +171,68 @@ section .card .text h6 {
   background-color: hsl(40, 100%, 80%);
   cursor: pointer;
 }
+
+footer {
+  position: relative;
+  text-align: left;
+  background-color: hsl(40, 100%, 60%);
+  z-index: 20;
+  margin:auto;
+  padding:33px;
+}
+
+footer a {
+  position: relative;
+  left: 5%;
+  font-size: 15px;
+  color: black;
+}
+
+.footerName1 {
+  position: absolute;
+  top: 40%;
+  left: 64%;
+}
+
+.footerName2 {
+  position: absolute;
+  top: 40%;
+  left: 84%;
+}
+
+.itLogo {
+  position: absolute;
+  background-image: url("/assets/Image/logo-it.png");
+  height: 520px;
+  width: 550px;
+  z-index: 21;
+  top: 0;
+  background-repeat: no-repeat;
+  transform: scale(0.1);
+  top: -98%;
+  left: -11%;
+}
+
+.spaceLogo {
+  position: absolute;
+  background-image: url("/assets/Image/logo-spaceth.png");
+  filter: brightness(0%);
+  height: 600px;
+  width: 2000px;
+  z-index: 21;
+  top: 0;
+  background-repeat: no-repeat;
+  transform: scale(0.1);
+  top: -119%;
+  left: -58%;
+}
+
+.footerLine {
+  position: absolute;
+  background-color: hsl(40, 100%, 20%);
+  height: 130px;
+  width: 3px;
+  border-radius: 10px;
+  top: 20%;
+  left: 57%;
+}
