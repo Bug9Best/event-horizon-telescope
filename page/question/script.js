@@ -23,8 +23,8 @@ function addbanana2() {
 }
 
 function sound() {
-  var soundTrack = new Audio('/assets/sound/Like_a_dream_come_true.mp3')
-  soundTrack.volume = 0.05
+  var soundTrack = new Audio('/assets/effect/BG_MUSIC.wav')
+  soundTrack.volume = 0.8
   soundTrack.loop = true;
   soundTrack.play();
 }
