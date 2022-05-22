@@ -7,6 +7,20 @@ let hintText = "เอากล้วยมา 5 ลูก แล้วฉัน
 let count = 1;
 let listHint = ["อย่าลืมนะว่าในอวกาศก็มีฝุ่น", "รู้ไหมว่าถ้าตามทฤษฏีต้องใช้เลนใหญ่เท่าโลกเลยนะ", "รู้ไหมว่าการเลือกสถานที่ตั้งกล้องควรเลือกสถานที่ที่มีสิ่งรบกวนน้อยที่สุด", "เป็นล้านเลยหรอพี่!! ข้อมูลมันเยอะมากเลยนะ!", "ความไกลและขนาดของหลุมดำก็มีผลต่อการถ่ายภาพนะ"]
 let stateHint = true;
+localStorage.setItem("correct", "0")
+
+function addbanana1() {
+  bPoint = bPoint + 3;
+  sPoint = sPoint + 1
+  starPnt.innerText = sPoint
+  bananaPnt.innerText = bPoint
+  var correct = parseInt(localStorage.getItem("correct"));
+  localStorage.setItem("correct", ++correct);
+}
+function addbanana2() {
+  bPoint = bPoint + 2
+  bananaPnt.innerText = bPoint
+}
 
 function sound() {
   var soundTrack = new Audio('/assets/sound/Like_a_dream_come_true.mp3')
@@ -199,16 +213,7 @@ function adddispay5f() {
   countDownTo52();
 }
 
-function addbanana1() {
-  bPoint = bPoint + 3;
-  sPoint = sPoint + 1
-  starPnt.innerText = sPoint
-  bananaPnt.innerText = bPoint
-}
-function addbanana2() {
-  bPoint = bPoint + 2
-  bananaPnt.innerText = bPoint
-}
+
 function checkbanana() {
   let element1 = document.getElementById("hint" + count);
   let element2 = document.getElementById("banana-p" + count)
