@@ -15,6 +15,10 @@ var [array0, array1, array2] =
 
 
 function main() {
+    var soundTrack = new Audio('/assets/sound/Space.mp3')
+    soundTrack.volume = 0.05
+    soundTrack.play();
+
     showDialog();
     state2();
     state3();
@@ -73,7 +77,7 @@ function state4() {
 function state5() {
     setTimeout(() => {
         pass();
-    }, 12000);
+    }, 15000);
 }
 
 function frameLooper0() {
@@ -115,7 +119,10 @@ function pass() {
         width: '750px',
         showConfirmButton: false,
         allowOutsideClick: false
-    })
+    });
+    var soundTrack = new Audio('/assets/effect/StageClear.mp3')
+    soundTrack.volume = 0.2
+    soundTrack.play();
 }
 
 function playAgain() {

@@ -9,6 +9,10 @@ let [selectedText0, selectedText1] = [word[0], word[1]];
 var [array0, array1] = [selectedText0.split(""), selectedText1.split("")];
 
 function main() {
+    var soundTrack = new Audio('/assets/sound/Space.mp3')
+    soundTrack.volume = 0.05
+    soundTrack.play();
+
     showDialog();
     state2();
     state3();
@@ -88,7 +92,10 @@ function fail() {
         width: '750px',
         showConfirmButton: false,
         allowOutsideClick: false
-    })
+    });
+    var sound = new Audio('/assets/effect/negative.wav')
+    sound.volume = 0.2
+    sound.play();
 }
 
 function playAgain() {
