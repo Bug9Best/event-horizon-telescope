@@ -6,7 +6,7 @@ var bird = document.getElementById("bird");
 var word = [
     'ok จากการสัมภาษณ์ประเมินแล้ว ดูเหมือนว่า นายมีสิทธิ์เข้าร่วมโครงการ EHT นะ สนใจจะเข้าไหม',
     'สนใจครับ',
-    'งั้นก็เริ่มทำโปรเจ็คได้เลย โปรคเจคต่อไปคือการถ่าย Sagittarius A* ฝากด้วยนะ']
+    'งั้นก็เริ่มทำโปรเจกต์ได้เลย โปรเจกต์ต่อไปคือการถ่าย Sagittarius A* ฝากด้วยนะ']
 var [selectedText0, selectedText1, selectedText2] = [word[0], word[1], word[2]];
 var [array0, array1, array2] =
     [selectedText0.split(""),
