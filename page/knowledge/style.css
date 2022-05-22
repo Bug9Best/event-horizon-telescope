@@ -175,33 +175,37 @@ section .card .text h6 {
 footer {
   position: relative;
   text-align: left;
-  background-color: hsl(40, 100%, 60%);
+  background-image: linear-gradient(to right, hsl(40, 100%, 70%), hsl(40, 100%, 60%));
   z-index: 20;
   margin:auto;
   padding:33px;
+  height: 220px;
+  /* display: flex;
+  justify-content: center; */
 }
 
-footer a {
+.footText{
   position: relative;
-  left: 5%;
+  top: 16%;
+  left: 10%;
   font-size: 15px;
   color: black;
 }
 
 .footerName1 {
   position: absolute;
-  top: 85px;
-  left: 810px;
-  /* top: 40%;
-  left: 64%; */
+  /* top: 85px;
+  left: 910px; */
+  top: 40%;
+  left: 64%;
 }
 
 .footerName2 {
   position: absolute;
-  top: 85px;
-  left: 1080px;
-  /* top: 40%;
-  left: 84%; */
+  /* top: 85px;
+  left: 1180px; */
+  top: 40%;
+  left: 84%;
 }
 
 .itLogo {
@@ -213,10 +217,10 @@ footer a {
   top: 0;
   background-repeat: no-repeat;
   transform: scale(0.1);
-  top: -210px;
-  left: -140px;
-  /* top: -98%;
-  left: -11%; */
+  /* top: -210px;
+  left: -120px; */
+  top: -470%;
+  left: -45%;
 }
 
 .spaceLogo {
@@ -229,10 +233,19 @@ footer a {
   top: 0;
   background-repeat: no-repeat;
   transform: scale(0.1);
-  top: -255px;
-  left: -740px;
-  /* top: -119%;
-  left: -58%; */
+  /* top: -255px;
+  left: -710px; */
+  top: -560%;
+  left: -165%;
+}
+
+.logo {
+  position: absolute;
+  background-color: transparent;
+  height: 50px;
+  width: 500px;
+  left: 10%;
+  top: 10%;
 }
 
 .footerLine {
@@ -241,8 +254,8 @@ footer a {
   height: 130px;
   width: 3px;
   border-radius: 10px;
-  top: 45px;
-  left: 730px;
-  /* top: 20%;
-  left: 57%; */
+  /* top: 45px;
+  left: 780px; */
+  top: 0%;
+  left: 50%;
 }
