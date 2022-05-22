@@ -1,4 +1,4 @@
-body{
+body {
     max-height: 100vh;
     background: black;
     background-size: cover;
@@ -6,13 +6,15 @@ body{
     overflow: hidden;
 }
 
-*{
+* {
     font-family: 'Mitr', sans-serif;
 }
-.bg{
+
+.bg {
     max-height: 100vh;
 }
-.bg1{
+
+.bg1 {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -20,7 +22,8 @@ body{
     top: 0;
     z-index: -99;
 }
-.bg2{
+
+.bg2 {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -28,7 +31,8 @@ body{
     top: 0;
     z-index: -100;
 }
-#monkey{
+
+#monkey {
     width: 25%;
     height: 60%;
     left: -10px;
@@ -36,7 +40,8 @@ body{
     position: absolute;
     opacity: 1;
 }
-#bird{
+
+#bird {
     width: 25%;
     height: 40%;
     right: 80px;
@@ -44,7 +49,8 @@ body{
     position: absolute;
     opacity: 1;
 }
-#dialog0{
+
+#dialog0 {
     width: 800px;
     height: 150px;
     background-color: #233353;
@@ -62,12 +68,14 @@ body{
     justify-content: center;
     z-index: 1;
 }
-p{
+
+p {
     font-size: 30px;
     color: white;
     text-align: center;
 }
-#dialog1, #dialog2{
+
+#dialog1, #dialog2 {
     width: 800px;
     height: 150px;
     background-color: #233353;
@@ -85,4 +93,59 @@ p{
     justify-content: center;
     z-index: 2;
     opacity: 0;
+}
+
+.content {
+    color: black;
+    font-size: 20px;
+}
+
+button {
+    margin: 8px;
+    width: 200px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+}
+
+#again {
+    background-color: #FFC700;
+}
+
+#again:hover {
+    background-color: #ffe070;
+    border: none;
+}
+
+#landing {
+    background-color: rgb(118, 219, 118);
+}
+
+#landing:hover {
+    background-color: rgba(150, 227, 150, 0.742);
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+#skipButton {
+    position: absolute;
+    padding: 12px 24px;
+    top: 1.5em;
+    right: 1.5em;
+
+    font-size: 18px;
+    color: black;
+    background-color: hsl(40, 100%, 60%);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#skipButton:hover {
+    color: white;
 }
