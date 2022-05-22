@@ -55,7 +55,7 @@ function state3() {
 
 function state4() {
     setTimeout(() => {
-        //  Blur Screen
+        fail();
     }, 12000);
 }
 
@@ -78,4 +78,24 @@ function frameLooper1() {
         clearTimeout(timer);
         document.getElementById("text1").innerHTML = selectedText1;
     }
+}
+
+function fail() {
+    Swal.fire({
+        template: '#fail',
+        icon: 'error',
+        title: 'เสียใจด้วย คุณไม่ผ่านการทดสอบ ไว้คราวหน้ามาใหม่นะ',
+        width: '750px',
+        showConfirmButton: false,
+        allowOutsideClick: false
+    })
+}
+
+function playAgain() {
+    localStorage.clear();
+    window.location.href = '/page/question/question.html'
+}
+
+function landing() {
+    window.location.href = '/page/summarize/summarize.html'
 }

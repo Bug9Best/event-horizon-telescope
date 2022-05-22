@@ -1,5 +1,6 @@
 var count = -1;
 var id = null;
+var end = false;
 var monkey = document.getElementById("monkey");
 var bird = document.getElementById("bird");
 var word = [
@@ -71,8 +72,8 @@ function state4() {
 
 function state5() {
     setTimeout(() => {
-        //  Blur Screen
-    }, 15000);
+        pass();
+    }, 12000);
 }
 
 function frameLooper0() {
@@ -104,4 +105,28 @@ function frameLooper2() {
         clearTimeout(timer);
         document.getElementById("text2").innerHTML = selectedText2;
     }
+}
+
+function pass() {
+    Swal.fire({
+        template: '#pass',
+        icon: 'success',
+        title: 'ยินดีด้วย คุณผ่านการทดสอบ',
+        width: '750px',
+        showConfirmButton: false,
+        allowOutsideClick: false
+    })
+}
+
+function playAgain() {
+    localStorage.clear();
+    window.location.href = '/page/question/question.html'
+}
+
+function landing() {
+    window.location.href = '/page/summarize/summarize.html'
+}
+
+function skip() {
+    end = true;
 }
