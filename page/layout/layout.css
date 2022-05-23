@@ -1,0 +1,69 @@
+body {
+  font-family: 'Mitr', sans-serif;
+}
+
+.container {
+  /* Can fixed Here */
+  width: 90vw;
+  height: 80vh;
+  margin-top: -20px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    'score score  question  question question question  helper helper'
+    'score score hint hint hint hint helper helper'
+    'choice choice choice choice choice choice choice choice';
+  grid-template-rows: 100px 100px auto;
+
+}
+
+.score {
+  grid-area: score;
+  border: 1px solid gray;
+}
+
+.helper {
+  grid-area: helper;
+  border: 1px solid gray;
+}
+
+.question {
+  height: 100px;
+  grid-area: question;
+
+  /* Can Fixed Here */
+  border: 1px solid gray;
+  background-color: #feb041;
+  color: #333;
+  font-size: 1.5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hint {
+  height: 100px;
+  grid-area: hint;
+  border: 1px solid gray;
+}
+
+.choice {
+  grid-area: choice;
+  background-color: pink;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#choice1 {
+  background-color: aqua;
+}
+
+#choice2 {
+  background-color: green;
+}
