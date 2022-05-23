@@ -14,23 +14,31 @@
 
 <body onload="showQuestion()">
   <div class="container">
-    <div class="score"></div>
+    <div class="score">
+      <div>
+        <span><img class="scorePic" src="/assets/image/banana-q2.png"></span>
+        <span class="scorePoint" id="banana"></span>
+      </div>
+      <div>
+        <span><img class="scorePic" src="/assets/image/star-q2.png"></span>
+        <span class="scorePoint" id="star"></span>
+      </div>
+    </div>
+
     <div class="helper"></div>
     <div class="question"></div>
     <div class="hint"></div>
     <div class="choice">
       <div id="choice1">
-        <img class="picchoice" src="/assets/image/choice1 1.jpg" alt="">
-        <br>
-        <button onclick="adddispay1t();" onmouseover="mouseOver()" class="btnchoice">กล้องโทรทรรศน์วิทยุ</button>
+        <img class="picchoice" id="pic1" src="/assets/image/choice1 1.jpg">
+        <button onclick="adddispay1t();" onmouseover="mouseOver()" class="btnchoice" id="btn1">กล้องโทรทรรศน์วิทยุ</button>
       </div>
       <div id="choice2">
-        <img class="picchoice" src="/assets/image/choice1 2.jpg" alt="">
-        <br>
-        <button onclick="adddispay1t();" onmouseover="mouseOver()" class="btnchoice">กล้องโทรทรรศน์วิทยุ</button>
-      </div>
+        <img class="picchoice" id="pic2" src="/assets/image/choice1 2.jpg">
+        <button onclick="adddispay1t();" onmouseover="mouseOver()" class="btnchoice" id="btn2">กล้องโทรทรรศน์วิทยุ</button>
       </div>
     </div>
+  </div>
   </div>
 
 
