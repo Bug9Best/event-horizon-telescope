@@ -23,8 +23,8 @@ function addbanana2() {
 }
 
 function sound() {
-  var soundTrack = new Audio('/assets/sound/Like_a_dream_come_true.mp3')
-  soundTrack.volume = 0.05
+  var soundTrack = new Audio('/assets/sound/Space.mp3')
+  soundTrack.volume = 0.2
   soundTrack.loop = true;
   soundTrack.play();
 }
@@ -49,7 +49,6 @@ function adddispay1t() {
   mouseSound.volume = 0.5;
   mouseSound.play();
   addbanana1();
-  countDownTo11();
 }
 
 function adddispay1f() {
@@ -62,7 +61,6 @@ function adddispay1f() {
   mouseSound.volume = 0.5;
   mouseSound.play();
   addbanana2();
-  countDownTo12();
 }
 function adddispay2q() {
   var element1 = document.getElementById("true-q1");
@@ -87,7 +85,6 @@ function adddispay2t() {
   mouseSound.volume = 0.5;
   mouseSound.play();
   addbanana1();
-  countDownTo21();
 }
 function adddispay2f() {
   var element1 = document.getElementById("q2");
@@ -99,7 +96,6 @@ function adddispay2f() {
   mouseSound.play();
   count++;
   addbanana2();
-  countDownTo22();
 }
 function adddispay3q() {
   var element1 = document.getElementById("true-q2");
@@ -124,7 +120,6 @@ function adddispay3t() {
   mouseSound.volume = 0.5;
   mouseSound.play();
   addbanana1();
-  countDownTo31();
 }
 function adddispay3f() {
   var element1 = document.getElementById("q3");
@@ -136,7 +131,6 @@ function adddispay3f() {
   mouseSound.volume = 0.5;
   mouseSound.play();
   addbanana2();
-  countDownTo32();
 }
 function adddispay4q() {
   var element1 = document.getElementById("true-q3");
@@ -161,7 +155,6 @@ function adddispay4t() {
   mouseSound.volume = 0.5;
   mouseSound.play();
   addbanana1();
-  countDownTo41();
 }
 function adddispay4f() {
   var element1 = document.getElementById("q4");
@@ -173,7 +166,6 @@ function adddispay4f() {
   mouseSound.play();
   count++;
   addbanana2();
-  countDownTo42();
 }
 function adddispay5q() {
   var element1 = document.getElementById("true-q4");
@@ -198,7 +190,6 @@ function adddispay5t() {
   mouseSound.play();
   count++;
   addbanana1();
-  countDownTo51();
 }
 function adddispay5f() {
   var element1 = document.getElementById("q5");
@@ -210,7 +201,6 @@ function adddispay5f() {
   mouseSound.volume = 0.5;
   mouseSound.play();
   addbanana2();
-  countDownTo52();
 }
 
 
