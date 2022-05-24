@@ -398,6 +398,12 @@ section:first-of-type h1 {
     color: white;
 }
 
+#subtitle {
+    width: 80%;
+    text-align: center;
+    font-size: 28px;
+}
+
 .img {
     position: fixed;
     top: 0;
@@ -521,6 +527,14 @@ blockquote {
     border-radius: 4px;
 }
 
+blockquote a {
+    font-size: 20px;
+}
+
+blockquote h1 {
+    font-size: 24px;
+}
+
 .page {
     position: fixed;
     z-index: 5;
@@ -577,30 +591,20 @@ blockquote {
 
 .space img {
     position: absolute;
-    left:0px;
+    left: 0px;
     width: 100%;
     height: auto;
     z-index: 26;
+    border-radius: 8px;
+    border: 2px solid gray;
 }
 
-#sec3 blockquote {
-    padding: 1em;
-    padding-left: 3em;
-}
 
 #sec9 img {
-    position: absolute;
-    width: 80%;
-    height: auto;
-    z-index: 26;
-    clip-path: none;
+    width: 90%;
 }
 
-#subtitle {
-    width: 80%;
-    text-align: center;
-    font-size: 28px;
-}
+
 
 /* --------------------------------------------------------------------------------------------
  ------------------------------------------ Map --------------------------------------------
@@ -657,6 +661,7 @@ blockquote {
 
 .eht1:hover #info1 {
     position: relative;
+    padding: 4px 8px;
     visibility: visible;
     top: 15px;
 }
@@ -669,6 +674,7 @@ blockquote {
 
 .eht2:hover #info2 {
     position: relative;
+    padding: 4px 8px;
     visibility: visible;
     left: 1px;
     top: -50px;
@@ -682,6 +688,7 @@ blockquote {
 
 .eht3:hover #info3 {
     position: relative;
+    padding: 4px 8px;
     visibility: visible;
     left: 1px;
     top: -50px;
@@ -695,6 +702,7 @@ blockquote {
 
 .eht4:hover #info4 {
     position: relative;
+    padding: 4px 8px;
     visibility: visible;
     top: 15px;
 }
@@ -707,6 +715,7 @@ blockquote {
 
 .eht5:hover #info5 {
     position: relative;
+    padding: 4px 8px;
     visibility: visible;
     left: 1px;
     top: 15px;
@@ -720,6 +729,7 @@ blockquote {
 
 .eht6:hover #info6 {
     position: relative;
+    padding: 4px 8px;
     visibility: visible;
     left: 0px;
     top: 15px;
@@ -733,6 +743,7 @@ blockquote {
 
 .eht7:hover #info7 {
     position: relative;
+    padding: 4px 8px;
     visibility: visible;
     left: 0px;
     top: -50px;
@@ -746,6 +757,7 @@ blockquote {
 
 .eht8:hover #info8 {
     position: relative;
+    padding: 4px 8px;
     visibility: visible;
     top: -50px;
 }
@@ -758,6 +770,7 @@ blockquote {
 
 .eht9:hover #info9 {
     position: relative;
+    padding: 4px 8px;
     visibility: visible;
     top: 15px;
 }
@@ -774,6 +787,7 @@ blockquote {
 
 .eht10:hover #info10 {
     position: relative;
+    padding: 4px 8px;
     visibility: visible;
     top: 15px;
 }
@@ -786,6 +800,7 @@ blockquote {
 
 .eht11:hover #info11 {
     position: relative;
+    padding: 4px 8px;
     visibility: visible;
     left: -10px;
     top: -50px;
