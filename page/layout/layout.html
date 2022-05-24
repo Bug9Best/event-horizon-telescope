@@ -13,7 +13,7 @@
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
-<body class="swal2-shown" onload="nextQuestion()">
+<body onload="nextQuestion()">
   <div class="container">
     <div class="score">
       <div>
@@ -41,14 +41,13 @@
     <div class="choice">
       <div id="choice1">
         <img class="picchoice" id="pic1" src="">
-        <button onclick="retreat();" onmouseover="mouseOver()" class="btnchoice" id="btn1">กล้องโทรทรรศน์วิทยุ</button>
+        <button onclick="choiceA();" onmouseover="mouseOver()" class="btnchoice" id="btn1">กล้องโทรทรรศน์วิทยุ</button>
       </div>
       <div id="choice2">
         <img class="picchoice" id="pic2" src="">
-        <button onclick="retreat();" onmouseover="mouseOver()" class="btnchoice" id="btn2">กล้องโทรทรรศน์วิทยุ</button>
+        <button onclick="choiceB();" onmouseover="mouseOver()" class="btnchoice" id="btn2">กล้องโทรทรรศน์วิทยุ</button>
       </div>
     </div>
-  </div>
   </div>
 
   <template id="retreats">
