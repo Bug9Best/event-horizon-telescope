@@ -46,11 +46,43 @@ let pathImg2 = [
   "/assets/image/choice4.2.png",
   "/assets/image/choice5.2.png",
   "/assets/image/choice6.2.jpg"]
+let ansCorrect = [
+  "ใช้ได้! กล้องโทรทรรศน์วิทยุใช้การวัดสัญญาณคลื่นวิทยุจากวัตถุท้องฟ้าและสามารถทะลุผ่านเมฆหมอกในบรรยากาศของโลกและผ่านฝุ่นผงในที่ว่างระหว่างดวงดาวได้ด้วย รับกล้วยไป",
+  "EHT เป็นโครงการศึกษาเกี่ยวกับหลุมดำโดยใช้กล้องโทรทัศน์ทำงานร่วมกัน เราสามารถจำลองกล้องโทรทรรศน์ที่ใหญ่เท่าโลกได้ด้วยเทคนิคที่เรียกว่า VLBI หรือ Very-long-baseline Interferometry",
+  "ยอดเยี่ยมไปเลย สามารถรับสัญญาณสำหรับการถ่ายภาพหลุมดำได้แล้ว!",
+  "ฉลาดมาก! เพราะข้อมูลมีมากเกินกว่าจะส่งผ่านอินเทอร์เน็ตได้ ทำให้ต้องส่งผ่านเครื่องบินเจ็ทเร็วแรงแทนเพราะดอมกล่าวไว้ว่าครอบครัว",
+  "ถูกต้อง! ในที่สุดพวกเราก็สามารถถ่ายภาพหลุมดำมวลที่ยิ่งยวดของกาแล็กซี่ Messier 87 ( เมอซิเย่ ) เป็นครั้งแรกของโลก ในวันที่ 10 เมษายน 2019 ทำได้ดีมากทุกคน!",
+  "ใช่แล้ว เพราะหลุมดำมวลยิ่งยวดมีมวลมากมายมหาศาลจนทำให้จานสะสม(Accretion Disk) มวลเกิดแสงสว่างจ้า ทำให้เราสังเกตเห็นนั่นเอง",
+]
+let pathAns1 = [
+  "/assets/image/q1-correct-fix.png",
+  "/assets/image/q2correct-fix.png",
+  "/assets/image/q3-correct-fix.png",
+  "/assets/image/q4-correct-fix.png",
+  "/assets/image/q5-fix.png",
+  "/assets/image/q6.png",
+]
+let ansFalse = [
+  "ถ่ายไม่เห็นอะไรเลย! เพราะนอกจากจะมีชั้นบรรยากาศห่อหุ้มโลกเป็นอุปสรรคแล้ว ยังมีฝุ่นต่างที่อยู่ในอวกาศขวางกั้นอีก เอาไปขายทิ้งซะนะ",
+  "โลกแตก เพราะการใช้กล้องโทรทรรศน์ตัวเดียวต้องมีขนาดใหญ่เท่าโลกถึง จะถ่ายภาพหลุมดำได้ (และจะเอาเงินที่ไหนไปสร้าง!)",
+  "ยอดแย่ คลื่นลมทะเลนั้นรุนแรงเสียจนการจับสัญญาณทำได้ยาก",
+  "โดนจับแล้ว!! คาดเกิดจากการทำเครือข่ายอินเทอร์เน็ตทั่วโลกล่มทันทีหลังส่ง ข้อมูลกว่า 5 ล้านกิกะไบต์ ศาลตัดสินให้จำคุกไม่มีประกันตัว",
+  "ถูกต้อง! สุดท้ายลิงก็ได้ถ่ายหลุมดำมวลยิ่งยวดของกาแล็กทางช้างเผือก ชื่อว่า Saguttarius A* เป็นครั้งที่สองของโลก ในวันที่ 12 พฤษภษคม 2022 ที่ผ่านมานี้เอง โดยหลุมดำแรกที่ถ่ายได้ก็คือ M87 เมื่อปี 2019 นั่นเอง",
+  "หลุมดำที่เกิดจากการระเบิดของดวงดาวเป็น Supernova นั้นมีมวลมากก็จริง แต่ยังไม่มากพอที่จะทำให้เกิดจานสะสมมวล (Accretion Disk) ที่ทำให้เราสังเกตได้",
+]
+let pathAns2 = [
+  "/assets/image/q1-false-fix.png",
+  "/assets/image/q2-false-fix.png",
+  "/assets/image/q3-false-fix.png",
+  "/assets/image/q4-false-fix.png",
+  "/assets/image/q5-sgra.png",
+  "/assets/image/q6.png",
+]
 
 var hintText = "เอากล้วยมา 5 ลูก แล้วฉันจะบอกคำใบ้นาย";
 var stateHint = true;
 var count = 0;
-var bPoint = 3;
+var bPoint = 8;
 var sPoint = 0;
 
 var questionA = document.querySelector(".question");
@@ -67,19 +99,18 @@ function showQuestion() {
   soundTrack.volume = 0.1
   soundTrack.loop = true;
   soundTrack.play();
-
   nextQuestion();
 }
 
 function nextQuestion() {
-  questionA.innerHTML = question[0 + count];
+  questionA.innerHTML = question[count];
   hint.innerHTML = hintText;
   banana.innerHTML = bPoint;
   star.innerHTML = sPoint;
-  picA.setAttribute("src", pathImg1[0 + count]);
-  picB.setAttribute("src", pathImg2[0 + count]);
-  btnA.innerHTML = choice1[0 + count]
-  btnB.innerHTML = choice2[0 + count]
+  picA.setAttribute("src", pathImg1[count]);
+  picB.setAttribute("src", pathImg2[count]);
+  btnA.innerHTML = choice1[count]
+  btnB.innerHTML = choice2[count]
 }
 
 function retreat() {
@@ -101,7 +132,6 @@ function playAgain() {
 function home() {
   window.location.href = '/index.html'
 }
-
 function cancle() {
   Swal.close({})
 }
@@ -111,4 +141,48 @@ function mouseOver() {
   mouseSound.volume = 0.2;
   mouseSound.play();
 }
+
+function checkbanana() {
+  if (bPoint < 5 && stateHint == true) {
+    var errorEffect = new Audio('/assets/effect/Wrong 2.wav')
+    errorEffect.volume = 0.25
+    errorEffect.play();
+    setTimeout(() => {
+      errorEffect.pause();
+    }, 500);
+
+    hint.innerText = "ไม่สนิทอย่าติดตลก ไปหากล้วยมาใหม่!!!"
+    hint.style.color = "red"
+    setTimeout(() => {
+      hint.innerText = hintText
+      hint.style.color = "black"
+    }, 2000);
+
+  } else {
+    if (stateHint == true) {
+      bPoint = bPoint - 5
+      stateHint = false;
+      var correctEffect = new Audio('/assets/effect/Click 3.wav')
+      correctEffect.volume = 0.75
+      correctEffect.play();
+      setTimeout(() => {
+        correctEffect.pause();
+      }, 200);
+    }
+    banana.innerText = bPoint
+    hint.innerText = listHint[count]
+    hint.style.color = "green"
+  }
+}
 // Answer Part --------------------------------------------------------------------------------------
+
+
+// Result --------------------------------------------------------------------------------------
+function result() {
+  if (sPoint >= 4) {
+    window.location.href = '/page/pass/pass.html'
+  }
+  else {
+    window.location.href = '/page/fail/fail.html'
+  }
+}
