@@ -4,7 +4,6 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
   background-image: radial-gradient(ellipse at top, #080e21 0%, #1b2735 95%);
 }
 
@@ -18,35 +17,134 @@ body {
   display: grid;
   gap: 10px;
   grid-template-areas:
-    'score score  question  question question helper  helper helper'
-    'score score hint hint hint helper helper helper'
-    'choice choice choice choice choice choice choice choice';
+    'score  question  helper'
+    'score hint  helper'
+    'score choice  choice';
   grid-template-rows: 100px 100px auto;
-
+  grid-template-columns: 160px 1fr 280px;
 }
 
 .score {
   grid-area: score;
-
 }
 
 .scorePic {
-  width: 4em;
-  height: 4em;
+  width: 3.5em;
+  height: 3.5em;
   position: relative;
   top: 8px;
 }
 
 .scorePoint {
   color: white;
-  font-size: 56px;
+  font-size: 50px;
   position: relative;
   left: 20px;
 }
 
+
+#retreat {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 8px 16px;
+  width: 140px;
+
+  color: white;
+  font-size: 1.25em;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid rgb(242, 97, 97);
+  border-radius: 12px;
+  background-color: #374658;
+}
+
+#retreat:hover {
+  background-color: rgb(242, 97, 97);
+  color: white;
+  cursor: pointer;
+  transform: translateY(-2px);
+  transition: all 0.2s linear;
+}
+
+
+button {
+  margin: 8px;
+  width: 250px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  font-family: 'Mitr', sans-serif;
+  cursor: pointer;
+}
+
+#again {
+  background-color: #ffc800;
+}
+
+#again:hover {
+  background-color: #ffe070;
+  border: none;
+}
+
+#landing {
+  background-color: rgb(87, 217, 87);
+}
+
+#landing:hover {
+  background-color: rgba(150, 227, 150, 0.742);
+  border: none;
+}
+
+#cancle {
+  border: 2px solid rgb(255, 108, 108);
+  background-color: transparent;
+  width: 94%;
+}
+
+#cancle:hover {
+  background-color: rgb(255, 108, 108);
+  border: 2px solid rgb(255, 108, 108);
+  color: white;
+}
+
 .helper {
   grid-area: helper;
-  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#hintPic {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+  right: 20px;
+  z-index: 1;
+}
+
+#birdPic {
+  width: 220px;
+  height: 180px;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+}
+
+#hintUse {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+}
+
+#hintUseText {
+  color: white;
+  position: absolute;
+  left: 60px;
+  bottom: -25px;
 }
 
 .question {
@@ -59,6 +157,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 40px;
+  overflow: hidden;
 }
 
 .hint {
@@ -71,6 +171,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .choice {
@@ -96,16 +198,16 @@ body {
 }
 
 .picchoice {
-  width: 480px;
-  height: 250px;
+  width: 80%;
+  height: 35vh;
   border-radius: 8px;
 }
 
 .btnchoice {
   padding: 16px 32px;
   margin-top: 30px;
-  width: 400px;
-  height: 100px;
+  width: 80%;
+  height: 80px;
   font-size: 1.25em;
   font-family: 'Mitr', sans-serif;
   text-align: center;
@@ -120,3 +222,5 @@ body {
 .btnchoice:hover {
   transform: translateY(-2px);
 }
+
+/* ------------------------------------------------------------------------------------------------------------------- */

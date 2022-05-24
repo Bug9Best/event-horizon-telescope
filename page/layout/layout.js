@@ -49,7 +49,7 @@ let pathImg2 = [
 
 var hintText = "เอากล้วยมา 5 ลูก แล้วฉันจะบอกคำใบ้นาย";
 var stateHint = true;
-var count = 5;
+var count = 0;
 var bPoint = 3;
 var sPoint = 0;
 
@@ -68,14 +68,7 @@ function showQuestion() {
   soundTrack.loop = true;
   soundTrack.play();
 
-  questionA.innerHTML = question[0];
-  hint.innerHTML = hintText;
-  banana.innerHTML = bPoint;
-  star.innerHTML = sPoint;
-  picA.setAttribute("src", pathImg1[0]);
-  picB.setAttribute("src", pathImg2[0]);
-  btnA.innerHTML = choice1[0]
-  btnB.innerHTML = choice2[0]
+  nextQuestion();
 }
 
 function nextQuestion() {
@@ -87,6 +80,30 @@ function nextQuestion() {
   picB.setAttribute("src", pathImg2[0 + count]);
   btnA.innerHTML = choice1[0 + count]
   btnB.innerHTML = choice2[0 + count]
+}
+
+function retreat() {
+  Swal.fire({
+    template: '#retreats',
+    icon: 'warning',
+    width: '40vw',
+    title: 'อะไรกัน เจ้าจะยอมเเพ้เเล้วอย่างนั้นรึ?',
+    showConfirmButton: false,
+    focusConfirm: false,
+    allowOutsideClick: false,
+    backdrop: false,
+  });
+}
+
+function playAgain() {
+  window.location.href = '/page/question/question.html'
+}
+function home() {
+  window.location.href = '/index.html'
+}
+
+function cancle() {
+  Swal.close({})
 }
 
 function mouseOver() {
