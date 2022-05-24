@@ -104,5 +104,5 @@ function playAgain() {
 }
 
 function landing() {
-    window.location.href = '/page/summarize/summarize.html'
+    window.location.href = '/page//knowledge/knowledge.html'
 }
