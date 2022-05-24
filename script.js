@@ -4,8 +4,8 @@ element.addEventListener("click", function () {
 }, { once: true });
 
 function soundTrack() {
-  var soundTrack = new Audio('/assets/sound/Memories.mp3')
-  soundTrack.volume = 0.2
+  var soundTrack = new Audio('/assets/sound/Like_a_dream_come_true.mp3')
+  soundTrack.volume = 0.1
   soundTrack.loop = true;
   soundTrack.play();
 }
