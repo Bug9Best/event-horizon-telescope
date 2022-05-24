@@ -2,6 +2,9 @@
  ------------------------------------------ Default --------------------------------------------
  ------------------------------------------------------------------------------------------- */
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Mitr', sans-serif;
 }
 
@@ -19,6 +22,7 @@ body {
 
 body::-webkit-scrollbar {
     display: none;
+    scrollbar-width: none;
 }
 
 #homeButton {
@@ -394,7 +398,7 @@ section:first-of-type h1 {
     color: white;
 }
 
-img {
+.img {
     position: fixed;
     top: 0;
     left: 0;
@@ -576,7 +580,6 @@ blockquote {
     width: 100%;
     height: auto;
     z-index: 26;
-    clip-path: none;
 }
 
 #sec3 blockquote {
@@ -606,50 +609,218 @@ blockquote {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 500px;
-    width: 1000px;
-    background-image: url("/assets/Image/earth2.jpg");
-    background-size: cover;
-    border-radius: 12px;
 }
 
 .topic {
     color: white;
     font-size: 35px;
-    text-align: center;
     letter-spacing: 8px;
-    margin-top: -60px;
-}
-
-.pin {
-    position: absolute;
-    height: 30px;
-    width: 30px;
-}
-
-.info {
-    width: 70px;
-    border-radius: 8px;
     text-align: center;
-    background-color: orange;
-    visibility: hidden;
+    margin-bottom: 12px;
 }
+
+#earth {
+    width: 960px;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid wheat;
+    box-shadow: 0 3px 4px 0 #d3dcfe;
+}
+
+.Alleht {
+    position: absolute;
+    display: inline-block;
+}
+
+/* ข้อมูลที่ปรากฏหลังเม้าส์ชี้ */
+.Alleht .info {
+    visibility: hidden;
+    background-color: hsl(40, 100%, 60%);
+    width: auto;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    left: -3px;
+    transform: translateY(-20px);
+    z-index: 1;
+}
+
+
 
 .eht1 {
-    padding: 0;
-    margin: 0;
-    width: 30px;
-    height: 30px;
-
-    /* Fix Here */
     position: absolute;
-    left: 680px;
+    left: -680px;
     top: 120px;
 }
 
-#jcmt {
-    /* Fix Here */
+.eht1:hover #info1 {
+    position: relative;
+    visibility: visible;
+    top: 2px;
+}
+
+.eht2 {
     position: absolute;
-    left: -20px;
-    top: 30px;
+    left: -680px;
+    top: 100px;
+}
+
+.eht2:hover #info2 {
+    position: relative;
+    visibility: visible;
+    top: 2px;
+}
+
+/* เปลี่ยนตำแหน่งกล่องข้อความ */
+.eht2 .info {
+    left: 3px;
+    transform: translateY(-90px);
+}
+
+.eht3 {
+    position: absolute;
+    left: -450px;
+    top: 330px;
+}
+
+.eht3:hover #info3 {
+    position: relative;
+    visibility: visible;
+    top: 2px;
+}
+
+/* เปลี่ยนตำแหน่งกล่องข้อความ */
+.eht3 .info {
+    left: 0px;
+    transform: translateY(-90px);
+}
+
+.eht4 {
+    position: absolute;
+    left: -500px;
+    top: 200px;
+}
+
+.eht4:hover #info4 {
+    position: relative;
+    visibility: visible;
+    top: 2px;
+}
+
+.eht5 {
+    position: absolute;
+    left: -370px;
+    top: 85px;
+}
+
+.eht5:hover #info5 {
+    position: relative;
+    visibility: visible;
+    top: 2px;
+}
+
+/* เปลี่ยนตำแหน่งกล่องข้อความ */
+.eht5 .info {
+    left: -1px;
+}
+
+.eht6 {
+    position: absolute;
+    left: -560px;
+    top: 120px;
+}
+
+.eht6:hover #info6 {
+    position: relative;
+    visibility: visible;
+    top: 2px;
+}
+
+.eht6 .info {
+    left: 1px;
+}
+
+.eht7 {
+    position: absolute;
+    left: -570px;
+    top: 80px;
+}
+
+.eht7:hover #info7 {
+    position: relative;
+    visibility: visible;
+    top: 2px;
+}
+
+/* เปลี่ยนตำแหน่งกล่องข้อความ */
+.eht7 .info {
+    left: 1px;
+    transform: translateY(-90px);
+}
+
+.eht8 {
+    position: absolute;
+    left: -660px;
+    top: 110px;
+}
+
+.eht8:hover #info8 {
+    position: relative;
+    visibility: visible;
+    top: 2px;
+}
+
+/* เปลี่ยนตำแหน่งกล่องข้อความ */
+.eht8 .info {
+    left: 10px;
+    transform: translateY(-90px);
+}
+
+.eht9 {
+    position: absolute;
+    left: -450px;
+    top: 10px;
+}
+
+.eht9:hover #info9 {
+    position: relative;
+    visibility: visible;
+    top: 2px;
+}
+
+/* เปลี่ยนตำแหน่งกล่องข้อความ */
+.eht9 .info {
+    left: -60px;
+    transform: translateY(-20px);
+}
+
+.eht10 {
+    position: absolute;
+    left: -585px;
+    top: 95px;
+}
+
+.eht10:hover #info10 {
+    position: relative;
+    visibility: visible;
+    top: 2px;
+}
+
+.eht11 {
+    position: absolute;
+    left: -350px;
+    top: 75px;
+}
+
+.eht11:hover #info11 {
+    position: relative;
+    visibility: visible;
+    top: 2px;
+}
+
+/* เปลี่ยนตำแหน่งกล่องข้อความ */
+.eht11 .info {
+    left: -9px;
+    transform: translateY(-90px);
 }

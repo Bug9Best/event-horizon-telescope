@@ -194,32 +194,15 @@ function engVer() {
 }
 
 // Map Part--------------------------------------------------------------------------------------------
-let eht1 = document.getElementById("jcmt");
-
-function jcmtIn() {
-  eht1.style.visibility = "visible";
-}
-function jcmtOut() {
-  eht1.style.visibility = "hidden";
-}
 function jcmt() {
-  // Swal.fire({
-  //   title: 'James Clerk Maxwell Telescope',
-  //   html: '<div style = "color: #5A5F72" style = "color: #5A5F72">สถานที่ตั้ง: ภูเขาไฟโมนาเคอา รัฐฮาวาย USA</div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 1987</div>',
-  //   imageUrl: '/assets/Image/JCMT.jpg',
-  //   imageWidth: 400,
-  //   imageHeight: 200,
-  //   imageAlt: 'JCMT',
-  //   confirmButtonColor: "#FAB400",
-  // })
-
   Swal.fire({
-    title: 'Sweet!',
-    text: 'Modal with a custom image.',
+    title: 'James Clerk Maxwell Telescope',
+    html: '<div style = "color: #5A5F72" style = "color: #5A5F72">สถานที่ตั้ง: ภูเขาไฟโมนาเคอา รัฐฮาวาย USA</div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 1987</div>',
     imageUrl: '/assets/Image/JCMT.jpg',
-    imageWidth: 100,
-    imageHeight: 100,
-    backdrop: false,
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'JCMT',
+    confirmButtonColor: "#FAB400",
   })
 }
 
@@ -341,8 +324,4 @@ function noema() {
     imageAlt: 'NOEMA',
     confirmButtonColor: "#FAB400",
   })
-}
-
-function test() {
-  alert("asdasd");
 }
