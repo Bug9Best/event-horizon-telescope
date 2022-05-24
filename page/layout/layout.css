@@ -1,0 +1,117 @@
+body {
+  font-family: 'Mitr', sans-serif;
+}
+
+.container {
+  /* Can fixed Here */
+  width: 90vw;
+  height: 80vh;
+  margin-top: -20px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  gap: 10px;
+  grid-template-areas:
+    'score score  score  question question helper  helper helper'
+    'score score score hint hint helper helper helper'
+    'choice choice choice choice choice choice choice choice';
+  grid-template-rows: 100px 100px auto;
+
+}
+
+.score {
+  grid-area: score;
+  border: 1px solid gray;
+}
+
+.helper {
+  grid-area: helper;
+  border: 1px solid gray;
+}
+
+.question {
+  height: 100px;
+  max-width: 800px;
+  grid-area: question;
+
+  /* Can Fixed Here */
+  border: 1px solid gray;
+  background-color: #feb041;
+  color: #333;
+  font-size: 1.5em;
+  word-wrap: break-word;
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hint {
+  height: 100px;
+  max-width: 800px;
+  grid-area: hint;
+  border: 1px solid gray;
+
+  background-color: #fff;
+  color: #333;
+  font-size: 1.25em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice {
+  grid-area: choice;
+  background-color: pink;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#choice1 {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.picchoice{
+  width: 300px;
+  height: 240px;
+}
+.btnchoice {
+  background-color: #FCFCFD;
+  border-radius: 10px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  height: 75px;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  margin-left: -12.5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  text-align: center;
+  transition: box-shadow .15s, transform .15s;
+}
+
+#choice2 {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

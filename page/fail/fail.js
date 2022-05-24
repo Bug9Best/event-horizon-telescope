@@ -3,12 +3,16 @@ var id = null;
 var monkey = document.getElementById("monkey");
 var bird = document.getElementById("bird");
 let word = [
-    'ok จากการสัมภาษณ์ประเมินแล้ว ดูเหมือนว่านายไม่เหมาะสมที่จะทำ โปรเจคนี้นะ เสียใจด้วย พยายามต่อไปนะ',
+    'ok จากการสัมภาษณ์ประเมินแล้ว ดูเหมือนว่านายไม่เหมาะสมที่จะทำ โปรเจกต์นี้นะ เสียใจด้วย พยายามต่อไปนะ',
     'ครับผม ผมจะพยายามให้มากขึ้นครับ '];
 let [selectedText0, selectedText1] = [word[0], word[1]];
 var [array0, array1] = [selectedText0.split(""), selectedText1.split("")];
 
 function main() {
+    var soundTrack = new Audio('/assets/sound/Space.mp3')
+    soundTrack.volume = 0.05
+    soundTrack.play();
+
     showDialog();
     state2();
     state3();
@@ -55,7 +59,7 @@ function state3() {
 
 function state4() {
     setTimeout(() => {
-        //  Blur Screen
+        fail();
     }, 12000);
 }
 
@@ -78,4 +82,27 @@ function frameLooper1() {
         clearTimeout(timer);
         document.getElementById("text1").innerHTML = selectedText1;
     }
+}
+
+function fail() {
+    Swal.fire({
+        template: '#fail',
+        icon: 'error',
+        title: 'เสียใจด้วย คุณไม่ผ่านการทดสอบ ไว้คราวหน้ามาใหม่นะ',
+        width: '750px',
+        showConfirmButton: false,
+        allowOutsideClick: false
+    });
+    var sound = new Audio('/assets/effect/negative.wav')
+    sound.volume = 0.2
+    sound.play();
+}
+
+function playAgain() {
+    localStorage.clear();
+    window.location.href = '/page/question/question.html'
+}
+
+function landing() {
+    window.location.href = '/page/summarize/summarize.html'
 }
