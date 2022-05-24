@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Lab | Event Horizon Telescope</title>
+    <title>ETH | Monkey M87</title>
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr&family=Redressed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fail.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body onload="main()">
@@ -25,6 +26,22 @@
     <div id="dialog1">
         <p id="text1"></p>
     </div>
+
+    <!-- <a id="skipButton" onclick="skip()">ข้ามเนื้อเรื่อง</a> -->
+
     <script src="fail.js"></script>
+
+    <template id="fail">
+        <swal-html>
+            <div style="display: flex; justify-content: center;" class="content">
+                หากคุณต้องการเล่นอีกครั้ง กดปุ่ม "เล่นใหม่" <br>
+                หากคุณต้องการไปยังหน้าเเลนดิ้ง กดปุ่ม "ไปหน้าเเลนดิ้ง"
+            </div>
+            <div style="margin-top: 50px;">
+                <button id="again" onclick="playAgain()">เล่นใหม่</button>
+                <button id="landing" onclick="landing()">ไปหน้าเเลนดิ้ง</button>
+            </div>
+        </swal-html>
+    </template>
 
 </html>

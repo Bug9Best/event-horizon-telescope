@@ -326,9 +326,8 @@ p {
 .picchoice img {
     width: 360px;
     height: 300px;
-    margin-left: 7px;
-    margin-right: 15px;
-    box-shadow: 7px 10px 5px 3px rgba(0, 0, 0, 0.64);
+    margin-left: 22px;
+    border-radius: 12px;
 }
 
 .textchoice {
@@ -704,8 +703,9 @@ p {
 }
 
 .img-false-q5 img {
-    min-width: 5vw;
-    width: 5%;
+    min-width: 27vw;
+    width: 27%;
+    border-radius: 20px;
 }
 .img-false-q5{
     width: 100%;
@@ -717,6 +717,71 @@ p {
     margin-top: 30px;
     
 }
+
+/* รอเชื่อมคำถามข้อ 6 */
+
+/* .box-true-q6 {
+    width: 800px;
+    height: 130px;
+    background-color: #feb041;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.text-true-q6 {
+    font-family: 'Mitr', sans-serif;
+    font-size: 24px;
+    padding: 20px;
+    
+}
+
+.img-true-q6 img {
+    min-width: 30vw;
+    width: 35%;
+}
+.img-true-q6{
+    width: 100%;
+    height: 450px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 30px;
+    
+}
+
+
+.box-false-q6 {
+    width: 800px;
+    height: 150px;
+    background-color: #feb041;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.text-false-q6 {
+    font-family: 'Mitr', sans-serif;
+    font-size: 24px;
+    padding: 20px;
+    
+}
+
+.img-false-q6 img {
+    min-width: 30vw;
+    width: 35%;
+}
+.img-false-q6{
+    width: 100%;
+    height: 450px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 30px;
+    
+} */
 
 #nextButton {
     position: absolute;
