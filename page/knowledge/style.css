@@ -1,7 +1,11 @@
 /* --------------------------------------------------------------------------------------------
  ------------------------------------------ Default --------------------------------------------
  ------------------------------------------------------------------------------------------- */
+<<<<<<< HEAD
 * {
+=======
+ * {
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -304,8 +308,11 @@ footer {
     margin: auto;
     padding: 33px;
     height: 220px;
+<<<<<<< HEAD
     /* display: flex;
     justify-content: center; */
+=======
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
 }
 
 .footText {
@@ -318,18 +325,34 @@ footer {
 
 .footerName1 {
     position: absolute;
+<<<<<<< HEAD
     /* top: 85px;
     left: 910px; */
     top: 40%;
     left: 64%;
+=======
+    text-align: center;
+    top: 40%;
+    left: 64%;
+    font-size: 18px;
+    color: black;
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
 }
 
 .footerName2 {
     position: absolute;
+<<<<<<< HEAD
     /* top: 85px;
     left: 1180px; */
     top: 40%;
     left: 84%;
+=======
+    text-align: center;
+    top: 33%;
+    left: 84%;
+    font-size: 18px;
+    color: black;
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
 }
 
 .logo {
@@ -350,8 +373,11 @@ footer {
     top: 0;
     background-repeat: no-repeat;
     transform: scale(0.1);
+<<<<<<< HEAD
     /* top: -210px;
     left: -120px; */
+=======
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     top: -470%;
     left: -45%;
 }
@@ -366,8 +392,11 @@ footer {
     top: 0;
     background-repeat: no-repeat;
     transform: scale(0.1);
+<<<<<<< HEAD
     /* top: -255px;
     left: -710px; */
+=======
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     top: -560%;
     left: -165%;
 }
@@ -432,7 +461,11 @@ section:nth-child(7) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
     background-image: linear-gradient(to bottom, black, transparent), url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
+=======
+    background-image: linear-gradient(to bottom, black, transparent), url('/assets/Image/landing-bg.png');
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -443,7 +476,11 @@ section:nth-child(8) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
     background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
+=======
+    background-image: url('/assets/Image/landing-bg.png');
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -454,7 +491,11 @@ section:nth-child(9) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
     background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
+=======
+    background-image: url('/assets/Image/landing-bg.png');
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -465,14 +506,22 @@ section:nth-child(10) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
     background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
+=======
+    background-image: url('/assets/Image/landing-bg.png');
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
 }
 
 section:nth-child(11) {
+<<<<<<< HEAD
     background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
+=======
+    background-image: url('/assets/Image/landing-bg.png');
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     position: relative;
     z-index: 3;
 }
@@ -482,7 +531,11 @@ section:nth-child(12) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
     background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
+=======
+    background-image: url('/assets/Image/landing-bg.png');
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -493,7 +546,11 @@ section:nth-child(13) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
     background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
+=======
+    background-image: url('/assets/Image/landing-bg.png');
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -504,7 +561,11 @@ section:nth-child(14) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
     background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
+=======
+    background-image: url('/assets/Image/landing-bg.png');
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -515,7 +576,11 @@ section:nth-child(15) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+<<<<<<< HEAD
     background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
+=======
+    background-image: url('/assets/Image/landing-bg.png');
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -525,6 +590,288 @@ blockquote {
     border-left: 10px solid hsl(40, 100%, 60%);
     padding: 3em;
     border-radius: 4px;
+<<<<<<< HEAD
+=======
+}
+
+blockquote a {
+    font-size: 20px;
+}
+
+blockquote h1 {
+    font-size: 24px;
+}
+
+.page {
+    position: fixed;
+    z-index: 5;
+    display: block;
+    width: 20px;
+    height: 200px;
+    bottom: 18em;
+    right: 1em;
+}
+
+.page a {
+    transition: fill 0.5s ease-out;
+}
+
+.page a:hover {
+    fill: hsl(40, 100%, 60%);
+    cursor: pointer;
+}
+
+.reveal {
+    margin: 0 200px;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#title {
+    width: 80%;
+    text-align: center;
+    font-size: 58px;
+}
+
+#title2 {
+    width: 80%;
+    text-align: center;
+    font-size: 52px;
+}
+
+.space {
+    position: relative;
+    background-color: transparent;
+    width: 500px;
+    height: 340px;
+    z-index: 25;
+    margin: 30px;
+    text-align: center;
+}
+
+.space img {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    z-index: 26;
+    border-radius: 8px;
+    border: 2px solid gray;
+}
+
+
+#sec9 img {
+    width: 90%;
+}
+
+
+
+/* --------------------------------------------------------------------------------------------
+ ------------------------------------------ Map --------------------------------------------
+ ------------------------------------------------------------------------------------------- */
+.map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.topic {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#earth {
+    width: 960px;
+    height: 500px;
+    border-radius: 10px;
+    border: 2px solid wheat;
+    box-shadow: 0 3px 4px 0 #d3dcfe;
+}
+
+.Alleht {
+    position: absolute;
+    display: inline-block;
+}
+
+/* ข้อมูลที่ปรากฏหลังเม้าส์ชี้ */
+.Alleht .info {
+    visibility: hidden;
+    background-color: hsl(40, 100%, 60%);
+    width: auto;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    left: -3px;
+    transform: translateY(-20px);
+    z-index: 1;
+}
+
+
+
+.eht1 {
+    position: absolute;
+    left: -910px;
+    top: 190px;
+}
+
+.eht1:hover #info1 {
+    position: relative;
+    padding: 4px 8px;
+    visibility: visible;
+    top: 15px;
+}
+
+.eht2 {
+    position: absolute;
+    left: -920px;
+    top: 170px;
+}
+
+.eht2:hover #info2 {
+    position: relative;
+    padding: 4px 8px;
+    visibility: visible;
+    left: 1px;
+    top: -50px;
+}
+
+.eht3 {
+    position: absolute;
+    left: -600px;
+    top: 470px;
+}
+
+.eht3:hover #info3 {
+    position: relative;
+    padding: 4px 8px;
+    visibility: visible;
+    left: 1px;
+    top: -50px;
+}
+
+.eht4 {
+    position: absolute;
+    left: -683px;
+    top: 285px;
+}
+
+.eht4:hover #info4 {
+    position: relative;
+    padding: 4px 8px;
+    visibility: visible;
+    top: 15px;
+}
+
+.eht5 {
+    position: absolute;
+    left: -505px;
+    top: 125px;
+}
+
+.eht5:hover #info5 {
+    position: relative;
+    padding: 4px 8px;
+    visibility: visible;
+    left: 1px;
+    top: 15px;
+}
+
+.eht6 {
+    position: absolute;
+    left: -755px;
+    top: 180px;
+}
+
+.eht6:hover #info6 {
+    position: relative;
+    padding: 4px 8px;
+    visibility: visible;
+    left: 0px;
+    top: 15px;
+}
+
+.eht7 {
+    position: absolute;
+    left: -775px;
+    top: 120px;
+}
+
+.eht7:hover #info7 {
+    position: relative;
+    padding: 4px 8px;
+    visibility: visible;
+    left: 0px;
+    top: -50px;
+}
+
+.eht8 {
+    position: absolute;
+    left: -669px;
+    top: 270px;
+}
+
+.eht8:hover #info8 {
+    position: relative;
+    padding: 4px 8px;
+    visibility: visible;
+    top: -50px;
+}
+
+.eht9 {
+    position: absolute;
+    left: -610px;
+    top: 40px;
+}
+
+.eht9:hover #info9 {
+    position: relative;
+    padding: 4px 8px;
+    visibility: visible;
+    top: 15px;
+}
+
+.eht9 .info {
+    left: -60px;
+}
+
+.eht10 {
+    position: absolute;
+    left: -790px;
+    top: 140px;
+}
+
+.eht10:hover #info10 {
+    position: relative;
+    padding: 4px 8px;
+    visibility: visible;
+    top: 15px;
+}
+
+.eht11 {
+    position: absolute;
+    left: -490px;
+    top: 105px;
+}
+
+.eht11:hover #info11 {
+    position: relative;
+    padding: 4px 8px;
+    visibility: visible;
+    left: -10px;
+    top: -50px;
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
 }
 
 blockquote a {

@@ -20,6 +20,7 @@ let thVer = [
   "Saguttarius A* หรือชื่อย่อ Sgr A* (เครื่องหมาย * อ่านว่า star) ตั้งอยู่ที่ใจกลางกาแล็คซีทางช้างเผือก (หรือ Milky Way galaxy) ซึ่งมีมวลมากกว่าดวงอาทิตย์ของเราประมาณ 4.15 ล้านเท่า และ อยู่ห่างจากโลกประมาณ 26,600 ปีแสง [ปีแสง – ใช้บอกระยะของวัตถุในอวกาศ 1ปีแสง จะประมาณ 9.5 ล้านล้าน กิโลเมตร] และ มีเส้นผ่านศูนย์กลางของขอบฟ้าเหตุการณ์ กว้าง 20 ล้านกิโลเมตร  สำหรับตัวหลุมดำแน่นอนว่าเราไม่อาจมองเห็นได้ เนื่องจากแรงโน้มถ่วงที่มีมากมายจะดึงดูดทุกสิ่งทุกอย่าง โชคดีที่รอบหลุมดำยักษ์เหล่านี้จะมี ‘จานสะสมมวล’ (Accretion Disk)",
   "แล้วจานสะสมมวลคืออะไรกันนะ ?",
   "จานสะสมมวล ประกอบด้วยกลุ่มฝุ่นและก๊าซจำนวนมากหมุนวนไปรอบหลุมดำด้วยความเร็วเกือบเท่าความเร็วแสง จนอนุภาคในจานสะสมมวลกลายเป็นพลาสมาที่มีอุณหภูมิสูงถึง 10,000 ล้านเคลวิน เปล่งแสงสว่างและคลื่นแม่เหล็กไฟฟ้าในย่านรังสีเอ็กซ์ออกมาจนเราสังเกตเห็นได้",
+<<<<<<< HEAD
   "เว็บไซต์นี้คือส่วนหนึ่งของโครงการความร่วมมือของรายวิชา Multimedia Technology",
   "คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
   "ร่วมกับ spaceth.co สื่อออนไลน์ด้านอวกาศ การสำรวจอวกาศ ทั้งในไทยและต่างประเทศ",
@@ -28,6 +29,8 @@ let thVer = [
   "ดร. สุภวรรณ ทัศนประเสริฐ",
   "ผู้ช่วยสอน",
   "สิริพร จงจิตร"
+=======
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
 ]
 let enVer = [
   "Home",
@@ -50,6 +53,7 @@ let enVer = [
   "Saguttarius A* or initials Sgr A*   (symbol * It's star) It's located at the center of the Milky Way galaxy.Â (Milky Way galaxy) Which is about 4.15 million times more massive than our sun. It is about 26,600 light years from Earth. [A light-year is used to tell the distance of an object in space. 1 light-year is approximately 9.5 trillion kilometers.] The diameter of the event horizon is 20 million kilometers wide. Of course, we can't see a black hole. Because the abundance of gravity attracts everything. Fortunately, around these giant black holes there is an 'Accretion Disk'.",
   "So what is an accretion disk ?",
   "The accretion disk, containing large amounts of dust and gas, revolves around the black hole at nearly the speed of light. The particles in the accretion disk turned into a plasma, reaching temperatures of up to 10 billion kelvin, emitting so much light and electromagnetic waves that we could see them in the X-ray zone.",
+<<<<<<< HEAD
   "This website is a part of the Multimedia Technology collaboration project.",
   "Faculty of Information Technology, King Mongkut's Institute of Technology Ladkrabang",
   "in collaboration with spaceth.co, an online space media for space exploration both in Thailand and abroad.",
@@ -58,6 +62,8 @@ let enVer = [
   "Dr. Supawan Tassanaprasert",
   "Teaching Assistant",
   "E-สิริพร จงจิตร"
+=======
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
 ]
 
 function sound() {
@@ -105,9 +111,12 @@ let title9 = document.getElementById("sec8-title");
 let subtitle9 = document.getElementById("sec8-subtitle");
 let title10 = document.getElementById("sec9-title");
 let subtitle10 = document.getElementById("sec9-subtitle");
+<<<<<<< HEAD
 let footerDetail = document.getElementsByClassName("footText");
 let footerNameOne = document.getElementsByClassName("footerName1");
 let footerNameTwo = document.getElementsByClassName("footerName2");
+=======
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
 
 function thaiVer() {
   homeButton.innerHTML = thVer[0] + `<div class="homeIcon"></div>`
@@ -128,9 +137,12 @@ function thaiVer() {
   subtitle9.innerText = thVer[17]
   title10.innerText = thVer[18]
   subtitle10.innerText = thVer[19]
+<<<<<<< HEAD
   footerDetail.innerText = thVer[20] + `<br>` + thVer[21] + `<br>` + thVer[22] + `<br>` + thVer[23]
   footerNameOne.innerText = thVer[24] + `<br>` + thVer[25]
   footerNameTwo.innerText = thVer[26] + `<br>` + thVer[27]
+=======
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
 }
 
 function engVer() {
@@ -152,6 +164,7 @@ function engVer() {
   subtitle9.innerText = enVer[17]
   title10.innerText = enVer[18]
   subtitle10.innerText = enVer[19]
+<<<<<<< HEAD
   // for (let i = 0; i < footerDetail.length; i++) {
   //   footerDetail.innerText = enVer[20] + `<br>` + enVer[21] + `<br>` + enVer[22] + `<br>` + enVer[23]
   // }
@@ -161,6 +174,8 @@ function engVer() {
   // for (let i = 0; i < footerNameTwo.length; i++) {
   //   footerNameTwo.innerText = enVer[26] + `<br>` + enVer[27]
   // }
+=======
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
 }
 
 // Map Part--------------------------------------------------------------------------------------------
@@ -294,4 +309,8 @@ function noema() {
     imageAlt: 'NOEMA',
     confirmButtonColor: "#FAB400",
   })
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
