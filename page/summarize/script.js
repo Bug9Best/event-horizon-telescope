@@ -1,3 +1,4 @@
+// Content Part--------------------------------------------------------------------------------------------
 let thVer = [
   "หน้าหลัก",
   "หลุมดำ",
@@ -19,7 +20,6 @@ let thVer = [
   "Saguttarius A* หรือชื่อย่อ Sgr A* (เครื่องหมาย * อ่านว่า star) ตั้งอยู่ที่ใจกลางกาแล็คซีทางช้างเผือก (หรือ Milky Way galaxy) ซึ่งมีมวลมากกว่าดวงอาทิตย์ของเราประมาณ 4.15 ล้านเท่า และ อยู่ห่างจากโลกประมาณ 26,600 ปีแสง [ปีแสง – ใช้บอกระยะของวัตถุในอวกาศ 1ปีแสง จะประมาณ 9.5 ล้านล้าน กิโลเมตร] และ มีเส้นผ่านศูนย์กลางของขอบฟ้าเหตุการณ์ กว้าง 20 ล้านกิโลเมตร  สำหรับตัวหลุมดำแน่นอนว่าเราไม่อาจมองเห็นได้ เนื่องจากแรงโน้มถ่วงที่มีมากมายจะดึงดูดทุกสิ่งทุกอย่าง โชคดีที่รอบหลุมดำยักษ์เหล่านี้จะมี ‘จานสะสมมวล’ (Accretion Disk)",
   "แล้วจานสะสมมวลคืออะไรกันนะ ?",
   "จานสะสมมวล ประกอบด้วยกลุ่มฝุ่นและก๊าซจำนวนมากหมุนวนไปรอบหลุมดำด้วยความเร็วเกือบเท่าความเร็วแสง จนอนุภาคในจานสะสมมวลกลายเป็นพลาสมาที่มีอุณหภูมิสูงถึง 10,000 ล้านเคลวิน เปล่งแสงสว่างและคลื่นแม่เหล็กไฟฟ้าในย่านรังสีเอ็กซ์ออกมาจนเราสังเกตเห็นได้",
-  "ถัดไป",
   "เว็บไซต์นี้คือส่วนหนึ่งของโครงการความร่วมมือของรายวิชา Multimedia Technology",
   "คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง",
   "ร่วมกับ spaceth.co สื่อออนไลน์ด้านอวกาศ การสำรวจอวกาศ ทั้งในไทยและต่างประเทศ",
@@ -50,7 +50,6 @@ let enVer = [
   "Saguttarius A* or initials Sgr A*   (symbol * It's star) It's located at the center of the Milky Way galaxy.Â (Milky Way galaxy) Which is about 4.15 million times more massive than our sun. It is about 26,600 light years from Earth. [A light-year is used to tell the distance of an object in space. 1 light-year is approximately 9.5 trillion kilometers.] The diameter of the event horizon is 20 million kilometers wide. Of course, we can't see a black hole. Because the abundance of gravity attracts everything. Fortunately, around these giant black holes there is an 'Accretion Disk'.",
   "So what is an accretion disk ?",
   "The accretion disk, containing large amounts of dust and gas, revolves around the black hole at nearly the speed of light. The particles in the accretion disk turned into a plasma, reaching temperatures of up to 10 billion kelvin, emitting so much light and electromagnetic waves that we could see them in the X-ray zone.",
-  "next",
   "This website is a part of the Multimedia Technology collaboration project.",
   "Faculty of Information Technology, King Mongkut's Institute of Technology Ladkrabang",
   "in collaboration with spaceth.co, an online space media for space exploration both in Thailand and abroad.",
@@ -88,31 +87,29 @@ function reveal() {
     }
   }
 }
+let homeButton = document.getElementById("homeButton");
+let title2 = document.getElementById("title2");
+let subtitle2 = document.getElementById("subtitle");
+let title3 = document.getElementById("sec2-title");
+let subtitle3 = document.getElementById("sec2-subtitle");
+let title4 = document.getElementById("sec3-title");
+let subtitle4Top = document.getElementById("sec3-subtitle1");
+let subtitle4Bottom = document.getElementById("sec3-subtitle2");
+let title5 = document.getElementById("sec4-title");
+let subtitle5 = document.getElementById("sec4-subtitle");
+let title7 = document.getElementById("sec5-title");
+let subtitle7 = document.getElementById("sec5-subtitle");
+let title8 = document.getElementById("sec7-title");
+let subtitle8 = document.getElementById("sec7-subtitle");
+let title9 = document.getElementById("sec8-title");
+let subtitle9 = document.getElementById("sec8-subtitle");
+let title10 = document.getElementById("sec9-title");
+let subtitle10 = document.getElementById("sec9-subtitle");
+let footerDetail = document.getElementsByClassName("footText");
+let footerNameOne = document.getElementsByClassName("footerName1");
+let footerNameTwo = document.getElementsByClassName("footerName2");
 
 function thaiVer() {
-  let homeButton = document.getElementById("homeButton");
-  let nextButton = document.getElementById("nextButton");
-  let title2 = document.getElementById("title2");
-  let subtitle2 = document.getElementById("subtitle");
-  let title3 = document.getElementById("sec2-title");
-  let subtitle3 = document.getElementById("sec2-subtitle");
-  let title4 = document.getElementById("sec3-title");
-  let subtitle4Top = document.getElementById("sec3-subtitle1");
-  let subtitle4Bottom = document.getElementById("sec3-subtitle2");
-  let title5 = document.getElementById("sec4-title");
-  let subtitle5 = document.getElementById("sec4-subtitle");
-  let title7 = document.getElementById("sec5-title");
-  let subtitle7 = document.getElementById("sec5-subtitle");
-  let title8 = document.getElementById("sec7-title");
-  let subtitle8 = document.getElementById("sec7-subtitle");
-  let title9 = document.getElementById("sec8-title");
-  let subtitle9 = document.getElementById("sec8-subtitle");
-  let title10 = document.getElementById("sec9-title");
-  let subtitle10 = document.getElementById("sec9-subtitle");
-  let footerDetail = document.getElementsByClassName("footText");
-  let footerNameOne = document.getElementsByClassName("footerName1");
-  let footerNameTwo = document.getElementsByClassName("footerName2");
-
   homeButton.innerHTML = thVer[0] + `<div class="homeIcon"></div>`
   title2.innerText = thVer[1]
   subtitle2.innerHTML = thVer[2] + `<br>` + thVer[3]
@@ -124,43 +121,19 @@ function thaiVer() {
   title5.innerText = thVer[9]
   subtitle5.innerText = thVer[10]
   title7.innerText = thVer[11]
-  subtitle7.innerText = thVer[12]  + `<br>` + thVer[13]
+  subtitle7.innerText = thVer[12] + `<br>` + thVer[13]
   title8.innerText = thVer[14]
   subtitle8.innerText = thVer[15]
   title9.innerText = thVer[16]
   subtitle9.innerText = thVer[17]
   title10.innerText = thVer[18]
   subtitle10.innerText = thVer[19]
-  nextButton.innerText = thVer[20]
-  footerDetail.innerText = thVer[21] + `<br>` + thVer[22] + `<br>` + thVer[23] + `<br>` + thVer[24]
-  footerNameOne.innerText = thVer[25] + `<br>` + thVer[26]
-  footerNameTwo.innerText = thVer[27] + `<br>` + thVer[28]
+  footerDetail.innerText = thVer[20] + `<br>` + thVer[21] + `<br>` + thVer[22] + `<br>` + thVer[23]
+  footerNameOne.innerText = thVer[24] + `<br>` + thVer[25]
+  footerNameTwo.innerText = thVer[26] + `<br>` + thVer[27]
 }
 
 function engVer() {
-  let homeButton = document.getElementById("homeButton");
-  let nextButton = document.getElementById("nextButton");
-  let title2 = document.getElementById("title2");
-  let subtitle2 = document.getElementById("subtitle");
-  let title3 = document.getElementById("sec2-title");
-  let subtitle3 = document.getElementById("sec2-subtitle");
-  let title4 = document.getElementById("sec3-title");
-  let subtitle4Top = document.getElementById("sec3-subtitle1");
-  let subtitle4Bottom = document.getElementById("sec3-subtitle2");
-  let title5 = document.getElementById("sec4-title");
-  let subtitle5 = document.getElementById("sec4-subtitle");
-  let title7 = document.getElementById("sec5-title");
-  let subtitle7 = document.getElementById("sec5-subtitle");
-  let title8 = document.getElementById("sec7-title");
-  let subtitle8 = document.getElementById("sec7-subtitle");
-  let title9 = document.getElementById("sec8-title");
-  let subtitle9 = document.getElementById("sec8-subtitle");
-  let title10 = document.getElementById("sec9-title");
-  let subtitle10 = document.getElementById("sec9-subtitle");
-  let footerDetail = document.getElementsByClassName("footText");
-  let footerNameOne = document.getElementsByClassName("footerName1");
-  let footerNameTwo = document.getElementsByClassName("footerName2");
-
   homeButton.innerHTML = enVer[0] + `<div class="homeIcon"></div>`
   title2.innerText = enVer[1]
   subtitle2.innerHTML = enVer[2] + `<br>` + enVer[3]
@@ -171,23 +144,154 @@ function engVer() {
   subtitle4Bottom.innerText = enVer[8]
   title5.innerText = enVer[9]
   subtitle5.innerText = enVer[10]
-  nextButton.innerText = enVer[11]
   title7.innerText = enVer[11]
-  subtitle7.innerText = enVer[12]  + `<br>` + enVer[13]
+  subtitle7.innerText = enVer[12] + `<br>` + enVer[13]
   title8.innerText = enVer[14]
   subtitle8.innerText = enVer[15]
   title9.innerText = enVer[16]
   subtitle9.innerText = enVer[17]
   title10.innerText = enVer[18]
   subtitle10.innerText = enVer[19]
-  nextButton.innerText = enVer[20]
-  for (let i = 0; i < footerDetail.length; i++) {
-    footerDetail.innerText = enVer[21] + `<br>` + enVer[22] + `<br>` + enVer[23] + `<br>` + enVer[24]
-  }
-  for (let i = 0; i < footerNameOne.length; i++) {
-    footerNameOne.innerText = enVer[25] + `<br>` + enVer[26]
-  }
-  for (let i = 0; i < footerNameTwo.length; i++) {
-    footerNameTwo.innerText = enVer[27] + `<br>` + enVer[28]
-  }
+  // for (let i = 0; i < footerDetail.length; i++) {
+  //   footerDetail.innerText = enVer[20] + `<br>` + enVer[21] + `<br>` + enVer[22] + `<br>` + enVer[23]
+  // }
+  // for (let i = 0; i < footerNameOne.length; i++) {
+  //   footerNameOne.innerText = enVer[24] + `<br>` + enVer[25]
+  // }
+  // for (let i = 0; i < footerNameTwo.length; i++) {
+  //   footerNameTwo.innerText = enVer[26] + `<br>` + enVer[27]
+  // }
+}
+
+// Map Part--------------------------------------------------------------------------------------------
+function jcmt() {
+  Swal.fire({
+    title: 'James Clerk Maxwell Telescope',
+    html: '<div style = "color: #5A5F72" style = "color: #5A5F72">สถานที่ตั้ง: ภูเขาไฟโมนาเคอา รัฐฮาวาย USA</div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 1987</div>',
+    imageUrl: '/assets/Image/JCMT.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'JCMT',
+    confirmButtonColor: "#FAB400",
+  })
+}
+
+function sma() {
+  Swal.fire({
+    title: 'The Submillimeter Array',
+    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: ด้านบนสุดของ Mauna Kea ในฮาวาย</div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 2003</div>',
+    imageUrl: '/assets/Image/SMA.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'SMA',
+    confirmButtonColor: "#FAB400",
+  })
+}
+
+function spt() {
+  Swal.fire({
+    title: 'South Pole Telescope',
+    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: สถานี Amundsen–Scott South Pole <br>ในทวีปแอนตาร์กติกา</div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 2007</div>',
+    imageUrl: '/assets/Image/SPT.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'SPT',
+    confirmButtonColor: "#FAB400",
+  })
+}
+
+function alma() {
+  Swal.fire({
+    title: 'Atacama Large Millimeter/Submillimeter Array',
+    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: ทะเลทราย Atacama ทางตอนเหนือของชิลี</div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 2013</div>',
+    imageUrl: '/assets/Image/ALMA.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'ALMA',
+    confirmButtonColor: "#FAB400",
+  })
+}
+
+function iram() {
+  Swal.fire({
+    title: 'IRAM 30 meter Telescope',
+    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: เซียร์ราเนวาดา ประเทศสเปน <br>ใกล้ยอดเขา Pico Veleta</div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 1984</div>',
+    imageUrl: '/assets/Image/IRAM.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'IRAM',
+    confirmButtonColor: "#FAB400",
+  })
+}
+
+function lmt() {
+  Swal.fire({
+    title: 'The Large Millimeter Telescope',
+    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: บนยอดเขาเซียร์ราเนกรา เม็กซิโก </div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 2010</div>',
+    imageUrl: '/assets/Image/LMT.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'LMT',
+    confirmButtonColor: "#FAB400",
+  })
+}
+
+function smt() {
+  Swal.fire({
+    title: 'Arizona Radio Observatory/Submillimeter-wave Astronomy',
+    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: ภูเขา Graham รัฐ Arizona USA </div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 1993</div>',
+    imageUrl: '/assets/Image/SMT.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'SMT',
+    confirmButtonColor: "#FAB400",
+  })
+}
+
+function apex() {
+  Swal.fire({
+    title: 'Atacama Pathfinder EXperiment',
+    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: หอดูดาว Llano de Chajnantor ตอนเหนือของประเทศชิลี</div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 2005</div>',
+    imageUrl: '/assets/Image/APEX.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'APEX',
+    confirmButtonColor: "#FAB400",
+  })
+}
+
+function green() {
+  Swal.fire({
+    title: 'Greenland Telescope',
+    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: Thule Air Base ตอนเหนือของ Greenland </div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 2017</div>',
+    imageUrl: '/assets/Image/Greenland.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Greenland telescope',
+    confirmButtonColor: "#FAB400",
+  })
+}
+
+function kpno() {
+  Swal.fire({
+    title: 'Kitt Peak National Observatory',
+    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: Kitt Peak, Arizona, US </div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 1958</div>',
+    imageUrl: '/assets/Image/KPNO.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'KPNO',
+    confirmButtonColor: "#FAB400",
+  })
+}
+
+function noema() {
+  Swal.fire({
+    title: 'Kitt Peak National Observatory',
+    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: Plateau de Bure ฝรั่งเศส</div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 2014</div>',
+    imageUrl: '/assets/Image/JCMT.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'NOEMA',
+    confirmButtonColor: "#FAB400",
+  })
 }
