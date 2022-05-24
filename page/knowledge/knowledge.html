@@ -9,167 +9,88 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <title>EHT | Knowledge</title>
 </head>
 
-<body onload="sound()">
-  <!-- section 1 -->
+<body>
   <section>
-  </section>
+    <div class = "map">
+      <div class="topic">EVENT HORIZON TELESCOPE</div>
+      <img id = "earth" src = "/assets/Image/earth2.jpg">
 
-  <!-- section 2 -->
-  <section>
-    <div class="container reveal">
-      <div class="card">
-        <div class="text">
-          <img src="/assets/Image/JCMT.jpg"
-            width="500px">
-          <h6>James Clerk Maxwell Telescope (JCMT)</h6>
-          <p>สถานที่ตั้ง: ภูเขาไฟโมนาเคอา รัฐฮาวาย USA</p>
-          <p>ก่อสร้างเสร็จ: 1987</p>
+      <div class="Alleht">
+
+        <div class="eht1" onclick="jcmt()"><img class = "pin1" src = "/assets/Image/point5.gif" width = "35px">
+          <div class="info" id = "info1">
+            <p>JCMT</p>
+          </div>
         </div>
 
-        <div class="text">
-          <img src="/assets/Image/SMT.jpg" width="500px">
-          <h6>Arizona Radio Observatory (ARO) /<br>
-            Submillimeter-wave Astronomy (SMT)</h6>
-          <p>สถานที่ตั้ง: ภูเขาGraham รัฐArizona USA</p>
-          <p>ก่อสร้างเสร็จ: 1993</p>
+        <div class="eht2" onclick = "sma()"><img class = "pin2" src = "/assets/Image/point5.gif" width = "35px">
+          <div class="info" id = "info2">
+            <p>SMA</p>
+          </div>
+        </div>
+
+        <div class="eht3" onclick = "spt()"><img class = "pin3" src = "/assets/Image/point5.gif" width = "35px">
+          <div class="info" id = "info3">
+            <p>SPT</p>
+          </div>
+        </div>
+
+        <div class="eht4" onclick = "alma()"><img class = "pin4" src = "/assets/Image/point5.gif" width = "35px">
+          <div class="info" id = "info4">
+            <p>ALMA</p>
+          </div>
+        </div>
+
+        <div class="eht5" onclick = "iram()"><img class = "pin5" src = "/assets/Image/point5.gif" width = "35px">
+          <div class="info" id = "info5">
+            <p>IRAM</p>
+          </div>
+        </div>
+
+        <div class="eht6" onclick = "lmt()"><img class = "pin6" src = "/assets/Image/point5.gif" width = "35px">
+          <div class="info" id = "info6">
+            <p>LMT</p>
+          </div>
+        </div>
+
+        <div class="eht7" onclick = "smt()"><img class = "pin7" src = "/assets/Image/point5.gif" width = "35px">
+          <div class="info" id = "info7">
+            <p>SMT</p>
+          </div>
+        </div>
+
+        <div class="eht8" onclick = "cso()"><img class = "pin8" src = "/assets/Image/point5.gif" width = "35px">
+          <div class="info" id = "info8">
+            <p>CSO</p>
+          </div>
+        </div>
+
+        <div class="eht9" onclick = "green()"><img class = "pin9" src = "/assets/Image/point5.gif" width = "35px">
+          <div class="info" id = "info9">
+            <p>Greenland Telescope</p>
+          </div>
+        </div>
+
+        <div class="eht10" onclick = "kpno()"><img class = "pin10" src = "/assets/Image/point5.gif" width = "35px">
+          <div class="info" id = "info10">
+            <p>KPNO</p>
+          </div>
+        </div>
+
+        <div class="eht11" onclick = "noema()"><img class = "pin11" src = "/assets/Image/point5.gif" width = "35px">
+          <div class="info" id = "info11">
+            <p>NOEMA</p>
+          </div>
         </div>
 
       </div>
+
     </div>
   </section>
-
-  <!-- section 3 -->
-  <section>
-    <div class="container reveal">
-      <div class="card">
-        <div class="text">
-          <img
-            src="/assets/Image/APEX.jpg"
-            width="500px">
-          <h6>Atacama Pathfinder EXperiment (APEX)</h6>
-          <p>สถานที่ตั้ง: หอดูดาว Llano de Chajnantor<br>ตอนเหนือของชิลี</p>
-          <p>ก่อสร้างเสร็จ: 2005</p>
-        </div>
-
-        <div class="text">
-          <img
-            src="/assets/Image/IRAM.jpg"
-            width="500px">
-          <h6>IRAM 30-meter telescope</h6>
-          <p>สถานที่ตั้ง: เซียร์ราเนวาดา ประเทศสเปน<br>ใกล้ยอดเขา Pico Veleta</p>
-          <p>ก่อสร้างเสร็จ: 1984</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- section 4 -->
-  <section>
-    <div class="container reveal">
-      <div class="card">
-        <div class="text">
-          <img
-            src="/assets/Image/SMA.jpg"
-            width="500px">
-          <h6>The Submillimeter Array (SMA)</h6>
-          <p>สถานที่ตั้ง: ด้านบนสุดของภูเขาไฟ Mauna Kea<br>ในฮาวาย</p>
-          <p>ก่อสร้างเสร็จ: 2003</p>
-        </div>
-
-        <div class="text">
-          <img
-            src="/assets/Image/LMT.jpg"
-            width="500px">
-          <h6>The Large Millimeter Telescope (LMT)</h6>
-          <p>สถานที่ตั้ง: บนยอดเขาเซียร์ราเนกรา เม็กซิโก</p>
-          <p>ก่อสร้างเสร็จ: 2010</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- section 5 -->
-  <section>
-    <div class="container reveal">
-      <div class="card">
-
-        <div class="text">
-          <img
-            src="/assets/Image/SPT.jpg"
-            width="500px">
-          <h6>South Pole Telescope (SPT)</h6>
-          <p>สถานที่ตั้ง: สถานี Amundsen–Scott South Pole<br>ทวีปแอนตาร์กติกา </p>
-          <p>ก่อสร้างเสร็จ: 2007</p>
-        </div>
-
-        <div class="text">
-          <img
-            src="/assets/Image/ALMA.jpg"
-            width="500px">
-          <h6>Atacama Large Millimeter/<br>Submillimeter Array (ALMA)</h6>
-          <p>สถานที่ตั้ง: ทะเลทราย Atacama<br>ทางตอนเหนือของชิลี </p>
-          <p>ก่อสร้างเสร็จ: 2013</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- section 6 -->
-  <section>
-  </section>
-
-  <!-- section 7 -->
-  <section>
-    <div class="container reveal">
-      <div class="card">
-        <div class="text">
-          <img
-            src="/assets/Image/KPNO.jpg"
-            width="500px">
-          <h6>Kitt Peak National <br>Observatory (KPNO)</h6>
-          <p>สถานที่ตั้ง: ยอดเขา Kitt Peak รัฐArizona USA</p>
-          <p>ก่อสร้างเสร็จ: 1958</p>
-        </div>
-
-        <div class="text">
-          <img
-            src="/assets/Image/Greenland.jpg"
-            width="500px">
-          <h6>Greenland Telescope</h6>
-          <p>สถานที่ตั้ง: ฐานทัพอากาศThule Air Base<br>ตอนเหนือของ กรีนแลนด์</p>
-          <p>ก่อสร้างเสร็จ: 2017</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- section 8 -->
-  <section>
-    <div class="container reveal">
-      <div class="card">
-        <div class="text">
-          <img
-            src="/assets/Image/IRAM_NOEMA.jpg"
-            width="500px">
-          <h6>IRAM NOEMA Observatory</h6>
-          <p>สถานที่ตั้ง: Plateau de Bure ฝรั่งเศส</p>
-          <p>ก่อสร้างเสร็จ: 2014</p>
-        </div>
-      </div>
-      <a class="nextButton" href="/page/summarize/summarize.html">Back</a>
-    </div>
-
-  </section>
-  <a href="/index.html" class="homeButton"> Home
-    <div class="homeIcon"></div>
-  </a>
-  <script src="script.js"></script>
+  <script src = "script.js"></script>
 </body>
-
 </html>
