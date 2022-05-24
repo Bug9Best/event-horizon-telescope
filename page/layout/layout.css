@@ -5,6 +5,8 @@ body {
   height: 100vh;
   width: 100vw;
   background-image: radial-gradient(ellipse at top, #080e21 0%, #1b2735 95%);
+  overflow: hidden;
+
 }
 
 .container {
@@ -225,3 +227,31 @@ button {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------- */
+.boxAnswer {
+  width: 1000px;
+  height: 100px;
+  margin: 50px auto;
+  background-color: #feb041;
+  border-radius: 20px;
+  padding: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textAnswer {
+  text-align: center;
+  color: black;
+  font-size: 26px;
+}
+
+.boxImg {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 30px;
+}

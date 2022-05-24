@@ -13,8 +13,8 @@
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
-<body onload="nextQuestion()">
-  <div class="container">
+<body onload="trueAnswer()">
+  <div class="container" style="visibility: hidden;">
     <div class="score">
       <div>
         <span><img class="scorePic" src="/assets/image/banana-q2.png"></span>
@@ -48,6 +48,16 @@
         <button onclick="choiceB();" onmouseover="mouseOver()" class="btnchoice" id="btn2">กล้องโทรทรรศน์วิทยุ</button>
       </div>
     </div>
+  </div>
+
+  <div class="answer">
+    <div class="boxAnswer">
+      <div class="textAnswer"></div>
+    </div>
+    <div class="boxImg">
+      <img id="imgAnswer" src="">
+  </div>
+
   </div>
 
   <template id="retreats">
