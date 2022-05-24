@@ -56,12 +56,12 @@ let ansCorrect = [
   "ใช่แล้ว เพราะหลุมดำมวลยิ่งยวดมีมวลมากมายมหาศาลจนทำให้จานสะสม(Accretion Disk) มวลเกิดแสงสว่างจ้า ทำให้เราสังเกตเห็นนั่นเอง",]
 
 let pathAns1 = [
-  "/assets/image/q1-correct-fix.png",
-  "/assets/image/q2correct-fix.png",
-  "/assets/image/q3-correct-fix.png",
-  "/assets/image/q4-correct-fix.png",
-  "/assets/image/q5-fix.png",
-  "/assets/image/q6.png",]
+  "/assets/Image/q1-correct-fix.png",
+  "/assets/Image/q2correct-fix.png",
+  "/assets/Image/q3-correct-fix.png",
+  "/assets/Image/q4-correct-fix.png",
+  "/assets/Image/q5-fix.png",
+  "/assets/Image/q6.png",]
 
 let ansFalse = [
   "ถ่ายไม่เห็นอะไรเลย! เพราะนอกจากจะมีชั้นบรรยากาศห่อหุ้มโลกเป็นอุปสรรคแล้ว ยังมีฝุ่นต่างที่อยู่ในอวกาศขวางกั้นอีก เอาไปขายทิ้งซะนะ",
@@ -72,46 +72,337 @@ let ansFalse = [
   "หลุมดำที่เกิดจากการระเบิดของดวงดาวเป็น Supernova นั้นมีมวลมากก็จริง แต่ยังไม่มากพอที่จะทำให้เกิดจานสะสมมวล (Accretion Disk) ที่ทำให้เราสังเกตได้",]
 
 let pathAns2 = [
-  "/assets/image/q1-false-fix.png",
-  "/assets/image/q2-false-fix.png",
-  "/assets/image/q3-false-fix.png",
-  "/assets/image/q4-false-fix.png",
-  "/assets/image/q5-sgra.png",
-  "/assets/image/q6.png",]
+  "/assets/Image/q1-false-fix.png",
+  "/assets/Image/q2-false-fix.png",
+  "/assets/Image/q3-false-fix.png",
+  "/assets/Image/q4-false-fix.png",
+  "/assets/Image/q5-sgra.png",
+  "/assets/Image/q6.png",]
+let sizeImg1 = [650, 650, 450, 450, 400, 575,]
+let sizeImg2 = [650, 650, 450, 375, 425, 575,]
 
 var hintText = "เอากล้วยมา 5 ลูก แล้วฉันจะบอกคำใบ้นาย";
 var stateHint = true;
-var count = 1;
-var bPoint = 5;
-var sPoint = 0;
+let questionContainer = document.querySelector(".container");
+let answerContainer = document.querySelector(".answer");
 
-var questionA = document.querySelector(".question");
-var hint = document.querySelector(".hint");
-var btnA = document.getElementById("btn1");
-var btnB = document.getElementById("btn2");
-var picA = document.getElementById("pic1");
-var picB = document.getElementById("pic2");
-var banana = document.getElementById("banana");
-var star = document.getElementById("star");
+let questionA = document.querySelector(".question");
+let hint = document.querySelector(".hint");
+let btnA = document.getElementById("btn1");
+let btnB = document.getElementById("btn2");
+let nextBtn = document.getElementById("nextButton");
+let picA = document.getElementById("pic1");
+let picB = document.getElementById("pic2");
+let banana = document.getElementById("banana");
+let star = document.getElementById("star");
+
 
 function showQuestion() {
   var soundTrack = new Audio('/assets/sound/Space.mp3')
   soundTrack.volume = 0.1
   soundTrack.loop = true;
   soundTrack.play();
-  nextQuestion();
+  question1();
 }
 
-function nextQuestion() {
-  questionA.innerHTML = question[count];
+function question1() {
+  let count = 0;
+  let bPoint = 3;
+  let sPoint = 0;
+  stateHint = true;
+  questionContainer.setAttribute("style", "visibility: visible;")
+  answerContainer.setAttribute("style", "visibility: hidden;")
+  questionA.innerHTML = question[0];
   hint.innerHTML = hintText;
   banana.innerHTML = bPoint;
   star.innerHTML = sPoint;
-  picA.setAttribute("src", pathImg1[count]);
-  picB.setAttribute("src", pathImg2[count]);
-  btnA.innerHTML = choice1[count]
-  btnB.innerHTML = choice2[count]
+  picA.setAttribute("src", pathImg1[0]);
+  picB.setAttribute("src", pathImg2[0]);
+  btnA.innerHTML = choice1[0]
+  btnB.innerHTML = choice2[0]
+  btnA.addEventListener("click", function () {
+    trueAnswer1(count, bPoint, sPoint);
+  });
+  btnB.addEventListener("click", function () {
+    falseAnswer1(count, bPoint, sPoint);
+  });
 }
+
+function question2() {
+  stateHint = true;
+  questionContainer.setAttribute("style", "visibility: visible;")
+  answerContainer.setAttribute("style", "visibility: hidden;")
+  questionA.innerHTML = question[1];
+  hint.innerHTML = hintText;
+  banana.innerHTML = bPoint;
+  star.innerHTML = sPoint;
+  picA.setAttribute("src", pathImg1[1]);
+  picB.setAttribute("src", pathImg2[1]);
+  btnA.innerHTML = choice1[1]
+  btnB.innerHTML = choice2[1]
+  btnA.addEventListener("click", function () {
+    falseAnswer2(count, bPoint, sPoint);
+  });
+  btnB.addEventListener("click", function () {
+    trueAnswer2(count, bPoint, sPoint);
+  });
+}
+
+function question3() {
+  stateHint = true;
+  questionContainer.setAttribute("style", "visibility: visible;")
+  answerContainer.setAttribute("style", "visibility: hidden;")
+  questionA.innerHTML = question[2];
+  hint.innerHTML = hintText;
+  banana.innerHTML = bPoint;
+  star.innerHTML = sPoint;
+  picA.setAttribute("src", pathImg1[2]);
+  picB.setAttribute("src", pathImg2[2]);
+  btnA.innerHTML = choice1[2]
+  btnB.innerHTML = choice2[2]
+  btnA.addEventListener("click", function () {
+    falseAnswer3(count, bPoint, sPoint);
+  });
+  btnB.addEventListener("click", function () {
+    trueAnswer3(count, bPoint, sPoint);
+  });
+}
+
+function question4() {
+  stateHint = true;
+  questionContainer.setAttribute("style", "visibility: visible;")
+  answerContainer.setAttribute("style", "visibility: hidden;")
+  questionA.innerHTML = question[3];
+  hint.innerHTML = hintText;
+  banana.innerHTML = bPoint;
+  star.innerHTML = sPoint;
+  picA.setAttribute("src", pathImg1[3]);
+  picB.setAttribute("src", pathImg2[3]);
+  btnA.innerHTML = choice1[3]
+  btnB.innerHTML = choice2[3]
+  btnA.addEventListener("click", function () {
+    falseAnswer4(count, bPoint, sPoint);
+  });
+  btnB.addEventListener("click", function () {
+    trueAnswer4(count, bPoint, sPoint);
+  });
+}
+
+function question5() {
+  stateHint = true;
+  questionContainer.setAttribute("style", "visibility: visible;")
+  answerContainer.setAttribute("style", "visibility: hidden;")
+  questionA.innerHTML = question[4];
+  hint.innerHTML = hintText;
+  banana.innerHTML = bPoint;
+  star.innerHTML = sPoint;
+  picA.setAttribute("src", pathImg1[4]);
+  picB.setAttribute("src", pathImg2[4]);
+  btnA.innerHTML = choice1[4]
+  btnB.innerHTML = choice2[4]
+  btnA.addEventListener("click", function () {
+    trueAnswer5(count, bPoint, sPoint);
+  });
+  btnB.addEventListener("click", function () {
+    trueAnswer5(count, bPoint, sPoint);
+  });
+}
+
+function question6() {
+  stateHint = true;
+  questionContainer.setAttribute("style", "visibility: visible;")
+  answerContainer.setAttribute("style", "visibility: hidden;")
+  questionA.innerHTML = question[5];
+  hint.innerHTML = hintText;
+  banana.innerHTML = bPoint;
+  star.innerHTML = sPoint;
+  picA.setAttribute("src", pathImg1[5]);
+  picB.setAttribute("src", pathImg2[5]);
+  btnA.innerHTML = choice1[5]
+  btnB.innerHTML = choice2[5]
+  btnA.addEventListener("click", function () {
+    trueAnswer6(count, bPoint, sPoint);
+  });
+  btnB.addEventListener("click", function () {
+    falseAnswer6(count, bPoint, sPoint);
+  });
+}
+
+// Answer Part --------------------------------------------------------------------------------------
+var answer = document.querySelector(".textAnswer");
+var picAnswer = document.querySelector("#imgAnswer");
+
+function trueAnswer1(count, bPoint, sPoint) {
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
+  answer.innerHTML = ansCorrect[0]
+  picAnswer.setAttribute("src", pathAns1[0])
+  picAnswer.setAttribute("width", sizeImg1[0] + "px")
+  count = count + 1;
+  sPoint = sPoint + 1;
+  bPoint = bPoint + 3;
+  nextBtn.addEventListener("click", function () {
+    question2(count, bPoint, sPoint);
+  });
+}
+
+function falseAnswer1(count, bPoint, sPoint) {
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
+  answer.innerHTML = ansFalse[0]
+  picAnswer.setAttribute("src", pathAns2[0])
+  picAnswer.setAttribute("width", sizeImg2[0] + "px")
+  count = count + 1;
+  bPoint = bPoint + 2;
+  nextBtn.addEventListener("click", function () {
+    question2(count, bPoint, sPoint);
+  });
+}
+
+function trueAnswer2(count, bPoint, sPoint) {
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
+  answer.innerHTML = ansCorrect[1]
+  picAnswer.setAttribute("src", pathAns1[1])
+  picAnswer.setAttribute("width", sizeImg1[1] + "px")
+  count = count + 1;
+  sPoint = sPoint + 1;
+  bPoint = bPoint + 3;
+  nextBtn.addEventListener("click", function () {
+    question3(count, bPoint, sPoint);
+  });
+}
+
+function falseAnswer2() {
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
+  answer.innerHTML = ansFalse[1]
+  picAnswer.setAttribute("src", pathAns2[1])
+  picAnswer.setAttribute("width", sizeImg2[1] + "px")
+  count = count + 1;
+  bPoint = bPoint + 2;
+  nextBtn.addEventListener("click", function () {
+    question3(count, bPoint, sPoint);
+  });
+}
+
+function trueAnswer3(count, bPoint, sPoint) {
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
+  answer.innerHTML = ansCorrect[2]
+  picAnswer.setAttribute("src", pathAns1[2])
+  picAnswer.setAttribute("width", sizeImg1[2] + "px")
+  count = count + 1;
+  sPoint = sPoint + 1;
+  bPoint = bPoint + 3;
+  nextBtn.addEventListener("click", function () {
+    question4(count, bPoint, sPoint);
+  });
+}
+
+function falseAnswer3(count, bPoint, sPoint) {
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
+  answer.innerHTML = ansFalse[2]
+  picAnswer.setAttribute("src", pathAns2[2])
+  picAnswer.setAttribute("width", sizeImg2[2] + "px")
+  count = count + 1;
+  bPoint = bPoint + 2;
+  nextBtn.addEventListener("click", function () {
+    question4(count, bPoint, sPoint);
+  });
+}
+
+function trueAnswer4(count, bPoint, sPoint) {
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
+  answer.innerHTML = ansCorrect[3]
+  picAnswer.setAttribute("src", pathAns1[3])
+  picAnswer.setAttribute("width", sizeImg1[3] + "px")
+  count = count + 1;
+  sPoint = sPoint + 1;
+  bPoint = bPoint + 3;
+  nextBtn.addEventListener("click", function () {
+    question5(count, bPoint, sPoint);
+  });
+}
+
+function falseAnswer4(count, bPoint, sPoint) {
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
+  answer.innerHTML = ansFalse[3]
+  picAnswer.setAttribute("src", pathAns2[3])
+  picAnswer.setAttribute("width", sizeImg2[3] + "px")
+  count = count + 1;
+  bPoint = bPoint + 2;
+  nextBtn.addEventListener("click", function () {
+    question5(count, bPoint, sPoint);
+  });
+}
+
+function trueAnswer5(count, bPoint, sPoint) {
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
+  answer.innerHTML = ansCorrect[4]
+  picAnswer.setAttribute("src", pathAns1[4])
+  picAnswer.setAttribute("width", sizeImg1[4] + "px")
+  count = count + 1;
+  sPoint = sPoint + 1;
+  bPoint = bPoint + 3;
+  nextBtn.addEventListener("click", function () {
+    question6(count, bPoint, sPoint);
+  });
+}
+
+function falseAnswer5(count, bPoint, sPoint) {
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
+  answer.innerHTML = ansFalse[4]
+  picAnswer.setAttribute("src", pathAns2[4])
+  picAnswer.setAttribute("width", sizeImg2[4] + "px")
+  count = count + 1;
+  bPoint = bPoint + 2;
+  nextBtn.addEventListener("click", function () {
+    question6(count, bPoint, sPoint);
+  });
+}
+
+function trueAnswer6(count, bPoint, sPoint) {
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
+  answer.innerHTML = ansCorrect[5]
+  picAnswer.setAttribute("src", pathAns1[5])
+  picAnswer.setAttribute("width", sizeImg1[5] + "px")
+  count = count + 1;
+  sPoint = sPoint + 1;
+  bPoint = bPoint + 3;
+  nextBtn.addEventListener("click", function () {
+    result(count, bPoint, sPoint);
+  });
+}
+
+function falseAnswer6(count, bPoint, sPoint) {
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
+  answer.innerHTML = ansFalse[5]
+  picAnswer.setAttribute("src", pathAns2[5])
+  picAnswer.setAttribute("width", sizeImg2[5] + "px")
+  count = count + 1;
+  bPoint = bPoint + 2;
+  nextBtn.addEventListener("click", function () {
+    result(count, bPoint, sPoint);
+  });
+}
+// Result --------------------------------------------------------------------------------------
+function result(count, bPoint, sPoint) {
+  if (sPoint >= 4) {
+    window.location.href = '/page/pass/pass.html'
+  }
+  else {
+    window.location.href = '/page/fail/fail.html'
+  }
+}
+
 
 function retreat() {
   Swal.fire({
@@ -142,7 +433,7 @@ function mouseOver() {
   mouseSound.play();
 }
 
-function checkbanana() {
+function checkbanana(count, bPoint, sPoint) {
   if (bPoint < 5 && stateHint == true) {
     var errorEffect = new Audio('/assets/effect/Wrong 2.wav')
     errorEffect.volume = 0.25
@@ -172,26 +463,5 @@ function checkbanana() {
     banana.innerText = bPoint
     hint.innerText = listHint[count]
     hint.style.color = "green"
-  }
-}
-// Answer Part --------------------------------------------------------------------------------------
-var answerA = document.querySelector(".textAnswer");
-var picAnswerA = document.querySelector("#imgAnswer");
-// var answer = document.querySelector(".boxAnswer");
-// var answer = document.querySelector(".boxAnswer");
-
-function trueAnswer() {
-  answerA.innerHTML = ansCorrect[count]
-  picAnswerA.setAttribute("src",pathAns1[count])
-  picAnswerA.setAttribute("width")
-}
-
-// Result --------------------------------------------------------------------------------------
-function result() {
-  if (sPoint >= 4) {
-    window.location.href = '/page/pass/pass.html'
-  }
-  else {
-    window.location.href = '/page/fail/fail.html'
   }
 }

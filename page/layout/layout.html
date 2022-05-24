@@ -13,8 +13,8 @@
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
-<body onload="trueAnswer()">
-  <div class="container" style="visibility: hidden;">
+<body onload="showQuestion()">
+  <div class="container">
     <div class="score">
       <div>
         <span><img class="scorePic" src="/assets/image/banana-q2.png"></span>
@@ -41,11 +41,11 @@
     <div class="choice">
       <div id="choice1">
         <img class="picchoice" id="pic1" src="">
-        <button onclick="choiceA();" onmouseover="mouseOver()" class="btnchoice" id="btn1">กล้องโทรทรรศน์วิทยุ</button>
+        <button onmouseover="mouseOver()" class="btnchoice" id="btn1">กล้องโทรทรรศน์วิทยุ</button>
       </div>
       <div id="choice2">
         <img class="picchoice" id="pic2" src="">
-        <button onclick="choiceB();" onmouseover="mouseOver()" class="btnchoice" id="btn2">กล้องโทรทรรศน์วิทยุ</button>
+        <button onmouseover="mouseOver()" class="btnchoice" id="btn2">กล้องโทรทรรศน์วิทยุ</button>
       </div>
     </div>
   </div>
@@ -55,10 +55,11 @@
       <div class="textAnswer"></div>
     </div>
     <div class="boxImg">
-      <img id="imgAnswer" src="">
+      <img id="imgAnswer">
+    </div>
+    <button class="next" id="nextButton">ข้อต่อไป</button>
   </div>
 
-  </div>
 
   <template id="retreats">
     <swal-html>
