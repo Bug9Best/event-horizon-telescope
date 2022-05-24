@@ -450,29 +450,8 @@ blockquote {
     cursor: pointer;
 }
 
-#nextButton {
-    position: absolute;
-    color: black;
-    font-size: 18px;
-    background-color: hsl(40, 100%, 60%);
-    border-radius: 20px;
-    padding: 8px;
-    width: 5em;
-    height: 2.7em;
-    bottom: 3em;
-    right: 4em;
-    text-align: center;
-    text-decoration: none;
-    transition: color 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.nextButton:hover {
-    background-color: hsl(40, 100%, 80%);
-    transform: translateX(5px);
-    cursor: pointer;
-}
-
 .reveal {
+    margin: 0 150px;
     position: relative;
     transform: translateY(150px);
     opacity: 0;
@@ -507,14 +486,14 @@ footer {
     text-align: left;
     background-image: linear-gradient(to right, hsl(40, 100%, 70%), hsl(40, 100%, 60%));
     z-index: 20;
-    margin:auto;
-    padding:33px;
+    margin: auto;
+    padding: 33px;
     height: 220px;
     /* display: flex;
     justify-content: center; */
 }
 
-.footText{
+.footText {
     position: relative;
     top: 16%;
     left: 10%;
