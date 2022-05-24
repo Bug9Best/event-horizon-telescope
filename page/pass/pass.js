@@ -1,11 +1,12 @@
 var count = -1;
 var id = null;
+var end = false;
 var monkey = document.getElementById("monkey");
 var bird = document.getElementById("bird");
 var word = [
     'ok จากการสัมภาษณ์ประเมินแล้ว ดูเหมือนว่า นายมีสิทธิ์เข้าร่วมโครงการ EHT นะ สนใจจะเข้าไหม',
     'สนใจครับ',
-    'งั้นก็เริ่มทำโปรเจ็คได้เลย โปรคเจคต่อไปคือการถ่าย Sagittarius A* ฝากด้วยนะ']
+    'งั้นก็เริ่มทำโปรเจกต์ได้เลย โปรเจกต์ต่อไปคือการถ่าย Sagittarius A* ฝากด้วยนะ']
 var [selectedText0, selectedText1, selectedText2] = [word[0], word[1], word[2]];
 var [array0, array1, array2] =
     [selectedText0.split(""),
@@ -14,6 +15,10 @@ var [array0, array1, array2] =
 
 
 function main() {
+    var soundTrack = new Audio('/assets/sound/Space.mp3')
+    soundTrack.volume = 0.05
+    soundTrack.play();
+
     showDialog();
     state2();
     state3();
@@ -71,7 +76,7 @@ function state4() {
 
 function state5() {
     setTimeout(() => {
-        //  Blur Screen
+        pass();
     }, 15000);
 }
 
@@ -104,4 +109,31 @@ function frameLooper2() {
         clearTimeout(timer);
         document.getElementById("text2").innerHTML = selectedText2;
     }
+}
+
+function pass() {
+    Swal.fire({
+        template: '#pass',
+        icon: 'success',
+        title: 'ยินดีด้วย คุณผ่านการทดสอบ',
+        width: '750px',
+        showConfirmButton: false,
+        allowOutsideClick: false
+    });
+    var soundTrack = new Audio('/assets/effect/StageClear.mp3')
+    soundTrack.volume = 0.2
+    soundTrack.play();
+}
+
+function playAgain() {
+    localStorage.clear();
+    window.location.href = '/page/question/question.html'
+}
+
+function landing() {
+    window.location.href = '/page/summarize/summarize.html'
+}
+
+function skip() {
+    end = true;
 }
