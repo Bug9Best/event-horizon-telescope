@@ -130,22 +130,3 @@ button {
 button:focus {
     outline: none;
 }
-
-#skipButton {
-    position: absolute;
-    padding: 12px 24px;
-    top: 1.5em;
-    right: 1.5em;
-
-    font-size: 18px;
-    color: black;
-    background-color: hsl(40, 100%, 60%);
-    text-align: center;
-    text-decoration: none;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-#skipButton:hover {
-    color: white;
-}

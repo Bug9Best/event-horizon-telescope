@@ -10,7 +10,7 @@ var [array0, array1] = [selectedText0.split(""), selectedText1.split("")];
 
 function main() {
     var soundTrack = new Audio('/assets/sound/Space.mp3')
-    soundTrack.volume = 0.05
+    soundTrack.volume = 0.15
     soundTrack.play();
 
     showDialog();
