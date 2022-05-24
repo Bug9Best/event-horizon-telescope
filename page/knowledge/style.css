@@ -1,11 +1,7 @@
 /* --------------------------------------------------------------------------------------------
  ------------------------------------------ Default --------------------------------------------
  ------------------------------------------------------------------------------------------- */
-<<<<<<< HEAD
-* {
-=======
  * {
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -303,16 +299,11 @@ body::-webkit-scrollbar {
 footer {
     position: relative;
     text-align: left;
-    background-image: linear-gradient(to right, hsl(40, 100%, 70%), hsl(40, 100%, 60%));
+    background-image: linear-gradient(to left, hsl(40, 100%, 65%), hsl(40, 100%, 60%));
     z-index: 20;
     margin: auto;
     padding: 33px;
     height: 220px;
-<<<<<<< HEAD
-    /* display: flex;
-    justify-content: center; */
-=======
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
 }
 
 .footText {
@@ -325,34 +316,20 @@ footer {
 
 .footerName1 {
     position: absolute;
-<<<<<<< HEAD
-    /* top: 85px;
-    left: 910px; */
-    top: 40%;
-    left: 64%;
-=======
     text-align: center;
     top: 40%;
     left: 64%;
     font-size: 18px;
     color: black;
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
 }
 
 .footerName2 {
     position: absolute;
-<<<<<<< HEAD
-    /* top: 85px;
-    left: 1180px; */
-    top: 40%;
-    left: 84%;
-=======
     text-align: center;
     top: 33%;
     left: 84%;
     font-size: 18px;
     color: black;
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
 }
 
 .logo {
@@ -373,11 +350,6 @@ footer {
     top: 0;
     background-repeat: no-repeat;
     transform: scale(0.1);
-<<<<<<< HEAD
-    /* top: -210px;
-    left: -120px; */
-=======
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     top: -470%;
     left: -45%;
 }
@@ -392,11 +364,6 @@ footer {
     top: 0;
     background-repeat: no-repeat;
     transform: scale(0.1);
-<<<<<<< HEAD
-    /* top: -255px;
-    left: -710px; */
-=======
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     top: -560%;
     left: -165%;
 }
@@ -461,11 +428,7 @@ section:nth-child(7) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-<<<<<<< HEAD
-    background-image: linear-gradient(to bottom, black, transparent), url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
-=======
     background-image: linear-gradient(to bottom, black, transparent), url('/assets/Image/landing-bg.png');
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -476,11 +439,7 @@ section:nth-child(8) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-<<<<<<< HEAD
-    background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
-=======
     background-image: url('/assets/Image/landing-bg.png');
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -491,11 +450,7 @@ section:nth-child(9) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-<<<<<<< HEAD
-    background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
-=======
     background-image: url('/assets/Image/landing-bg.png');
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -506,22 +461,14 @@ section:nth-child(10) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-<<<<<<< HEAD
-    background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
-=======
     background-image: url('/assets/Image/landing-bg.png');
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
 }
 
 section:nth-child(11) {
-<<<<<<< HEAD
-    background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
-=======
     background-image: url('/assets/Image/landing-bg.png');
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     position: relative;
     z-index: 3;
 }
@@ -531,11 +478,7 @@ section:nth-child(12) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-<<<<<<< HEAD
-    background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
-=======
     background-image: url('/assets/Image/landing-bg.png');
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -546,11 +489,7 @@ section:nth-child(13) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-<<<<<<< HEAD
-    background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
-=======
     background-image: url('/assets/Image/landing-bg.png');
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -561,11 +500,7 @@ section:nth-child(14) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-<<<<<<< HEAD
-    background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
-=======
     background-image: url('/assets/Image/landing-bg.png');
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -576,11 +511,7 @@ section:nth-child(15) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-<<<<<<< HEAD
-    background-image: url('https://cdn.discordapp.com/attachments/934057101632897026/971669250840363018/unknown.png');
-=======
     background-image: url('/assets/Image/landing-bg.png');
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
     padding: 5rem;
     position: relative;
     z-index: 3;
@@ -590,8 +521,6 @@ blockquote {
     border-left: 10px solid hsl(40, 100%, 60%);
     padding: 3em;
     border-radius: 4px;
-<<<<<<< HEAD
-=======
 }
 
 blockquote a {
@@ -871,7 +800,6 @@ blockquote h1 {
     visibility: visible;
     left: -10px;
     top: -50px;
->>>>>>> bd59110c7f3b39c203af4493a6b62b19148b5200
 }
 
 blockquote a {
