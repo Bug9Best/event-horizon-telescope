@@ -577,6 +577,7 @@ blockquote {
 
 .space img {
     position: absolute;
+    left:0px;
     width: 100%;
     height: auto;
     z-index: 26;
@@ -614,7 +615,7 @@ blockquote {
 .topic {
     color: white;
     font-size: 35px;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
     text-align: center;
     margin-bottom: 12px;
 }
@@ -650,177 +651,142 @@ blockquote {
 
 .eht1 {
     position: absolute;
-    left: -680px;
-    top: 120px;
+    left: -910px;
+    top: 190px;
 }
 
 .eht1:hover #info1 {
     position: relative;
     visibility: visible;
-    top: 2px;
+    top: 15px;
 }
 
 .eht2 {
     position: absolute;
-    left: -680px;
-    top: 100px;
+    left: -920px;
+    top: 170px;
 }
 
 .eht2:hover #info2 {
     position: relative;
     visibility: visible;
-    top: 2px;
-}
-
-/* เปลี่ยนตำแหน่งกล่องข้อความ */
-.eht2 .info {
-    left: 3px;
-    transform: translateY(-90px);
+    left: 1px;
+    top: -50px;
 }
 
 .eht3 {
     position: absolute;
-    left: -450px;
-    top: 330px;
+    left: -600px;
+    top: 470px;
 }
 
 .eht3:hover #info3 {
     position: relative;
     visibility: visible;
-    top: 2px;
-}
-
-/* เปลี่ยนตำแหน่งกล่องข้อความ */
-.eht3 .info {
-    left: 0px;
-    transform: translateY(-90px);
+    left: 1px;
+    top: -50px;
 }
 
 .eht4 {
     position: absolute;
-    left: -500px;
-    top: 200px;
+    left: -683px;
+    top: 285px;
 }
 
 .eht4:hover #info4 {
     position: relative;
     visibility: visible;
-    top: 2px;
+    top: 15px;
 }
 
 .eht5 {
     position: absolute;
-    left: -370px;
-    top: 85px;
+    left: -505px;
+    top: 125px;
 }
 
 .eht5:hover #info5 {
     position: relative;
     visibility: visible;
-    top: 2px;
-}
-
-/* เปลี่ยนตำแหน่งกล่องข้อความ */
-.eht5 .info {
-    left: -1px;
+    left: 1px;
+    top: 15px;
 }
 
 .eht6 {
     position: absolute;
-    left: -560px;
-    top: 120px;
+    left: -755px;
+    top: 180px;
 }
 
 .eht6:hover #info6 {
     position: relative;
     visibility: visible;
-    top: 2px;
-}
-
-.eht6 .info {
-    left: 1px;
+    left: 0px;
+    top: 15px;
 }
 
 .eht7 {
     position: absolute;
-    left: -570px;
-    top: 80px;
+    left: -775px;
+    top: 120px;
 }
 
 .eht7:hover #info7 {
     position: relative;
     visibility: visible;
-    top: 2px;
-}
-
-/* เปลี่ยนตำแหน่งกล่องข้อความ */
-.eht7 .info {
-    left: 1px;
-    transform: translateY(-90px);
+    left: 0px;
+    top: -50px;
 }
 
 .eht8 {
     position: absolute;
-    left: -660px;
-    top: 110px;
+    left: -669px;
+    top: 270px;
 }
 
 .eht8:hover #info8 {
     position: relative;
     visibility: visible;
-    top: 2px;
-}
-
-/* เปลี่ยนตำแหน่งกล่องข้อความ */
-.eht8 .info {
-    left: 10px;
-    transform: translateY(-90px);
+    top: -50px;
 }
 
 .eht9 {
     position: absolute;
-    left: -450px;
-    top: 10px;
+    left: -610px;
+    top: 40px;
 }
 
 .eht9:hover #info9 {
     position: relative;
     visibility: visible;
-    top: 2px;
+    top: 15px;
 }
 
-/* เปลี่ยนตำแหน่งกล่องข้อความ */
 .eht9 .info {
     left: -60px;
-    transform: translateY(-20px);
 }
 
 .eht10 {
     position: absolute;
-    left: -585px;
-    top: 95px;
+    left: -790px;
+    top: 140px;
 }
 
 .eht10:hover #info10 {
     position: relative;
     visibility: visible;
-    top: 2px;
+    top: 15px;
 }
 
 .eht11 {
     position: absolute;
-    left: -350px;
-    top: 75px;
+    left: -490px;
+    top: 105px;
 }
 
 .eht11:hover #info11 {
     position: relative;
     visibility: visible;
-    top: 2px;
-}
-
-/* เปลี่ยนตำแหน่งกล่องข้อความ */
-.eht11 .info {
-    left: -9px;
-    transform: translateY(-90px);
+    left: -10px;
+    top: -50px;
 }

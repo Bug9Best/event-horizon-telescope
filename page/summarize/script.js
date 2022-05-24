@@ -257,7 +257,7 @@ function iram() {
 function lmt() {
   Swal.fire({
     title: 'The Large Millimeter Telescope',
-    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: บนยอดเขาเซียร์ราเนกราในเม็กซิโก </div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 2010</div>',
+    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: บนยอดเขาเซียร์ราเนกรา เม็กซิโก </div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 2010</div>',
     imageUrl: '/assets/Image/LMT.jpg',
     imageWidth: 400,
     imageHeight: 200,
@@ -278,14 +278,14 @@ function smt() {
   })
 }
 
-function cso() {
+function apex() {
   Swal.fire({
-    title: 'Caltech Submillimeter Observatory',
-    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: ภูเขาไฟ  Maunakea ฮาวาย </div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 1985</div>',
-    imageUrl: '/assets/Image/CSO.jpg',
+    title: 'Atacama Pathfinder EXperiment',
+    html: '<div style = "color: #5A5F72">สถานที่ตั้ง: หอดูดาว Llano de Chajnantor ตอนเหนือของประเทศชิลี</div>' + '<div style = "color: gray">ก่อสร้างเสร็จ: 2005</div>',
+    imageUrl: '/assets/Image/APEX.jpg',
     imageWidth: 400,
     imageHeight: 200,
-    imageAlt: 'CSO',
+    imageAlt: 'APEX',
     confirmButtonColor: "#FAB400",
   })
 }
