@@ -49,7 +49,7 @@ let pathImg2 = [
 
 let ansCorrect = [
   "ใช้ได้! กล้องโทรทรรศน์วิทยุใช้การวัดสัญญาณคลื่นวิทยุจากวัตถุท้องฟ้าและสามารถทะลุผ่านเมฆหมอกในบรรยากาศของโลกและผ่านฝุ่นผงในที่ว่างระหว่างดวงดาวได้ด้วย รับกล้วยไป",
-  "EHT เป็นโครงการศึกษาเกี่ยวกับหลุมดำโดยใช้กล้องโทรทัศน์ทำงานร่วมกัน เราสามารถจำลองกล้องโทรทรรศน์ที่ใหญ่เท่าโลกได้ด้วยเทคนิคที่เรียกว่า VLBI หรือ Very-long-baseline Interferometry",
+  "EHT เป็นโครงการศึกษาเกี่ยวกับหลุมดำโดยใช้กล้องโทรทรรศน์ทำงานร่วมกัน เราสามารถจำลองกล้องโทรทรรศน์ที่ใหญ่เท่าโลกได้ด้วยเทคนิคที่เรียกว่า VLBI หรือ Very-long-baseline Interferometry",
   "ยอดเยี่ยมไปเลย สามารถรับสัญญาณสำหรับการถ่ายภาพหลุมดำได้แล้ว!",
   "ฉลาดมาก! เพราะข้อมูลมีมากเกินกว่าจะส่งผ่านอินเทอร์เน็ตได้ ทำให้ต้องส่งผ่านเครื่องบินเจ็ทเร็วแรงแทนเพราะดอมกล่าวไว้ว่าครอบครัว",
   "ถูกต้อง! ในที่สุดพวกเราก็สามารถถ่ายภาพหลุมดำมวลที่ยิ่งยวดของกาแล็กซี่ Messier 87 ( เมอซิเย่ ) เป็นครั้งแรกของโลก ในวันที่ 10 เมษายน 2019 ทำได้ดีมากทุกคน!",
@@ -139,8 +139,6 @@ function showQuestion() {
 
 function question1() {
   stateHint = true;
-  questionContainer.setAttribute("style", "visibility: visible;")
-  answerContainer.setAttribute("style", "visibility: hidden;")
   questionA.innerHTML = question[0];
   hint.innerHTML = hintText;
   hint.style.color = "#333"
@@ -152,12 +150,12 @@ function question1() {
   btnB.innerHTML = choice2[0]
   btnA.setAttribute("onclick", "trueAnswer1();");
   btnB.setAttribute("onclick", "falseAnswer1();");
+  questionContainer.setAttribute("style", "visibility: visible;")
+  answerContainer.setAttribute("style", "visibility: hidden;")
 }
 
 function question2() {
   stateHint = true;
-  questionContainer.setAttribute("style", "visibility: visible;")
-  answerContainer.setAttribute("style", "visibility: hidden;")
   questionA.innerHTML = question[1];
   hint.innerHTML = hintText;
   hint.style.color = "#333"
@@ -169,12 +167,12 @@ function question2() {
   btnB.innerHTML = choice2[1]
   btnA.setAttribute("onclick", "falseAnswer2();");
   btnB.setAttribute("onclick", "trueAnswer2();");
+  questionContainer.setAttribute("style", "visibility: visible;")
+  answerContainer.setAttribute("style", "visibility: hidden;")
 }
 
 function question3() {
   stateHint = true;
-  questionContainer.setAttribute("style", "visibility: visible;")
-  answerContainer.setAttribute("style", "visibility: hidden;")
   questionA.innerHTML = question[2];
   hint.innerHTML = hintText;
   hint.style.color = "#333"
@@ -186,12 +184,12 @@ function question3() {
   btnB.innerHTML = choice2[2]
   btnA.setAttribute("onclick", "falseAnswer3();");
   btnB.setAttribute("onclick", "trueAnswer3();");
+  questionContainer.setAttribute("style", "visibility: visible;")
+  answerContainer.setAttribute("style", "visibility: hidden;")
 }
 
 function question4() {
   stateHint = true;
-  questionContainer.setAttribute("style", "visibility: visible;")
-  answerContainer.setAttribute("style", "visibility: hidden;")
   questionA.innerHTML = question[3];
   hint.innerHTML = hintText;
   hint.style.color = "#333"
@@ -203,12 +201,12 @@ function question4() {
   btnB.innerHTML = choice2[3]
   btnA.setAttribute("onclick", "falseAnswer4();");
   btnB.setAttribute("onclick", "trueAnswer4();");
+  questionContainer.setAttribute("style", "visibility: visible;")
+  answerContainer.setAttribute("style", "visibility: hidden;")
 }
 
 function question5() {
   stateHint = true;
-  questionContainer.setAttribute("style", "visibility: visible;")
-  answerContainer.setAttribute("style", "visibility: hidden;")
   questionA.innerHTML = question[4];
   hint.innerHTML = hintText;
   hint.style.color = "#333"
@@ -220,12 +218,12 @@ function question5() {
   btnB.innerHTML = choice2[4]
   btnA.setAttribute("onclick", "trueAnswer5();");
   btnB.setAttribute("onclick", "falseAnswer5();");
+  questionContainer.setAttribute("style", "visibility: visible;")
+  answerContainer.setAttribute("style", "visibility: hidden;")
 }
 
 function question6() {
   stateHint = true;
-  questionContainer.setAttribute("style", "visibility: visible;")
-  answerContainer.setAttribute("style", "visibility: hidden;")
   questionA.innerHTML = question[5];
   hint.innerHTML = hintText;
   hint.style.color = "#333"
@@ -237,6 +235,8 @@ function question6() {
   btnB.innerHTML = choice2[5]
   btnA.setAttribute("onclick", "trueAnswer6();");
   btnB.setAttribute("onclick", "falseAnswer6();");
+  questionContainer.setAttribute("style", "visibility: visible;")
+  answerContainer.setAttribute("style", "visibility: hidden;")
 }
 
 // Answer Part --------------------------------------------------------------------------------------
@@ -244,41 +244,40 @@ var answer = document.querySelector(".textAnswer");
 var picAnswer = document.querySelector("#imgAnswer");
 
 function trueAnswer1() {
-  questionContainer.setAttribute("style", "visibility: hidden;")
-  answerContainer.setAttribute("style", "visibility: visible;")
   trueNomalSound();
   answer.innerHTML = ansCorrect[0]
   picAnswer.setAttribute("src", pathAns1[0])
   picAnswer.setAttribute("width", sizeImg1[0] + "px")
   nextBtn.setAttribute("onclick", "question2();")
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
   trueAddBanana();
 }
 
 function falseAnswer1() {
-  questionContainer.setAttribute("style", "visibility: hidden;")
-  answerContainer.setAttribute("style", "visibility: visible;")
+
   falseNomalSound();
   answer.innerHTML = ansFalse[0]
   picAnswer.setAttribute("src", pathAns2[0])
   picAnswer.setAttribute("width", sizeImg2[0] + "px")
   nextBtn.setAttribute("onclick", "question2();")
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
   falseAddBanana();
 }
 
 function trueAnswer2() {
-  questionContainer.setAttribute("style", "visibility: hidden;")
-  answerContainer.setAttribute("style", "visibility: visible;")
   trueNomalSound();
   answer.innerHTML = ansCorrect[1]
   picAnswer.setAttribute("src", pathAns1[1])
   picAnswer.setAttribute("width", sizeImg1[1] + "px")
   nextBtn.setAttribute("onclick", "question3();")
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
   trueAddBanana();
 }
 
 function falseAnswer2() {
-  questionContainer.setAttribute("style", "visibility: hidden;")
-  answerContainer.setAttribute("style", "visibility: visible;")
   var mouseSound = new Audio('/assets/effect/Crack Earth ( Egg Sound ).wav')
   mouseSound.volume = 0.5;
   mouseSound.play();
@@ -286,45 +285,45 @@ function falseAnswer2() {
   picAnswer.setAttribute("src", pathAns2[1])
   picAnswer.setAttribute("width", sizeImg2[1] + "px")
   nextBtn.setAttribute("onclick", "question3();")
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
   falseAddBanana();
 }
 
 function trueAnswer3() {
-  questionContainer.setAttribute("style", "visibility: hidden;")
-  answerContainer.setAttribute("style", "visibility: visible;")
   trueNomalSound();
   answer.innerHTML = ansCorrect[2]
   picAnswer.setAttribute("src", pathAns1[2])
   picAnswer.setAttribute("width", sizeImg1[2] + "px")
   nextBtn.setAttribute("onclick", "question4();")
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
   trueAddBanana();
 }
 
 function falseAnswer3() {
-  questionContainer.setAttribute("style", "visibility: hidden;")
-  answerContainer.setAttribute("style", "visibility: visible;")
   falseNomalSound();
   answer.innerHTML = ansFalse[2]
   picAnswer.setAttribute("src", pathAns2[2])
   picAnswer.setAttribute("width", sizeImg2[2] + "px")
   nextBtn.setAttribute("onclick", "question4();")
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
   falseAddBanana();
 }
 
 function trueAnswer4() {
-  questionContainer.setAttribute("style", "visibility: hidden;")
-  answerContainer.setAttribute("style", "visibility: visible;")
   trueNomalSound();
   answer.innerHTML = ansCorrect[3]
   picAnswer.setAttribute("src", pathAns1[3])
   picAnswer.setAttribute("width", sizeImg1[3] + "px")
   nextBtn.setAttribute("onclick", "question5();")
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
   trueAddBanana();
 }
 
 function falseAnswer4() {
-  questionContainer.setAttribute("style", "visibility: hidden;")
-  answerContainer.setAttribute("style", "visibility: visible;")
   var mouseSound = new Audio('/assets/effect/Siren Police.wav')
   mouseSound.volume = 0.5;
   mouseSound.play();
@@ -332,50 +331,52 @@ function falseAnswer4() {
   picAnswer.setAttribute("src", pathAns2[3])
   picAnswer.setAttribute("width", sizeImg2[3] + "px")
   nextBtn.setAttribute("onclick", "question5();")
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
   falseAddBanana();
 }
 
 function trueAnswer5() {
-  questionContainer.setAttribute("style", "visibility: hidden;")
-  answerContainer.setAttribute("style", "visibility: visible;")
   trueNomalSound();
   answer.innerHTML = ansCorrect[4]
   picAnswer.setAttribute("src", pathAns1[4])
   picAnswer.setAttribute("width", sizeImg1[4] + "px")
   nextBtn.setAttribute("onclick", "question6();")
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
   trueAddBanana();
 }
 
 function falseAnswer5() {
-  questionContainer.setAttribute("style", "visibility: hidden;")
-  answerContainer.setAttribute("style", "visibility: visible;")
   trueNomalSound();
   answer.innerHTML = ansFalse[4]
   picAnswer.setAttribute("src", pathAns2[4])
   picAnswer.setAttribute("width", sizeImg2[4] + "px")
   nextBtn.setAttribute("onclick", "question6();")
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
   trueAddBanana();
 }
 
 function trueAnswer6() {
-  questionContainer.setAttribute("style", "visibility: hidden;")
-  answerContainer.setAttribute("style", "visibility: visible;")
   trueNomalSound();
   answer.innerHTML = ansCorrect[5]
   picAnswer.setAttribute("src", pathAns1[5])
   picAnswer.setAttribute("width", sizeImg1[5] + "px")
   nextBtn.setAttribute("onclick", "result();")
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
   trueAddBanana();
 }
 
 function falseAnswer6() {
-  questionContainer.setAttribute("style", "visibility: hidden;")
-  answerContainer.setAttribute("style", "visibility: visible;")
   falseNomalSound();
   answer.innerHTML = ansFalse[5]
   picAnswer.setAttribute("src", pathAns2[5])
   picAnswer.setAttribute("width", sizeImg2[5] + "px")
   nextBtn.setAttribute("onclick", "result();")
+  questionContainer.setAttribute("style", "visibility: hidden;")
+  answerContainer.setAttribute("style", "visibility: visible;")
   falseAddBanana();
 }
 // Result --------------------------------------------------------------------------------------
