@@ -95,7 +95,32 @@ let picA = document.getElementById("pic1");
 let picB = document.getElementById("pic2");
 let banana = document.getElementById("banana");
 let star = document.getElementById("star");
+let count = 0;
+let bPoint = 3;
+let sPoint = 0;
 
+function trueNomalSound() {
+  var soundTrack = new Audio('/assets/effect/Correct.wav')
+  soundTrack.volume = 0.5;
+  soundTrack.play();
+}
+
+function falseNomalSound() {
+  var soundTrack = new Audio('/assets/effect/Wrong 2.wav')
+  soundTrack.volume = 0.5;
+  soundTrack.play();
+}
+
+function trueAddBanana() {
+  count = count + 1;
+  sPoint = sPoint + 1;
+  bPoint = bPoint + 3;
+}
+
+function falseAddBanana() {
+  count = count + 1;
+  bPoint = bPoint + 1;
+}
 
 function showQuestion() {
   var soundTrack = new Audio('/assets/sound/Space.mp3')
@@ -106,26 +131,20 @@ function showQuestion() {
 }
 
 function question1() {
-  let count = 0;
-  let bPoint = 3;
-  let sPoint = 0;
   stateHint = true;
   questionContainer.setAttribute("style", "visibility: visible;")
   answerContainer.setAttribute("style", "visibility: hidden;")
   questionA.innerHTML = question[0];
   hint.innerHTML = hintText;
+  hint.style.color = "#333"
   banana.innerHTML = bPoint;
   star.innerHTML = sPoint;
   picA.setAttribute("src", pathImg1[0]);
   picB.setAttribute("src", pathImg2[0]);
   btnA.innerHTML = choice1[0]
   btnB.innerHTML = choice2[0]
-  btnA.addEventListener("click", function () {
-    trueAnswer1(count, bPoint, sPoint);
-  });
-  btnB.addEventListener("click", function () {
-    falseAnswer1(count, bPoint, sPoint);
-  });
+  btnA.setAttribute();
+  btnB.setAttribute();
 }
 
 function question2() {
@@ -134,6 +153,7 @@ function question2() {
   answerContainer.setAttribute("style", "visibility: hidden;")
   questionA.innerHTML = question[1];
   hint.innerHTML = hintText;
+  hint.style.color = "#333"
   banana.innerHTML = bPoint;
   star.innerHTML = sPoint;
   picA.setAttribute("src", pathImg1[1]);
@@ -154,6 +174,7 @@ function question3() {
   answerContainer.setAttribute("style", "visibility: hidden;")
   questionA.innerHTML = question[2];
   hint.innerHTML = hintText;
+  hint.style.color = "#333"
   banana.innerHTML = bPoint;
   star.innerHTML = sPoint;
   picA.setAttribute("src", pathImg1[2]);
@@ -174,6 +195,7 @@ function question4() {
   answerContainer.setAttribute("style", "visibility: hidden;")
   questionA.innerHTML = question[3];
   hint.innerHTML = hintText;
+  hint.style.color = "#333"
   banana.innerHTML = bPoint;
   star.innerHTML = sPoint;
   picA.setAttribute("src", pathImg1[3]);
@@ -194,6 +216,7 @@ function question5() {
   answerContainer.setAttribute("style", "visibility: hidden;")
   questionA.innerHTML = question[4];
   hint.innerHTML = hintText;
+  hint.style.color = "#333"
   banana.innerHTML = bPoint;
   star.innerHTML = sPoint;
   picA.setAttribute("src", pathImg1[4]);
@@ -214,6 +237,7 @@ function question6() {
   answerContainer.setAttribute("style", "visibility: hidden;")
   questionA.innerHTML = question[5];
   hint.innerHTML = hintText;
+  hint.style.color = "#333"
   banana.innerHTML = bPoint;
   star.innerHTML = sPoint;
   picA.setAttribute("src", pathImg1[5]);
