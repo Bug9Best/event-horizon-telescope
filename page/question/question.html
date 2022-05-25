@@ -2,534 +2,75 @@
 <html lang="en">
 
 <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ETH | Monkey M87</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel=" preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mitr&family=Redressed&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ETH | Monkey M87</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel=" preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr&family=Redressed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
-<body onload="sound()">
+<body onload="showQuestion()">
+  <div class="container">
+    <div class="score">
+      <div>
+        <span><img class="scorePic" src="/assets/image/banana-q2.png"></span>
+        <span class="scorePoint" id="banana"></span>
+      </div>
+      <div>
+        <span><img class="scorePic" src="/assets/image/star-q2.png"></span>
+        <span class="scorePoint" id="star"></span>
+      </div>
 
-    <div class="star1"></div>
-    <div class="q1 dispay" id="q1">
-        <div class="top">
-            <div class="point">
-                <div class="banana">
-                    <img src="/assets/image/banana-q.png" alt="banana">
-                    <p id="banana-p">3</p>
-                </div>
-                <div class="star">
-                    <img src="/assets/image/star-q.png" alt="banana">
-                    <p id="star-p">0</p>
-                </div>
-            </div>
-            <div class="textbox">
-                <div class="question-box">
-                    <p>คำถามที่1 : ลิงเลือกซื้อกล้องโทรทรรศน์ใน Solar Shopping Mall<br>
-                        ต้องใช้แบบไหนดี</p>
-                </div>
-                <div class="hint-box">
-                    <p id="hint1">เอากล้วยมา 5 ลูก แล้วฉันจะบอกคำใบ้นาย</p>
-                </div>
-            </div>
-            <div class="hint">
-                <div class="messagebox">
-                    <img src="/assets/image/hint.png" alt="nok">
-                </div>
-                <div class="bird">
-                    <button><img src="/assets/image/n_normal.png" onclick="checkbanana()"
-                            onmouseover="this.src='/assets/image/n_use.png'"
-                            onmouseout="this.src='/assets/image/n_normal.png'" alt="nok"></button>
-                </div>
-                <div class="banana-hint">
-                    <div class="banana-h">
-                        <img src="/assets/image/banana-q.png" alt="banana">
-                        <p>x5</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="box1">
-            <div class="left">
-                <div class="dbutton">
-                    <button class="button" onclick="backHome()">กลับหน้าแรก</button>
-                </div>
-                <div class="monkeyimg">
-                    <img src="/assets/image/m_ques.png" alt="monkey   ">
-                </div>
-            </div>
-            <div class="right">
-                <div class="choice1">
-                    <div class="picchoice">
-                        <img src="/assets/image/trypic.jpg" alt="">
-                    </div>
-                    <div class="textchoice">
-                        <br><br>
-                        <button onclick="adddispay1t();" onmouseover="mouseOver()"
-                            class="btnchoice">กล้องโทรทรรศน์วิทยุ</button>
-                    </div>
-                </div>
-                <div class="choice2">
-                    <div class="picchoice">
-                        <img src="/assets/image/trypic2.jpg" alt="">
-                    </div>
-                    <div class="textchoice">
-                        <br><br>
-                        <button onclick="adddispay1f(); " onmouseover="mouseOver()" class="btnchoice">
-                            <p>กล้องโทรทรรศน์แบบ
-                                สะท้อนแสง</p>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="q2" id="q2">
-        <div class="top">
-            <div class="point">
-                <div class="banana">
-                    <img src="/assets/image/banana-q.png" alt="banana">
-                    <p id="banana-p2">0</p>
-                </div>
-                <div class="star">
-                    <img src="/assets/image/star-q.png" alt="banana">
-                    <p id="star-p2">0</p>
-                </div>
-            </div>
-            <div class="textbox">
-                <div class="question-box">
-                    <p>คำถามที่2 : เลือกรูปแบบตำแหน่งการวางของกล้อง</p>
-                </div>
-                <div class="hint-box">
-                    <p id="hint2">เอากล้วยมา 5 ลูก แล้วฉันจะบอกคำใบ้นาย</p>
-                </div>
-            </div>
-            <div class="hint">
-                <div class="messagebox">
-                    <img src="/assets/image/hint.png" alt="nok">
-                </div>
-                <div class="bird">
-                    <button><img src="/assets/image/n_normal.png" onclick="checkbanana()"
-                            onmouseover="this.src='/assets/image/n_use.png'"
-                            onmouseout="this.src='/assets/image/n_normal.png'" alt="nok"></button>
-                </div>
-                <div class="banana-hint">
-                    <div class="banana-h">
-                        <img src="/assets/image/banana-q.png" alt="banana">
-                        <p>x5</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="box">
-            <div class="leftchoice">
-                <div class="choiceonly c1">
-                    <div class="picchoice">
-                        <img src="/assets/image/choice2.1.png" alt="">
-                    </div>
-                    <div class="textchoice">
-                        <br><br>
-                        <button onclick="adddispay2f()" class="btnchoice">ใช้กล้องโทรทรรศน์อันเดียว <br>
-                            ใหญ่ๆไปเลย</button>
-                    </div>
-                </div>
-            </div>
-            <div class="rightchoice">
-                <div class="choiceonly c2">
-                    <div class="picchoice">
-                        <img src="/assets/image/choice2.2.png" alt="">
-                    </div>
-                    <div class="textchoice">
-                        <br><br>
-                        <button onclick="adddispay2t()" class="btnchoice">
-                            ใช้หลายๆตัวกระจายอยู่
-                            ทั่วโลก
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="q3" id="q3">
-        <div class="top">
-            <div class="point">
-                <div class="banana">
-                    <img src="/assets/image/banana-q.png" alt="banana">
-                    <p id="banana-p3">0</p>
-                </div>
-                <div class="star">
-                    <img src="/assets/image/star-q.png" alt="banana">
-                    <p id="star-p3">0</p>
-                </div>
-            </div>
-            <div class="textbox">
-                <div class="question-box">
-                    <p>คำถามที่ 3 : สถานที่ตั้งกล้องควรเป็นที่ใดระหว่าง กลางทะเล
-                        หรือ เขตที่ราบสูง
-                    </p>
-                </div>
-                <div class="hint-box">
-                    <p id="hint3">เอากล้วยมา 5 ลูก แล้วฉันจะบอกคำใบ้นาย</p>
-                </div>
-            </div>
-            <div class="hint">
-                <div class="messagebox">
-                    <img src="/assets/image/hint.png" alt="nok">
-                </div>
-                <div class="bird">
-                    <button><img src="/assets/image/n_normal.png" onclick="checkbanana()"
-                            onmouseover="this.src='/assets/image/n_use.png'"
-                            onmouseout="this.src='/assets/image/n_normal.png'" alt="nok"></button>
-                </div>
-                <div class="banana-hint">
-                    <div class="banana-h">
-                        <img src="/assets/image/banana-q.png" alt="banana">
-                        <p>x5</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="box">
-            <div class="leftchoice">
-                <div class="choiceonly c1">
-                    <div class="picchoice">
-                        <img src="/assets/image/choice3.1.png" alt="">
-                    </div>
-                    <div class="textchoice">
-                        <br><br>
-                        <button onclick="adddispay3f()" class="btnchoice">กลางทะเลที่นิ่งสงบ </button>
-                    </div>
-                </div>
-            </div>
-            <div class="rightchoice">
-                <div class="choiceonly c2">
-                    <div class="picchoice">
-                        <img src="/assets/image/choice3.2.png" alt="">
-                    </div>
-                    <div class="textchoice">
-                        <br><br>
-                        <button onclick="adddispay3t()" class="btnchoice">
-                            ที่ราบสูงห่างไกลผู้คน
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="q4" id="q4">
-        <div class="top">
-            <div class="point">
-                <div class="banana">
-                    <img src="/assets/image/banana-q.png" alt="banana">
-                    <p id="banana-p4">1</p>
-                </div>
-                <div class="star">
-                    <img src="/assets/image/star-q.png" alt="banana">
-                    <p id="star-p4">1</p>
-                </div>
-            </div>
-            <div class="textbox">
-                <div class="question-box">
-                    <p>คำถาม 4 : ลิงได้ข้อมูลจากกล้องกว่า 5 ล้านกิกะไบต์
-                        เราต้องส่งให้สถานีวิจัยให้เร็วที่สุดยังไงดีนะ?
-                    </p>
-                </div>
-                <div class="hint-box">
-                    <p id="hint4">เอากล้วยมา 5 ลูก แล้วฉันจะบอกคำใบ้นาย</p>
-                </div>
-            </div>
-            <div class="hint">
-                <div class="messagebox">
-                    <img src="/assets/image/hint.png" alt="nok">
-                </div>
-                <div class="bird">
-                    <button><img src="/assets/image/n_normal.png" onclick="checkbanana()"
-                            onmouseover="this.src='/assets/image/n_use.png'"
-                            onmouseout="this.src='/assets/image/n_normal.png'" alt="nok"></button>
-                </div>
-                <div class="banana-hint">
-                    <div class="banana-h">
-                        <img src="/assets/image/banana-q.png" alt="banana">
-                        <p>x5</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="box">
-            <div class="leftchoice">
-                <div class="choiceonly c1">
-                    <div class="picchoice">
-                        <img src="/assets/image/choice4.1.png" alt="">
-                    </div>
-                    <div class="textchoice">
-                        <br><br>
-                        <button onclick="adddispay4f()" class="btnchoice">ส่งผ่านทางสายเคเบิ้ลใต้ทะเล</button>
-                    </div>
-                </div>
-            </div>
-            <div class="rightchoice">
-                <div class="choiceonly c2">
-                    <div class="picchoice">
-                        <img src="/assets/image/choice4.2.png" alt="">
-                    </div>
-                    <div class="textchoice">
-                        <br><br>
-                        <button onclick="adddispay4t()" class="btnchoice">
-                            นำข้อมูลใส่ฮาร์ดดิสก์ไดร์ฟแล้วส่งขึ้นเครื่องบิน
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="q5" id="q5">
-        <div class="top">
-            <div class="point">
-                <div class="banana">
-                    <img src="/assets/image/banana-q.png" alt="banana">
-                    <p id="banana-p5">1</p>
-                </div>
-                <div class="star">
-                    <img src="/assets/image/star-q.png" alt="banana">
-                    <p id="star-p5">1</p>
-                </div>
-            </div>
-            <div class="textbox">
-                <div class="question-box">
-                    <p>คำถาม 5 : ในที่สุดลิงก็ได้ถ่ายภาพหลุมดำซักที ว่าแต่หัวหน้าสั่งให้
-                        เราถ่ายหลุมดำจากกาแลกซี่ไหนนะ ?
-                    </p>
-                </div>
-                <div class="hint-box">
-                    <p id="hint5">เอากล้วยมา 5 ลูก แล้วฉันจะบอกคำใบ้นาย</p>
-                </div>
-            </div>
-            <div class="hint">
-                <div class="messagebox">
-                    <img src="/assets/image/hint.png" alt="nok">
-                </div>
-                <div class="bird">
-                    <button><img src="/assets/image/n_normal.png" onclick="checkbanana()"
-                            onmouseover="this.src='/assets/image/n_use.png'"
-                            onmouseout="this.src='/assets/image/n_normal.png'" alt="nok"></button>
-                </div>
-                <div class="banana-hint">
-                    <div class="banana-h">
-                        <img src="/assets/image/banana-q.png" alt="banana">
-                        <p>x5</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="box">
-            <div class="leftchoice">
-                <div class="choiceonly c1">
-                    <div class="picchoice">
-                        <img src="/assets/image/choice5.1.png" alt="">
-                    </div>
-                    <div class="textchoice">
-                        <br><br>
-                        <button onclick="adddispay5t()" class="btnchoice">กาแล็กซี่เมซีเย 87 อันไกลโพ้น
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="rightchoice">
-                <div class="choiceonly c2">
-                    <div class="picchoice">
-                        <img src="/assets/image/choice5.2.png" alt="">
-                    </div>
-                    <div class="textchoice">
-                        <br><br>
-                        <button onclick="adddispay5f()" class="btnchoice">
-                            กาแล็กซี่ทางช้างเผือกของเราเอง
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <button id="retreat" onclick="retreat()">ยอมเเพ้</button>
     </div>
 
-    <!-- ri-part -->
-    <div class="true-q1" id="true-q1">
-        <div class="box-true-q1">
-            <p class="text-true-q1">
-                &nbsp;ใช้ได้! กล้องโทรทรรศน์วิทยุใช้การวัดสัญญาณคลื่นวิทยุจากวัตถุท้องฟ้าและ
-                &nbsp;&nbsp;&nbsp;&nbsp;สามารถทะลุผ่านเมฆหมอกในบรรยากาศของโลกและผ่านฝุ่นผงในที่ว่าง
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                ระหว่างดวงดาวได้ด้วย รับกล้วยไป
-            </p>
-        </div>
-        <div class="img-true-q1">
-            <img id="test" src="/assets/image/q1-correct-fix.png" alt="">
-        </div>
-        <a id="nextButton" onclick="adddispay2q()">ข้อต่อไป</a>
+    <div class="helper">
+      <img id="hintPic" src="/assets/image/hint2.png">
+      <img id="birdPic" src="/assets/image/n_normal.png" onclick="checkbanana()"
+        onmouseover="this.src='/assets/image/n_use.png'" onmouseout="this.src='/assets/image/n_normal.png'">
+      <img id="hintUse" src="/assets/image/banana-q2.png">
+      <h1 id="hintUseText">x5</h1>
     </div>
+    <div class="question"></div>
+    <div class="hint"></div>
 
-    <div class="false-q1" id="false-q1">
-        <div class="box-false-q1">
-            <p class="text-false-q1">
-                ถ่ายไม่เห็นอะไรเลย! เพราะนอกจากจะมีชั้นบรรยากาศห่อหุ้มโลกเป็น
-                อุปสรรคแล้ว ยังมีฝุ่นต่างที่อยู่ในอวกาศขวางกั้นอีก เอาไปขายทิ้งซะนะ
-            </p>
-        </div>
-        <div class="img-false-q1">
-            <img src="/assets/image/q1-false-fix.png" alt="">
-        </div>
-        <a id="nextButton" onclick="adddispay2q()">ข้อต่อไป</a>
+    <div class="choice">
+      <div id="choice1">
+        <img class="picchoice" id="pic1" src="">
+        <button onmouseover="mouseOver()" class="btnchoice" id="btn1"></button>
+      </div>
+      <div id="choice2">
+        <img class="picchoice" id="pic2" src="">
+        <button onmouseover="mouseOver()" class="btnchoice" id="btn2"></button>
+      </div>
     </div>
+  </div>
 
-
-    <div class="true-q2" id="true-q2">
-        <div class="box-true-q2">
-            <p class="text-true-q2">
-                &emsp;EHT เป็นโครงการศึกษาเกี่ยวกับหลุมดำโดยใช้กล้องโทรทัศน์ทำงานร่วมกัน
-                &nbsp;&emsp;เราสามารถจำลองกล้องโทรทรรศน์ที่ใหญ่เท่าโลกได้ด้วยเทคนิคที่เรียกว่า<br>
-                &nbsp;&emsp;&emsp;&emsp;&emsp;VLBI หรือ Very-long-baseline Interferometry
-            </p>
-        </div>
-        <div class="img-true-q2">
-            <img src="/assets/image/q2correct-fix.png" alt="">
-        </div>
-        <a id="nextButton" onclick="adddispay3q()">ข้อต่อไป</a>
+  <div class="answer">
+    <div class="boxAnswer">
+      <div class="textAnswer"></div>
     </div>
-
-    <div class="false-q2" id="false-q2">
-        <div class="box-false-q2">
-            <p class="text-false-q2">
-                โลกแตก เพราะการใช้กล้องโทรทรรศน์ตัวเดียวต้องมีขนาดใหญ่เท่าโลกถึง
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                จะถ่ายภาพหลุมดำได้ (และจะเอาเงินที่ไหนไปสร้าง!)
-            </p>
-        </div>
-        <div class="img-false-q2">
-            <img src="/assets/image/q2-false-fix.png" alt="">
-        </div>
-        <a id="nextButton" onclick="adddispay3q()">ข้อต่อไป</a>
+    <div class="boxImg">
+      <img id="imgAnswer">
     </div>
-
-    <div class="true-q3" id="true-q3">
-        <div class="box-true-q3">
-            <p class="text-true-q3">
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                ยอดเยี่ยมไปเลย <br>
-                &emsp;&emsp;&emsp;&emsp;&emsp;สามารถรับสัญญาณสำหรับการถ่ายภาพหลุมดำได้แล้ว!
-            </p>
-        </div>
-        <div class="img-true-q3">
-            <img src="/assets/image/q3-correct-fix.png" alt="">
-        </div>
-        <a id="nextButton" onclick="adddispay4q()">ข้อต่อไป</a>
-    </div>
-
-    <div class="false-q3" id="false-q3">
-        <div class="box-false-q3">
-            <p class="text-false-q3">
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-                ยอดแย่<br>
-                &emsp;&emsp;&emsp;&emsp;&emsp;คลื่นลมทะเลนั้นรุนแรงเสียจนการจับสัญญาณทำได้ยาก
-            </p>
-        </div>
-        <div class="img-false-q3">
-            <img src="/assets/image/q3-false-fix.png" alt="">
-        </div>
-        <a id="nextButton" onclick="adddispay4q()">ข้อต่อไป</a>
-    </div>
-
-    <div class="true-q4" id="true-q4">
-        <div class="box-true-q4">
-            <p class="text-true-q4">
-                &emsp;&emsp;&emsp;&nbsp;&nbsp;ฉลาดมาก! เพราะข้อมูลมีมากเกินกว่าจะส่งผ่านอินเทอร์เน็ตได้
-                &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;ทำให้ต้องส่งผ่านเครื่องบินเจ็ทเร็วแรงแทนเพราะดอมกล่าวไว้ว่าครอบครัว
-            </p>
-        </div>
-        <div class="img-true-q4">
-            <img src="/assets/image/q4-correct-fix.png" alt="">
-        </div>
-        <a id="nextButton" onclick="adddispay5q()">ข้อต่อไป</a>
-    </div>
-
-    <div class="false-q4" id="false-q4">
-        <div class="box-false-q4">
-            <p class="text-false-q4">
-                &nbsp;โดนจับแล้ว!! คาดเกิดจากการทำเครือข่ายอินเทอร์เน็ตทั่วโลกล่มทันทีหลังส่ง
-                &emsp;&emsp;&emsp;&emsp;ข้อมูลกว่า 5 ล้านกิกะไบต์ ศาลตัดสินให้จำคุกไม่มีประกันตัว
-            </p>
-        </div>
-        <div class="img-false-q4">
-            <img src="/assets/image/q4-false-fix.png" alt="">
-        </div>
-        <a id="nextButton" onclick="adddispay5q()">ข้อต่อไป</a>
-    </div>
-
-    <div class="true-q5" id="true-q5">
-        <div class="box-true-q5">
-            <p class="text-true-q5">
-                &emsp;&emsp;&nbsp;ถูกต้อง! ในที่สุดพวกเราก็สามารถถ่ายภาพหลุมดำมวลที่ยิ่งยวดของ<br>
-                &nbsp;&emsp;&emsp;&emsp;&nbsp;กาแล็กซี่ Messier 87 ( เมอซิเย่ ) เป็นครั้งแรกของโลก !!<br>
-                &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;ในวันที่ 10 เมษายน 2019 ทำได้ดีมากทุกคน!
-            </p>
-        </div>
-        <div class="img-true-q5">
-            <img src="/assets/image/q5-fix.png" alt="">
-        </div>
-        <a id="nextButton" onclick="result()">ข้อต่อไป</a>
-    </div>
-
-    <div class="false-q5" id="false-q5">
-        <div class="box-false-q5">
-            <p class="text-false-q5">
-                &emsp;&nbsp;ถูกต้อง! สุดท้ายลิงก็ได้ถ่ายหลุมดำมวลยิ่งยวดของกาแล็กทางช้างเผือก<br>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;ชื่อว่า Saguttarius A* เป็นครั้งที่สองของโลก<br>
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;ในวันที่ 12 พฤษภษคม 2022 ที่ผ่านมานี้เอง <br>
-                &emsp;&emsp;&emsp;&emsp;&emsp;โดยหลุมดำแรกที่ถ่ายได้ก็คือ M87 เมื่อปี 2019 นั่นเอง <br>
-            </p>
-        </div>
-        <div class="img-false-q5">
-            <img src="/assets/image/q5-sgra.png" alt="">
-        </div>
-        <a id="nextButton" onclick="result()">ข้อต่อไป</a>
-    </div> -->
-
-    <div class="true-q6" id="true-q6">
-        <div class="box-true-q6">
-            <p class="text-true-q6">
-                &emsp;&nbsp;&emsp;ใช่แล้ว เพราะหลุมดำมวลยิ่งยวดมีมวลมากมายมหาศาลจนทำให้<br>
-                จานสะสม(Accretion Disk) มวลเกิดแสงสว่างจ้า ทำให้เราสังเกตเห็นนั่นเอง
-            </p>
-        </div>
-        <div class="img-true-q6">
-            <img src="/assets/image/q6.png" alt="">
-        </div>
-        <a id="nextButton" onclick="result()">ข้อต่อไป</a>
-    </div>
+    <button class="next" id="nextButton">ข้อต่อไป</button>
+  </div>
 
 
-    <div class="false-q6" id="false-q6">
-        <div class="box-false-q6">
-            <p class="text-false-q6">
-                &emsp;&emsp;&emsp;&emsp;&nbsp;หลุมดำที่เกิดจากการระเบิดของดวงดาวเป็น Supernova นั้น<br>
-                &nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;มีมวลมากก็จริง แต่ยังไม่มากพอที่จะทำให้เกิด<br>
-                &emsp;&emsp;&emsp;&emsp;&emsp;จานสะสมมวล (Accretion Disk) ที่ทำให้เราสังเกตได้
-            </p>
-        </div>
-        <div class="img-false-q6">
-            <img src="/assets/image/q6.png" alt="">
-        </div>
-        <a id="nextButton" onclick="result()">ข้อต่อไป</a>
-    </div>
-
-    <script src="script.js"></script>
+  <template id="retreats">
+    <swal-html>
+      <div style="margin-top: 50px;">
+        <button id="again" onclick="playAgain()">เล่นใหม่</button>
+        <button id="landing" onclick="home()">ไปหน้าเเรก</button>
+        <button id="cancle" onclick="cancle()">ยกเลิก</button>
+      </div>
+    </swal-html>
+  </template>
+  <script src="script.js"></script>
 </body>
 
 </html>
