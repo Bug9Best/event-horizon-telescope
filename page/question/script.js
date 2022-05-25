@@ -99,6 +99,13 @@ let count = 0;
 let bPoint = 3;
 let sPoint = 0;
 
+function mouseOver() {
+  var mouseSound = new Audio('/assets/effect/Click 4.wav')
+  mouseSound.volume = 0.2;
+  mouseSound.play();
+}
+
+
 function trueNomalSound() {
   var soundTrack = new Audio('/assets/effect/Correct.wav')
   soundTrack.volume = 0.5;
@@ -143,8 +150,8 @@ function question1() {
   picB.setAttribute("src", pathImg2[0]);
   btnA.innerHTML = choice1[0]
   btnB.innerHTML = choice2[0]
-  btnA.setAttribute();
-  btnB.setAttribute();
+  btnA.setAttribute("onclick", "trueAnswer1();");
+  btnB.setAttribute("onclick", "falseAnswer1();");
 }
 
 function question2() {
@@ -160,12 +167,8 @@ function question2() {
   picB.setAttribute("src", pathImg2[1]);
   btnA.innerHTML = choice1[1]
   btnB.innerHTML = choice2[1]
-  btnA.addEventListener("click", function () {
-    falseAnswer2(count, bPoint, sPoint);
-  });
-  btnB.addEventListener("click", function () {
-    trueAnswer2(count, bPoint, sPoint);
-  });
+  btnA.setAttribute("onclick", "falseAnswer2();");
+  btnB.setAttribute("onclick", "trueAnswer2();");
 }
 
 function question3() {
@@ -181,12 +184,8 @@ function question3() {
   picB.setAttribute("src", pathImg2[2]);
   btnA.innerHTML = choice1[2]
   btnB.innerHTML = choice2[2]
-  btnA.addEventListener("click", function () {
-    falseAnswer3(count, bPoint, sPoint);
-  });
-  btnB.addEventListener("click", function () {
-    trueAnswer3(count, bPoint, sPoint);
-  });
+  btnA.setAttribute("onclick", "falseAnswer3();");
+  btnB.setAttribute("onclick", "trueAnswer3();");
 }
 
 function question4() {
@@ -202,12 +201,8 @@ function question4() {
   picB.setAttribute("src", pathImg2[3]);
   btnA.innerHTML = choice1[3]
   btnB.innerHTML = choice2[3]
-  btnA.addEventListener("click", function () {
-    falseAnswer4(count, bPoint, sPoint);
-  });
-  btnB.addEventListener("click", function () {
-    trueAnswer4(count, bPoint, sPoint);
-  });
+  btnA.setAttribute("onclick", "falseAnswer4();");
+  btnB.setAttribute("onclick", "trueAnswer4();");
 }
 
 function question5() {
@@ -223,12 +218,8 @@ function question5() {
   picB.setAttribute("src", pathImg2[4]);
   btnA.innerHTML = choice1[4]
   btnB.innerHTML = choice2[4]
-  btnA.addEventListener("click", function () {
-    trueAnswer5(count, bPoint, sPoint);
-  });
-  btnB.addEventListener("click", function () {
-    trueAnswer5(count, bPoint, sPoint);
-  });
+  btnA.setAttribute("onclick", "trueAnswer5();");
+  btnB.setAttribute("onclick", "falseAnswer5();");
 }
 
 function question6() {
@@ -244,181 +235,151 @@ function question6() {
   picB.setAttribute("src", pathImg2[5]);
   btnA.innerHTML = choice1[5]
   btnB.innerHTML = choice2[5]
-  btnA.addEventListener("click", function () {
-    trueAnswer6(count, bPoint, sPoint);
-  });
-  btnB.addEventListener("click", function () {
-    falseAnswer6(count, bPoint, sPoint);
-  });
+  btnA.setAttribute("onclick", "trueAnswer6();");
+  btnB.setAttribute("onclick", "falseAnswer6();");
 }
 
 // Answer Part --------------------------------------------------------------------------------------
 var answer = document.querySelector(".textAnswer");
 var picAnswer = document.querySelector("#imgAnswer");
 
-function trueAnswer1(count, bPoint, sPoint) {
+function trueAnswer1() {
   questionContainer.setAttribute("style", "visibility: hidden;")
   answerContainer.setAttribute("style", "visibility: visible;")
+  trueNomalSound();
   answer.innerHTML = ansCorrect[0]
   picAnswer.setAttribute("src", pathAns1[0])
   picAnswer.setAttribute("width", sizeImg1[0] + "px")
-  count = count + 1;
-  sPoint = sPoint + 1;
-  bPoint = bPoint + 3;
-  nextBtn.addEventListener("click", function () {
-    question2(count, bPoint, sPoint);
-  });
+  nextBtn.setAttribute("onclick", "question2();")
+  trueAddBanana();
 }
 
-function falseAnswer1(count, bPoint, sPoint) {
+function falseAnswer1() {
   questionContainer.setAttribute("style", "visibility: hidden;")
   answerContainer.setAttribute("style", "visibility: visible;")
+  falseNomalSound();
   answer.innerHTML = ansFalse[0]
   picAnswer.setAttribute("src", pathAns2[0])
   picAnswer.setAttribute("width", sizeImg2[0] + "px")
-  count = count + 1;
-  bPoint = bPoint + 2;
-  nextBtn.addEventListener("click", function () {
-    question2(count, bPoint, sPoint);
-  });
+  nextBtn.setAttribute("onclick", "question2();")
+  falseAddBanana();
 }
 
-function trueAnswer2(count, bPoint, sPoint) {
+function trueAnswer2() {
   questionContainer.setAttribute("style", "visibility: hidden;")
   answerContainer.setAttribute("style", "visibility: visible;")
+  trueNomalSound();
   answer.innerHTML = ansCorrect[1]
   picAnswer.setAttribute("src", pathAns1[1])
   picAnswer.setAttribute("width", sizeImg1[1] + "px")
-  count = count + 1;
-  sPoint = sPoint + 1;
-  bPoint = bPoint + 3;
-  nextBtn.addEventListener("click", function () {
-    question3(count, bPoint, sPoint);
-  });
+  nextBtn.setAttribute("onclick", "question3();")
+  trueAddBanana();
 }
 
 function falseAnswer2() {
   questionContainer.setAttribute("style", "visibility: hidden;")
   answerContainer.setAttribute("style", "visibility: visible;")
+  var mouseSound = new Audio('/assets/effect/Crack Earth ( Egg Sound ).wav')
+  mouseSound.volume = 0.5;
+  mouseSound.play();
   answer.innerHTML = ansFalse[1]
   picAnswer.setAttribute("src", pathAns2[1])
   picAnswer.setAttribute("width", sizeImg2[1] + "px")
-  count = count + 1;
-  bPoint = bPoint + 2;
-  nextBtn.addEventListener("click", function () {
-    question3(count, bPoint, sPoint);
-  });
+  nextBtn.setAttribute("onclick", "question3();")
+  falseAddBanana();
 }
 
-function trueAnswer3(count, bPoint, sPoint) {
+function trueAnswer3() {
   questionContainer.setAttribute("style", "visibility: hidden;")
   answerContainer.setAttribute("style", "visibility: visible;")
+  trueNomalSound();
   answer.innerHTML = ansCorrect[2]
   picAnswer.setAttribute("src", pathAns1[2])
   picAnswer.setAttribute("width", sizeImg1[2] + "px")
-  count = count + 1;
-  sPoint = sPoint + 1;
-  bPoint = bPoint + 3;
-  nextBtn.addEventListener("click", function () {
-    question4(count, bPoint, sPoint);
-  });
+  nextBtn.setAttribute("onclick", "question4();")
+  trueAddBanana();
 }
 
-function falseAnswer3(count, bPoint, sPoint) {
+function falseAnswer3() {
   questionContainer.setAttribute("style", "visibility: hidden;")
   answerContainer.setAttribute("style", "visibility: visible;")
+  falseNomalSound();
   answer.innerHTML = ansFalse[2]
   picAnswer.setAttribute("src", pathAns2[2])
   picAnswer.setAttribute("width", sizeImg2[2] + "px")
-  count = count + 1;
-  bPoint = bPoint + 2;
-  nextBtn.addEventListener("click", function () {
-    question4(count, bPoint, sPoint);
-  });
+  nextBtn.setAttribute("onclick", "question4();")
+  falseAddBanana();
 }
 
-function trueAnswer4(count, bPoint, sPoint) {
+function trueAnswer4() {
   questionContainer.setAttribute("style", "visibility: hidden;")
   answerContainer.setAttribute("style", "visibility: visible;")
+  trueNomalSound();
   answer.innerHTML = ansCorrect[3]
   picAnswer.setAttribute("src", pathAns1[3])
   picAnswer.setAttribute("width", sizeImg1[3] + "px")
-  count = count + 1;
-  sPoint = sPoint + 1;
-  bPoint = bPoint + 3;
-  nextBtn.addEventListener("click", function () {
-    question5(count, bPoint, sPoint);
-  });
+  nextBtn.setAttribute("onclick", "question5();")
+  trueAddBanana();
 }
 
-function falseAnswer4(count, bPoint, sPoint) {
+function falseAnswer4() {
   questionContainer.setAttribute("style", "visibility: hidden;")
   answerContainer.setAttribute("style", "visibility: visible;")
+  var mouseSound = new Audio('/assets/effect/Siren Police.wav')
+  mouseSound.volume = 0.5;
+  mouseSound.play();
   answer.innerHTML = ansFalse[3]
   picAnswer.setAttribute("src", pathAns2[3])
   picAnswer.setAttribute("width", sizeImg2[3] + "px")
-  count = count + 1;
-  bPoint = bPoint + 2;
-  nextBtn.addEventListener("click", function () {
-    question5(count, bPoint, sPoint);
-  });
+  nextBtn.setAttribute("onclick", "question5();")
+  falseAddBanana();
 }
 
-function trueAnswer5(count, bPoint, sPoint) {
+function trueAnswer5() {
   questionContainer.setAttribute("style", "visibility: hidden;")
   answerContainer.setAttribute("style", "visibility: visible;")
+  trueNomalSound();
   answer.innerHTML = ansCorrect[4]
   picAnswer.setAttribute("src", pathAns1[4])
   picAnswer.setAttribute("width", sizeImg1[4] + "px")
-  count = count + 1;
-  sPoint = sPoint + 1;
-  bPoint = bPoint + 3;
-  nextBtn.addEventListener("click", function () {
-    question6(count, bPoint, sPoint);
-  });
+  nextBtn.setAttribute("onclick", "question6();")
+  trueAddBanana();
 }
 
-function falseAnswer5(count, bPoint, sPoint) {
+function falseAnswer5() {
   questionContainer.setAttribute("style", "visibility: hidden;")
   answerContainer.setAttribute("style", "visibility: visible;")
+  trueNomalSound();
   answer.innerHTML = ansFalse[4]
   picAnswer.setAttribute("src", pathAns2[4])
   picAnswer.setAttribute("width", sizeImg2[4] + "px")
-  count = count + 1;
-  bPoint = bPoint + 2;
-  nextBtn.addEventListener("click", function () {
-    question6(count, bPoint, sPoint);
-  });
+  nextBtn.setAttribute("onclick", "question6();")
+  trueAddBanana();
 }
 
-function trueAnswer6(count, bPoint, sPoint) {
+function trueAnswer6() {
   questionContainer.setAttribute("style", "visibility: hidden;")
   answerContainer.setAttribute("style", "visibility: visible;")
+  trueNomalSound();
   answer.innerHTML = ansCorrect[5]
   picAnswer.setAttribute("src", pathAns1[5])
   picAnswer.setAttribute("width", sizeImg1[5] + "px")
-  count = count + 1;
-  sPoint = sPoint + 1;
-  bPoint = bPoint + 3;
-  nextBtn.addEventListener("click", function () {
-    result(count, bPoint, sPoint);
-  });
+  nextBtn.setAttribute("onclick", "result();")
+  trueAddBanana();
 }
 
-function falseAnswer6(count, bPoint, sPoint) {
+function falseAnswer6() {
   questionContainer.setAttribute("style", "visibility: hidden;")
   answerContainer.setAttribute("style", "visibility: visible;")
+  falseNomalSound();
   answer.innerHTML = ansFalse[5]
   picAnswer.setAttribute("src", pathAns2[5])
   picAnswer.setAttribute("width", sizeImg2[5] + "px")
-  count = count + 1;
-  bPoint = bPoint + 2;
-  nextBtn.addEventListener("click", function () {
-    result(count, bPoint, sPoint);
-  });
+  nextBtn.setAttribute("onclick", "result();")
+  falseAddBanana();
 }
 // Result --------------------------------------------------------------------------------------
-function result(count, bPoint, sPoint) {
+function result() {
   if (sPoint >= 4) {
     window.location.href = '/page/pass/pass.html'
   }
@@ -428,36 +389,7 @@ function result(count, bPoint, sPoint) {
 }
 
 
-function retreat() {
-  Swal.fire({
-    template: '#retreats',
-    icon: 'warning',
-    width: '40vw',
-    title: 'อะไรกัน เจ้าจะยอมเเพ้เเล้วอย่างนั้นรึ?',
-    showConfirmButton: false,
-    focusConfirm: false,
-    allowOutsideClick: false,
-    backdrop: false,
-  });
-}
-
-function playAgain() {
-  window.location.href = '/page/question/question.html'
-}
-function home() {
-  window.location.href = '/index.html'
-}
-function cancle() {
-  Swal.close({})
-}
-
-function mouseOver() {
-  var mouseSound = new Audio('/assets/effect/Click 4.wav')
-  mouseSound.volume = 0.2;
-  mouseSound.play();
-}
-
-function checkbanana(count, bPoint, sPoint) {
+function checkbanana() {
   if (bPoint < 5 && stateHint == true) {
     var errorEffect = new Audio('/assets/effect/Wrong 2.wav')
     errorEffect.volume = 0.25
@@ -489,3 +421,28 @@ function checkbanana(count, bPoint, sPoint) {
     hint.style.color = "green"
   }
 }
+
+
+function retreat() {
+  Swal.fire({
+    template: '#retreats',
+    icon: 'warning',
+    width: '40vw',
+    title: 'อะไรกัน เจ้าจะยอมเเพ้เเล้วอย่างนั้นรึ?',
+    showConfirmButton: false,
+    focusConfirm: false,
+    allowOutsideClick: false,
+    backdrop: false,
+  });
+}
+
+function playAgain() {
+  window.location.href = '/page/question/question.html'
+}
+function home() {
+  window.location.href = '/index.html'
+}
+function cancle() {
+  Swal.close({})
+}
+
